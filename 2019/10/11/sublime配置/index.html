@@ -256,8 +256,12 @@ var _hmt = _hmt || [];
 <p>jsformat  js代码格式化插件</p>
 <h1 id="保存自动格式化"><a href="#保存自动格式化" class="headerlink" title="保存自动格式化"></a>保存自动格式化</h1><p>先下载jsformat插件</p>
 <p>下载完成之后选择该插件的配置文件：首选项-》package settings-》jsformat-》settings-user 双击打开 输入：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;e4x&quot;</span>:<span class="literal">true</span>,</span><br><span class="line">    <span class="comment">//jsformat options</span></span><br><span class="line">    <span class="string">&quot;format_on_save&quot;</span>:<span class="literal">true</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="js">&#123;
+    &quot;e4x&quot;:true,
+    //jsformat options
+    &quot;format_on_save&quot;:true,
+&#125;
+</code></pre>
 <p>输入完成后点击保存，即可正常ctrl+s自动格式化保存js文件</p>
 <h1 id="永久自动换行"><a href="#永久自动换行" class="headerlink" title="永久自动换行"></a>永久自动换行</h1><p>打开sublime 选择首选项 设置 ctrl+f查找word_wrap是否存在</p>
 <p>右侧一般都会有个user的文件，在最外层的花括号{} 内最后一个配置的结尾无逗号时，添加一个逗号，换行写入：”word_wrap”: true</p>

@@ -249,7 +249,42 @@ var _hmt = _hmt || [];
 
 <div id="article-content">
 	<h1 id="自定义vscode主题"><a href="#自定义vscode主题" class="headerlink" title="自定义vscode主题"></a>自定义vscode主题</h1><p>打开配置粘贴以下代码</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 自定义页面主题dark+ (default dark)</span></span><br><span class="line">    &quot;workbench.colorCustomizations&quot;: &#123;</span><br><span class="line">        &quot;tab.activeBackground&quot;: &quot;#118511&quot;,</span><br><span class="line">        &quot;activityBar.background&quot;: &quot;#1b9b36a8&quot;,</span><br><span class="line">        &quot;sideBar.background&quot;: &quot;#14412f94&quot;,</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;editor.tokenColorCustomizations&quot;: &#123;</span><br><span class="line">        &quot;tab.activeBackground&quot;: &quot;#4fc26c&quot;,</span><br><span class="line">        &quot;activityBar.background&quot;: &quot;#020000&quot;,</span><br><span class="line">        &quot;sideBar.background&quot;: &quot;#000000&quot;,</span><br><span class="line">        &quot;[Default Dark+]&quot;: &#123;</span><br><span class="line">            <span class="comment">//注释颜色</span></span><br><span class="line">            &quot;comments&quot;: &quot;#48f8cf8c&quot;,</span><br><span class="line">            <span class="comment">//函数颜色</span></span><br><span class="line">            &quot;functions&quot;: &quot;#e62df7&quot;,</span><br><span class="line">            <span class="comment">//关键字颜色</span></span><br><span class="line">            &quot;keywords&quot;: &quot;#a31cfd&quot;,</span><br><span class="line">            <span class="comment">//数值颜色</span></span><br><span class="line">            &quot;numbers&quot;: &quot;#ee6969&quot;,</span><br><span class="line">            <span class="comment">//字符串颜色</span></span><br><span class="line">            &quot;strings&quot;: &quot;#8c7eda&quot;,</span><br><span class="line">            <span class="comment">//类型颜色</span></span><br><span class="line">            &quot;types&quot;: &quot;#4400ff&quot;,</span><br><span class="line">            <span class="comment">//这个忘了 但在文件内有提示</span></span><br><span class="line">            &quot;variables&quot;: &quot;#00ff2a&quot;,</span><br><span class="line">            &quot;textMateRules&quot;: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">&quot;scope&quot;</span>: <span class="string">&quot;keyword.operator&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;settings&quot;</span>: &#123;</span><br><span class="line">                        <span class="attr">&quot;foreground&quot;</span>: <span class="string">&quot;#eeff00&quot;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="json">// 自定义页面主题dark+ (default dark)
+    &quot;workbench.colorCustomizations&quot;: &#123;
+        &quot;tab.activeBackground&quot;: &quot;#118511&quot;,
+        &quot;activityBar.background&quot;: &quot;#1b9b36a8&quot;,
+        &quot;sideBar.background&quot;: &quot;#14412f94&quot;,
+    &#125;,
+    &quot;editor.tokenColorCustomizations&quot;: &#123;
+        &quot;tab.activeBackground&quot;: &quot;#4fc26c&quot;,
+        &quot;activityBar.background&quot;: &quot;#020000&quot;,
+        &quot;sideBar.background&quot;: &quot;#000000&quot;,
+        &quot;[Default Dark+]&quot;: &#123;
+            //注释颜色
+            &quot;comments&quot;: &quot;#48f8cf8c&quot;,
+            //函数颜色
+            &quot;functions&quot;: &quot;#e62df7&quot;,
+            //关键字颜色
+            &quot;keywords&quot;: &quot;#a31cfd&quot;,
+            //数值颜色
+            &quot;numbers&quot;: &quot;#ee6969&quot;,
+            //字符串颜色
+            &quot;strings&quot;: &quot;#8c7eda&quot;,
+            //类型颜色
+            &quot;types&quot;: &quot;#4400ff&quot;,
+            //这个忘了 但在文件内有提示
+            &quot;variables&quot;: &quot;#00ff2a&quot;,
+            &quot;textMateRules&quot;: [
+                &#123;
+                    &quot;scope&quot;: &quot;keyword.operator&quot;,
+                    &quot;settings&quot;: &#123;
+                        &quot;foreground&quot;: &quot;#eeff00&quot;
+                    &#125;
+                &#125;
+            ]
+        &#125;
+    &#125;
+</code></pre>
 
 </div>
 

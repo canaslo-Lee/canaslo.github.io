@@ -249,21 +249,40 @@ var _hmt = _hmt || [];
 
 <div id="article-content">
 	<h1 id="vue中全局挂载less"><a href="#vue中全局挂载less" class="headerlink" title="vue中全局挂载less"></a>vue中全局挂载less</h1><p>项目搭建完成后使用cmd 运行命令</p>
-<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue add style-resources-loader</span><br></pre></td></tr></table></figure>
-
+<pre><code class="diff">vue add style-resources-loader
+</code></pre>
 <p>添加完成后 在 vue.config.js内进行配置</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// url: 全局挂载的less文件在项目内的位置 </span></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>)</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    pluginOptions: &#123;</span><br><span class="line">        <span class="string">&#x27;style-resources-loader&#x27;</span>: &#123;</span><br><span class="line">            preProcessor: <span class="string">&#x27;less&#x27;</span>,</span><br><span class="line">            patterns: [</span><br><span class="line">                path.resolve(__dirname, <span class="string">&#x27;url&#x27;</span>)</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">// url: 全局挂载的less文件在项目内的位置 
+const path = require(&#39;path&#39;)
+module.exports = &#123;
+    pluginOptions: &#123;
+        &#39;style-resources-loader&#39;: &#123;
+            preProcessor: &#39;less&#39;,
+            patterns: [
+                path.resolve(__dirname, &#39;url&#39;)
+            ]
+        &#125;
+    &#125;
+&#125;
+</code></pre>
 <p>入口文件内引入 全局挂载的less文件</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&#x27;urlPath&#x27;</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">import &#39;urlPath&#39;
+</code></pre>
 <p>重启项目 重启项目 重启项目！！！</p>
 <p>在公共less内随便写点啥</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@red: red;</span><br><span class="line">@abstl0: &#123;</span><br><span class="line">    <span class="attribute">position</span>:abslute;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="css">@red: red;
+@abstl0: &#123;
+    position:abslute;
+    top:0;
+    left:0;
+&#125;
+</code></pre>
 <p>随便找个.vue文件内使用</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="variable">@red</span>;</span><br><span class="line">    <span class="variable">@abstl0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="less">.container&#123;
+    color: @red;
+    @abstl0;
+&#125;
+</code></pre>
 <p>解释一下 <strong>@abstl0;</strong> 的意思：将全局less文件内定义的样式插入到这里</p>
 <p>保存，之后再浏览器内检查元素 看样式有没有挂载上</p>
 

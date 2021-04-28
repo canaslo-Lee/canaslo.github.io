@@ -250,8 +250,24 @@ var _hmt = _hmt || [];
 <div id="article-content">
 	<h1 id="vue配置错误定位"><a href="#vue配置错误定位" class="headerlink" title="vue配置错误定位"></a>vue配置错误定位</h1><p>如果是vue-cli3创建的项目的话</p>
 <p>vue.config.js文件内添加</p>
-<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+const debug = process.env.NODE_ENV !== &#x27;production&#x27;</span></span><br><span class="line">module.exports = &#123;</span><br><span class="line"><span class="addition">+  configureWebpack: config =&gt; &#123;</span></span><br><span class="line"><span class="addition">+    if (debug) &#123; // 开发环境配置</span></span><br><span class="line"><span class="addition">+      config.devtool = &#x27;source-map&#x27;</span></span><br><span class="line"><span class="addition">+    &#125;</span></span><br><span class="line"><span class="addition">+  &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line">module.exports = &#123;</span><br><span class="line"><span class="addition">+  configureWebpack: config =&gt; &#123;</span></span><br><span class="line"><span class="addition">+    if (process.env.NODE_ENV !== &#x27;production&#x27;) &#123; // 开发环境配置</span></span><br><span class="line"><span class="addition">+      config.devtool = &#x27;source-map&#x27;</span></span><br><span class="line"><span class="addition">+    &#125;</span></span><br><span class="line"><span class="addition">+  &#125;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="diff">+const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpack: config =&gt; &#123;
++    if (debug) &#123; // 开发环境配置
++      config.devtool = &#39;source-map&#39;
++    &#125;
++  &#125;
+&#125;
 
+或者
+module.exports = &#123;
++  configureWebpack: config =&gt; &#123;
++    if (process.env.NODE_ENV !== &#39;production&#39;) &#123; // 开发环境配置
++      config.devtool = &#39;source-map&#39;
++    &#125;
++  &#125;
+&#125;
+</code></pre>
 
 </div>
 

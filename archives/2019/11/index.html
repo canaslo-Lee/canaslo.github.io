@@ -270,7 +270,9 @@ node(附带npm包):​    选择长期支持版，最新版容易出b
 				<div class="index-brief">
 					vue配置错误定位如果是vue-cli3创建的项目的话
 vue.config.js文件内添加
-123456789101112131415161718+const debug = process.env.NODE_ENV !== &#x27;production&#x27;module.exports
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
@@ -289,7 +291,9 @@ vue.config.js文件内添加
 				</h2>
 				<div class="index-brief">
 					自定义vscode主题打开配置粘贴以下代码
-1234567891011121314151617181920212223242526272829303132333435// 自定义页面主题dark+ (default dark)    &quot;workbench.colorCustomizatio
+// 自定义页面主题dark+ (default dark)
+    &quot;workbench.colorCustomizations&quot;: &#123;
+        &quot;tab.activeBackground&quot;: &
 					...
 				</div>
 			</a>
@@ -308,10 +312,11 @@ vue.config.js文件内添加
 				</h2>
 				<div class="index-brief">
 					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-1vue add style-resources-loader
+vue add style-resources-loader
 
 添加完成后 在 vue.config.js内进行配置
-123456789101112// url: 全局挂载的less文件在项目内的位置 const path = requi
+// url: 全局挂载的less文件在项目内的位置 
+const path = require(&#39;path&#3
 					...
 				</div>
 			</a>

@@ -256,10 +256,105 @@ var _hmt = _hmt || [];
 </ul>
 <p>2: 在seetings.json 中配置 ；</p>
 <p>​    打开方式 ：侧边栏–》设置–》右上角左数第一个 折角的文件图标</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 编辑器</span></span><br><span class="line">    <span class="comment">// 解决吃内存--是否在搜索中跟踪符号链接</span></span><br><span class="line">    <span class="attr">&quot;search.followSymlinks&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="comment">// 是否显示缩略图</span></span><br><span class="line">    <span class="attr">&quot;editor.minimap.enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 缩略图显示位置</span></span><br><span class="line">    <span class="attr">&quot;editor.minimap.side&quot;</span>: <span class="string">&quot;left&quot;</span>,</span><br><span class="line">    <span class="comment">// 侧边栏显示位置</span></span><br><span class="line">    <span class="attr">&quot;workbench.sideBar.location&quot;</span>: <span class="string">&quot;right&quot;</span>,</span><br><span class="line">    <span class="comment">// 保存格式化文件</span></span><br><span class="line">    <span class="attr">&quot;editor.formatOnSave&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 显示取色器及颜色</span></span><br><span class="line">    <span class="attr">&quot;editor.colorDecorators&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 拖拽移动代码</span></span><br><span class="line">    <span class="attr">&quot;editor.dragAndDrop&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 不选内容复制当前行</span></span><br><span class="line">    <span class="attr">&quot;editor.emptySelectionClipboard&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 代码折叠</span></span><br><span class="line">    <span class="attr">&quot;editor.folding&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 字体大小</span></span><br><span class="line">    <span class="attr">&quot;editor.fontSize&quot;</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="comment">// 自动化格式每行</span></span><br><span class="line">    <span class="attr">&quot;editor.formatOnType&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 悬停提示</span></span><br><span class="line">    <span class="attr">&quot;editor.hover.enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 突出显示语义符的匹配项</span></span><br><span class="line">    <span class="attr">&quot;editor.occurrencesHighlight&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// 未使用代码淡化</span></span><br><span class="line">    <span class="attr">&quot;editor.showUnused&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="comment">// tab补全</span></span><br><span class="line">    <span class="attr">&quot;editor.tabCompletion&quot;</span>: <span class="string">&quot;off&quot;</span>,</span><br><span class="line">    <span class="comment">// tab占位数</span></span><br><span class="line">    <span class="attr">&quot;editor.tabSize&quot;</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="comment">// 是否换行</span></span><br><span class="line">    <span class="attr">&quot;editor.wordWrap&quot;</span>: <span class="string">&quot;on&quot;</span>,</span><br><span class="line">    <span class="comment">// 换行方式</span></span><br><span class="line">    <span class="attr">&quot;editor.wrappingIndent&quot;</span>: <span class="string">&quot;same&quot;</span>,</span><br><span class="line">    <span class="comment">// 设置窗口缩放</span></span><br><span class="line">    <span class="attr">&quot;window.zoomLevel&quot;</span>: <span class="number">0</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="json">&#123;
+    // 编辑器
+    // 解决吃内存--是否在搜索中跟踪符号链接
+    &quot;search.followSymlinks&quot;: false,
+    // 是否显示缩略图
+    &quot;editor.minimap.enabled&quot;: true,
+    // 缩略图显示位置
+    &quot;editor.minimap.side&quot;: &quot;left&quot;,
+    // 侧边栏显示位置
+    &quot;workbench.sideBar.location&quot;: &quot;right&quot;,
+    // 保存格式化文件
+    &quot;editor.formatOnSave&quot;: true,
+    // 显示取色器及颜色
+    &quot;editor.colorDecorators&quot;: true,
+    // 拖拽移动代码
+    &quot;editor.dragAndDrop&quot;: true,
+    // 不选内容复制当前行
+    &quot;editor.emptySelectionClipboard&quot;: true,
+    // 代码折叠
+    &quot;editor.folding&quot;: true,
+    // 字体大小
+    &quot;editor.fontSize&quot;: 18,
+    // 自动化格式每行
+    &quot;editor.formatOnType&quot;: true,
+    // 悬停提示
+    &quot;editor.hover.enabled&quot;: true,
+    // 突出显示语义符的匹配项
+    &quot;editor.occurrencesHighlight&quot;: true,
+    // 未使用代码淡化
+    &quot;editor.showUnused&quot;: true,
+    // tab补全
+    &quot;editor.tabCompletion&quot;: &quot;off&quot;,
+    // tab占位数
+    &quot;editor.tabSize&quot;: 2,
+    // 是否换行
+    &quot;editor.wordWrap&quot;: &quot;on&quot;,
+    // 换行方式
+    &quot;editor.wrappingIndent&quot;: &quot;same&quot;,
+    // 设置窗口缩放
+    &quot;window.zoomLevel&quot;: 0,
+&#125;
+</code></pre>
 <p>配置eslint</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ---------------------------------------------------------------</span></span><br><span class="line">   <span class="comment">// prettier</span></span><br><span class="line">   <span class="comment">// 代码最佳长度</span></span><br><span class="line">   &quot;prettier.printWidth&quot;: 80,</span><br><span class="line">   <span class="comment">// 是否加分号</span></span><br><span class="line">   &quot;prettier.semi&quot;: false,</span><br><span class="line">   <span class="comment">// 单引号</span></span><br><span class="line">   &quot;prettier.singleQuote&quot;: true,</span><br><span class="line">   <span class="comment">// tab缩进</span></span><br><span class="line">   &quot;prettier.useTabs&quot;: true,</span><br><span class="line">   <span class="comment">// 指定默认格式化程序</span></span><br><span class="line">   <span class="comment">// &quot;editor.defaultFormatter&quot;: &quot;dbaeumer.vscode-eslint&quot;,</span></span><br><span class="line">   <span class="comment">// 指定shell的默认路径</span></span><br><span class="line">   &quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Windows\\System32\\cmd.exe&quot;,</span><br><span class="line">   <span class="comment">// ---------------------------------------------------------</span></span><br><span class="line">   <span class="comment">// eslint</span></span><br><span class="line">   <span class="comment">// 启用eslint</span></span><br><span class="line">   &quot;eslint.enable&quot;: true,</span><br><span class="line">   <span class="comment">// 控制整个工作区的连接任务是否可用</span></span><br><span class="line">   &quot;eslint.lintTask.enable&quot;: true,</span><br><span class="line">   <span class="comment">// &quot;eslint.options&quot;: &#123;&#125;,</span></span><br><span class="line">   <span class="comment">// 开启或关闭自动修复</span></span><br><span class="line">   &quot;eslint.autoFixOnSave&quot;: true,</span><br><span class="line">   <span class="comment">// 应由ESLint进行验证的一组语言id</span></span><br><span class="line">   &quot;eslint.validate&quot;: [</span><br><span class="line">       &quot;javascript&quot;,</span><br><span class="line">       &quot;javascriptreact&quot;,</span><br><span class="line">       &quot;html&quot;,</span><br><span class="line">       &quot;css&quot;,</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="comment">// 要由ESLint验证的语言ID</span></span><br><span class="line">           <span class="attr">&quot;language&quot;</span>: <span class="string">&quot;vue&quot;</span>,</span><br><span class="line">           <span class="comment">// 是否提供该语言的自动修复</span></span><br><span class="line">           <span class="attr">&quot;autoFix&quot;</span>: <span class="literal">true</span></span><br><span class="line">       &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="comment">// 要由ESLint验证的语言ID</span></span><br><span class="line">           <span class="attr">&quot;language&quot;</span>: <span class="string">&quot;react&quot;</span>,</span><br><span class="line">           <span class="comment">// 是否提供该语言的自动修复</span></span><br><span class="line">           <span class="attr">&quot;autoFix&quot;</span>: <span class="literal">true</span></span><br><span class="line">       &#125;,</span><br><span class="line">   ],</span><br><span class="line">   <span class="comment">//</span></span><br><span class="line">   <span class="comment">// vetur</span></span><br><span class="line">   &quot;vetur.format.defaultFormatter.js&quot;: &quot;vscode-typescript&quot;,</span><br><span class="line">   <span class="comment">// 设置默认格式化</span></span><br><span class="line">   &quot;[html]&quot;: &#123;</span><br><span class="line">       &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;</span><br><span class="line">   &#125;,</span><br><span class="line">   &quot;[javascript]&quot;: &#123;</span><br><span class="line">       &quot;editor.defaultFormatter&quot;: &quot;dbaeumer.vscode-eslint&quot;</span><br><span class="line">   &#125;,</span><br><span class="line">   &quot;[vue]&quot;: &#123;</span><br><span class="line">       &quot;editor.defaultFormatter&quot;: &quot;octref.vetur&quot;</span><br><span class="line">   &#125;,</span><br></pre></td></tr></table></figure>
+<pre><code class="json"> // ---------------------------------------------------------------
+    // prettier
+    // 代码最佳长度
+    &quot;prettier.printWidth&quot;: 80,
+    // 是否加分号
+    &quot;prettier.semi&quot;: false,
+    // 单引号
+    &quot;prettier.singleQuote&quot;: true,
+    // tab缩进
+    &quot;prettier.useTabs&quot;: true,
+    // 指定默认格式化程序
+    // &quot;editor.defaultFormatter&quot;: &quot;dbaeumer.vscode-eslint&quot;,
+    // 指定shell的默认路径
+    &quot;terminal.integrated.shell.windows&quot;: &quot;C:\\Windows\\System32\\cmd.exe&quot;,
+    // ---------------------------------------------------------
+    // eslint
+    // 启用eslint
+    &quot;eslint.enable&quot;: true,
+    // 控制整个工作区的连接任务是否可用
+    &quot;eslint.lintTask.enable&quot;: true,
+    // &quot;eslint.options&quot;: &#123;&#125;,
+    // 开启或关闭自动修复
+    &quot;eslint.autoFixOnSave&quot;: true,
+    // 应由ESLint进行验证的一组语言id
+    &quot;eslint.validate&quot;: [
+        &quot;javascript&quot;,
+        &quot;javascriptreact&quot;,
+        &quot;html&quot;,
+        &quot;css&quot;,
+        &#123;
+            // 要由ESLint验证的语言ID
+            &quot;language&quot;: &quot;vue&quot;,
+            // 是否提供该语言的自动修复
+            &quot;autoFix&quot;: true
+        &#125;,
+        &#123;
+            // 要由ESLint验证的语言ID
+            &quot;language&quot;: &quot;react&quot;,
+            // 是否提供该语言的自动修复
+            &quot;autoFix&quot;: true
+        &#125;,
+    ],
+    //
+    // vetur
+    &quot;vetur.format.defaultFormatter.js&quot;: &quot;vscode-typescript&quot;,
+    // 设置默认格式化
+    &quot;[html]&quot;: &#123;
+        &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+    &#125;,
+    &quot;[javascript]&quot;: &#123;
+        &quot;editor.defaultFormatter&quot;: &quot;dbaeumer.vscode-eslint&quot;
+    &#125;,
+    &quot;[vue]&quot;: &#123;
+        &quot;editor.defaultFormatter&quot;: &quot;octref.vetur&quot;
+    &#125;,
+</code></pre>
 
 </div>
 
