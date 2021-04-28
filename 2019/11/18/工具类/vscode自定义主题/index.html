@@ -256,6 +256,10 @@ var _hmt = _hmt || [];
 </h1>
 <div class="article-meta">
 	
+		<span>
+			阅读量:<span id="/2019/11/18/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/" class="leancloud_visitors" data-flag-title="vscode自定义主题"></span>
+		</span>
+	
 	<span>李宜珂</span>
 	<span>2019-11-18 20:06:20</span>
 		<div id="article-categories">
@@ -362,6 +366,38 @@ var _hmt = _hmt || [];
 			recordIP: false
 		})
 	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
 	
 </script>
 	</div>
