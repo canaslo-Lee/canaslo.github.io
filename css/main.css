@@ -196,6 +196,7 @@ a {
 /* index */
 #content{
 	max-width: 850px;
+	min-height: 83.5vh;
 	top: 50px;
 	flex-grow: 1;
 	flex-shrink: 1;
@@ -340,7 +341,7 @@ table {
   background: transparent;
   border-collapse: collapse;
   border-spacing: 0;
-  text-align: left; 
+  text-align: left;
   border: 1px solid black;
 }
 table th {
@@ -349,7 +350,7 @@ table th {
 	border: 1px solid black;
 }
 table td {
-	padding: 5px 10px; 
+	padding: 5px 10px;
 	border: 1px solid black;
 }
 
