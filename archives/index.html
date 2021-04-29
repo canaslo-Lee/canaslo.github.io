@@ -156,9 +156,16 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										基础
+									</a>
+									
+							<ul>
 								<li class="file">
-									<a href="/2019/11/24/vue/vue-webpack%E9%85%8D%E7%BD%AE%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
-										vue-webpack配置生产模式错误定位
+									<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+										数据双向绑定的原理
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -166,11 +173,53 @@ var _hmt = _hmt || [];
 			
 							<ul>
 								<li class="file">
-									<a href="/2019/11/18/vue/vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
-										vue项目中全局挂载less
+									<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+										生命周期
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+										组件传值
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										配置
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+										全局挂载less
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+										生产模式错误定位
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
 							</ul>
 			
 								</li>
@@ -381,9 +430,73 @@ node(附带npm包):​    选择长期支持版，最新版容易出b
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-webpack%E9%85%8D%E7%BD%AE%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
 				<h2 class="index-title">
-					vue-webpack配置生产模式错误定位
+					数据双向绑定的原理
+				</h2>
+				<div class="index-brief">
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+				<h2 class="index-title">
+					生命周期
+				</h2>
+				<div class="index-brief">
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
+
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
+
+生命周期
+beforeCreate 创建前
+数据监听和初始
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+				<h2 class="index-title">
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
 					vue配置错误定位如果是vue-cli3创建的项目的话
@@ -397,6 +510,55 @@ module.exports = &#123;
                 <div class="article-meta">
 				    <span>2019-11-24</span>
                     
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+				<h2 class="index-title">
+					组件传值
+				</h2>
+				<div class="index-brief">
+					组件间传值
+父传子
+子组件通过 props 方法接收父组件传入值
+
+
+子传父
+子组件通过 $emit 方法传递给父组件
+
+
+非父子、兄弟组件
+eventBus；
+创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
+
+
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
                             
                     
                 </div>
@@ -432,17 +594,17 @@ module.exports = &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
 				<h2 class="index-title">
-					vue项目中全局挂载less
+					全局挂载less
 				</h2>
 				<div class="index-brief">
 					vue中全局挂载less项目搭建完成后使用cmd 运行命令
 vue add style-resources-loader
 
 添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置 
-const path = require(&#39;path&#3
+// url: 全局挂载的less文件在项目内的位置
+const path = require(&#39;path&#39
 					...
 				</div>
 			</a>
@@ -450,68 +612,10 @@ const path = require(&#39;path&#3
 				    <span>2019-11-18</span>
                     
                             
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E9%85%8D%E7%BD%AE/">
-				<h2 class="index-title">
-					配置
-				</h2>
-				<div class="index-brief">
-					sublime常用插件autobackups  代码备份功能：可以查找旧版本的代码，可在其设置中更改备份位置
-docblockr  注释插件：方法前输入 /** 可以快捷生成注释模板
-emmet html 快捷输入标签
-sublime server  localhost 的方式打开html文件
-De
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-10-11</span>
-                    
-                            
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/工具类/">工具类</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E9%85%8D%E7%BD%AEvue/">
-				<h2 class="index-title">
-					配置vue
-				</h2>
-				<div class="index-brief">
-					Vscode vue篇1：在vscode中安装
-
-vetur
-eslint
-prettier-code formatter
-
-2: 在seetings.json 中配置 ；
-​    打开方式 ：侧边栏–》设置–》右上角左数第一个 折角的文件图标
-&#123;
-    // 编辑器
-    // 解
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-10-11</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/工具类/">工具类</a>
+                                        <a href="/categories/vue/">vue</a>
 										
                                     </span>
                                 
@@ -522,6 +626,8 @@ prettier-code formatter
 	
 	
 	<div id="index-paginator">
+		
+			<span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">&gt;</a>
 		
 	</div>
 </div>

@@ -322,44 +322,58 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/html/html%E7%AF%87/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					html篇
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-12-03</span>
+				    <span>2019-11-24</span>
                     
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
                             
                     
                 </div>
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
 				<h2 class="index-title">
-					抓包工具
+					全局挂载less
 				</h2>
 				<div class="index-brief">
-					charles第一步：官网下载charles；官网地址： https://www.charlesproxy.com/
-右边 找DOWNLOAD 点击下边的Download a free trial Version
-根据你的pc系统选择对应的安装包下载
-下载完成后下一步安装即可；可自行配置软件安装位置
+					vue中全局挂载less项目搭建完成后使用cmd 运行命令
+vue add style-resources-loader
+
+添加完成后 在 vue.config.js内进行配置
+// url: 全局挂载的less文件在项目内的位置
+const path = require(&#39;path&#39
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-12-02</span>
+				    <span>2019-11-18</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/工具类/">工具类</a>
+                                        <a href="/categories/vue/">vue</a>
 										
                                     </span>
                                 
