@@ -231,6 +231,62 @@ var _hmt = _hmt || [];
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										操作符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										01.操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.一元操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										03.位操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										04.布尔操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										05.乘性操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										数据类型
 									</a>
 									
@@ -711,6 +767,48 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+				<h2 class="index-title">
+					基础
+				</h2>
+				<div class="index-brief">
+					vuex 是什么
+状态机 用于存储、更改状态的组件
+
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
+
+
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
 				<h2 class="index-title">
 					route和router的区别
@@ -805,19 +903,16 @@ hash 不会重加载页面
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					钩子函数
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					
-可控制导航跳转，beforeEach，afterEach 等
-一般用于页面标题修改
-需要登陆才能调整页面重定向
-beforeEach 的参数
-to route 即将进入的目标路由对象
-from route 当前导航要离开的路由
-next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
@@ -838,28 +933,49 @@ next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					基础
+					02.mvvm模式
 				</h2>
 				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
-
-
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
+					
+model view viewmodel 的缩写
+model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
+view 表示视图层；负责将 model 的数据展示在页面上
+viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+				<h2 class="index-title">
+					钩子函数
+				</h2>
+				<div class="index-brief">
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 					...
 				</div>
 			</a>
@@ -914,36 +1030,6 @@ vue.js 的两个核心
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
-				<h2 class="index-title">
-					02.mvvm模式
-				</h2>
-				<div class="index-brief">
-					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
 					03.指令
@@ -961,41 +1047,6 @@ v-on ==&gt; v-on:click ==&gt; @click
 
 v-if 和 v-show 的区别
 v-if 条件
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
-				<h2 class="index-title">
-					04.生命周期
-				</h2>
-				<div class="index-brief">
-					生命周期是什么
-实例从创建到销毁的过程
-从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
-
-生命周期的作用
-生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
-
-生命周期
-beforeCreate 创建前
-数据监听和初始
 					...
 				</div>
 			</a>

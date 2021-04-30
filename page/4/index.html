@@ -231,6 +231,62 @@ var _hmt = _hmt || [];
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										操作符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										01.操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.一元操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										03.位操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										04.布尔操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										05.乘性操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										数据类型
 									</a>
 									
@@ -678,15 +734,185 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					06.数据双向绑定的原理
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+				<h2 class="index-title">
+					02.mvvm模式
+				</h2>
+				<div class="index-brief">
+					
+model view viewmodel 的缩写
+model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
+view 表示视图层；负责将 model 的数据展示在页面上
+viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+				<h2 class="index-title">
+					钩子函数
+				</h2>
+				<div class="index-brief">
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+				<h2 class="index-title">
+					01.vue是什么
+				</h2>
+				<div class="index-brief">
+					
+构建用户界面的渐进式框架
+基于数据驱动的单页面应用
 
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
+vue.js 的两个核心
+数据驱动
+条件渲染
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+				<h2 class="index-title">
+					03.指令
+				</h2>
+				<div class="index-brief">
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
+
+v-if 和 v-show 的区别
+v-if 条件
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+				<h2 class="index-title">
+					04.生命周期
+				</h2>
+				<div class="index-brief">
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
+
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
+
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>
@@ -728,6 +954,35 @@ eventBus；
 
 
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+				<h2 class="index-title">
+					06.数据双向绑定的原理
+				</h2>
+				<div class="index-brief">
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -806,187 +1061,6 @@ exclude 排除的组件不缓存，优先级大于 include
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
-				<h2 class="index-title">
-					09.过滤器
-				</h2>
-				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
-				<h2 class="index-title">
-					10.css只在当前组件生效
-				</h2>
-				<div class="index-brief">
-					style 标签中添加 scoped
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
-				<h2 class="index-title">
-					优缺点
-				</h2>
-				<div class="index-brief">
-					优点：
-vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
-mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
-不支持低版本浏览器，最低支持到 ie9
-不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
-首次加载首
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
-				<h2 class="index-title">
-					和其他框架的区别
-				</h2>
-				<div class="index-brief">
-					vue 和 react、angular 的区别
-angular 学习成本高，使用率不大，版本间存在断层。未学习使用过
-react
-共同点：
-react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
-对文件内容有约定
-都需要编译后使用
-核心思想一致
-一切都是组件、组件实例间可嵌
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
-				<h2 class="index-title">
-					生产模式错误定位
-				</h2>
-				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/18/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/">
-				<h2 class="index-title">
-					自定义主题
-				</h2>
-				<div class="index-brief">
-					自定义vscode主题打开配置粘贴以下代码
-// 自定义页面主题dark+ (default dark)
-    &quot;workbench.colorCustomizations&quot;: &#123;
-        &quot;tab.activeBackground&quot;: &
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-18</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/工具类/">工具类</a>
 										
                                     </span>
                                 
