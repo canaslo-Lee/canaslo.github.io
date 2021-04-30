@@ -69,7 +69,8 @@ a {
 }
 #sidebar-toggle{
 	top: 60px;
-	left: 260px;
+	/* left: 260px; */
+	right: -10%;
 	position: absolute;
 }
 .toggle {
@@ -90,7 +91,8 @@ a {
 	flex-grow:1;
 	flex-shrink:1;
 	flex-basis: 0;
-	width: 250px;
+	max-width: 25%;
+	min-width: 250px;
 	left: -250px;
 	height: 100%;
 	top: 0px;
@@ -153,7 +155,8 @@ a {
 }
 #sidebar ul li {
 	list-style: none;
-	white-space: nowrap;
+	/* white-space: nowrap; */
+	white-space: unset;
 }
 #sidebar ul li a {
 	color: #999;

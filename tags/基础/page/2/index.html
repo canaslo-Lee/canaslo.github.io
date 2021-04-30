@@ -595,19 +595,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
 				<h2 class="index-title">
-					07.计算属性
+					06.数据双向绑定的原理
 				</h2>
 				<div class="index-brief">
-					什么是vue的计算属性
-模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
-计算属性的优点
-数据处理结构清晰
-依赖于数据，数据更新，处理结果自动更新
-计算属性内部 this 指向 vm 实例
-template 调用时直接写计算属性名称即可
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
 
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -628,15 +624,19 @@ template 调用时直接写计算属性名称即可
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
 				<h2 class="index-title">
-					06.数据双向绑定的原理
+					07.计算属性
 				</h2>
 				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+					什么是vue的计算属性
+模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
+计算属性的优点
+数据处理结构清晰
+依赖于数据，数据更新，处理结果自动更新
+计算属性内部 this 指向 vm 实例
+template 调用时直接写计算属性名称即可
 
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -721,17 +721,13 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
 				<h2 class="index-title">
-					优缺点
+					10.css只在当前组件生效
 				</h2>
 				<div class="index-brief">
-					优点：
-vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
-mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
-不支持低版本浏览器，最低支持到 ie9
-不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
-首次加载首
+					style 标签中添加 scoped
+
 					...
 				</div>
 			</a>
@@ -752,13 +748,17 @@ mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
 				<h2 class="index-title">
-					10.css只在当前组件生效
+					优缺点
 				</h2>
 				<div class="index-brief">
-					style 标签中添加 scoped
-
+					优点：
+vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
+mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
+不支持低版本浏览器，最低支持到 ie9
+不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
+首次加载首
 					...
 				</div>
 			</a>
