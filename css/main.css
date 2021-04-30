@@ -69,8 +69,7 @@ a {
 }
 #sidebar-toggle{
 	top: 60px;
-	/* left: 260px; */
-	right: -10%;
+	right: -50px;
 	position: absolute;
 }
 .toggle {
@@ -91,9 +90,8 @@ a {
 	flex-grow:1;
 	flex-shrink:1;
 	flex-basis: 0;
-	max-width: 25%;
-	min-width: 250px;
-	left: -250px;
+	width: 25%;
+	left: -25%;
 	height: 100%;
 	top: 0px;
 	background: #41555d;
@@ -103,7 +101,7 @@ a {
   left: 0;
 }
 #sidebar.off {
-  left: -250px;
+  left: -25%;
 }
 #search-input {
 	position: absolute;
