@@ -628,15 +628,27 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
+			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
 				<h2 class="index-title">
-					route和router的区别
+					基础
 				</h2>
 				<div class="index-brief">
-					$route 和 $router 的区别
-$route 路由信息对象，包含 path、params、hash、query、fullPath、matched、name 等路由信息参数
-$router 路由实例，对象包含路由跳转方法、钩子函数等
+					vuex 是什么
+状态机 用于存储、更改状态的组件
 
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
+
+
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
 
 					...
 				</div>
@@ -665,6 +677,36 @@ $router 路由实例，对象包含路由跳转方法、钩子函数等
 				<div class="index-brief">
 					如何定义 vue-router 的动态路由  router 目录下 index.js 文件中 对 path 属性添加/:id
 值如何获取  使用 router 对象的 params.id 获取
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
+				<h2 class="index-title">
+					route和router的区别
+				</h2>
+				<div class="index-brief">
+					$route 和 $router 的区别
+$route 路由信息对象，包含 path、params、hash、query、fullPath、matched、name 等路由信息参数
+$router 路由实例，对象包含路由跳转方法、钩子函数等
+
 
 					...
 				</div>
@@ -871,47 +913,6 @@ v-if 条件
 生命周期
 beforeCreate 创建前
 数据监听和初始
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
-				<h2 class="index-title">
-					05.组件传值
-				</h2>
-				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
-
-
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
 					...
 				</div>
 			</a>

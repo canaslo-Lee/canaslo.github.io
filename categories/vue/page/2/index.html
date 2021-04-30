@@ -595,6 +595,47 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+				<h2 class="index-title">
+					05.组件传值
+				</h2>
+				<div class="index-brief">
+					组件间传值
+父传子
+子组件通过 props 方法接收父组件传入值
+
+
+子传父
+子组件通过 $emit 方法传递给父组件
+
+
+非父子、兄弟组件
+eventBus；
+创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
+
+
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
 				<h2 class="index-title">
 					06.数据双向绑定的原理
@@ -721,78 +762,6 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
-				<h2 class="index-title">
-					基础
-				</h2>
-				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
-
-
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
-				<h2 class="index-title">
-					生产模式错误定位
-				</h2>
-				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
 				<h2 class="index-title">
 					10.css只在当前组件生效
@@ -865,6 +834,36 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 都需要编译后使用
 核心思想一致
 一切都是组件、组件实例间可嵌
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+				<h2 class="index-title">
+					生产模式错误定位
+				</h2>
+				<div class="index-brief">
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
