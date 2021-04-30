@@ -23,11 +23,11 @@
 
 	<!-- search -->
 	<script>
-		var searchEngine = "https://cn.bing.com/search?q=";
+		var searchEngine = "";
 		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
 			searchEngine = "https://www.google.com/search?q=";
 		}
-		var homeHost = "lakvovs.github.io";
+		var homeHost = "";
 		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
 			homeHost = window.location.host;
 		}
@@ -763,16 +763,20 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
 				<h2 class="index-title">
-					09.过滤器
+					和其他框架的区别
 				</h2>
 				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
+					vue 和 react、angular 的区别
+angular 学习成本高，使用率不大，版本间存在断层。未学习使用过
+react
+共同点：
+react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
+对文件内容有约定
+都需要编译后使用
+核心思想一致
+一切都是组件、组件实例间可嵌
 					...
 				</div>
 			</a>
@@ -824,20 +828,16 @@ mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					和其他框架的区别
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					vue 和 react、angular 的区别
-angular 学习成本高，使用率不大，版本间存在断层。未学习使用过
-react
-共同点：
-react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
-对文件内容有约定
-都需要编译后使用
-核心思想一致
-一切都是组件、组件实例间可嵌
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>

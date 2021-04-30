@@ -23,11 +23,11 @@
 
 	<!-- search -->
 	<script>
-		var searchEngine = "https://cn.bing.com/search?q=";
+		var searchEngine = "";
 		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
 			searchEngine = "https://www.google.com/search?q=";
 		}
-		var homeHost = "lakvovs.github.io";
+		var homeHost = "";
 		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
 			homeHost = window.location.host;
 		}
@@ -734,15 +734,18 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/cookie/">
+			<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8F/">
 				<h2 class="index-title">
-					cookie
+					列表排序
 				</h2>
 				<div class="index-brief">
-					const operCookie = &#123;
-  get (key) &#123;
-    let start = document.cookie.indexOf(key + &#39;=&#39;)
-    if (document.cookie.length &lt; 0 || start
+					基础版 – 按照索引排序
+/**
+ * @description 排序分类--设置分类序号
+ * todo 当前是按照索引进行排序设置序号
+ * todo 需根据需求进行具体修改
+ * 当前可设置 置顶 置底 上移 下移 指定位置
+ * @param currentIndex &#123; Numb
 					...
 				</div>
 			</a>
@@ -763,18 +766,15 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8F/">
+			<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/cookie/">
 				<h2 class="index-title">
-					列表排序
+					cookie
 				</h2>
 				<div class="index-brief">
-					基础版 – 按照索引排序
-/**
- * @description 排序分类--设置分类序号
- * todo 当前是按照索引进行排序设置序号
- * todo 需根据需求进行具体修改
- * 当前可设置 置顶 置底 上移 下移 指定位置
- * @param currentIndex &#123; Numb
+					const operCookie = &#123;
+  get (key) &#123;
+    let start = document.cookie.indexOf(key + &#39;=&#39;)
+    if (document.cookie.length &lt; 0 || start
 					...
 				</div>
 			</a>
@@ -828,36 +828,6 @@ function browserInfo() &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/js%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%8E%86%E5%8F%B2/">
-				<h2 class="index-title">
-					js简介及历史
-				</h2>
-				<div class="index-brief">
-					创造者：
-网景公司 的 Brendan Eich（布兰登 · 艾克）
-
-历史回顾：
-1995 年 为代替必要验证产生的与服务器端产生的数据交互；因此，网景公司创建 Mocha 并为赶上发布时间与Sun 公司结为开发联盟，共同完成 LiveScript 的开发。为搭上java 的顺风车将 LiveSc
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E5%85%B3%E9%94%AE%E5%AD%97%E5%8F%8A%E4%BF%9D%E7%95%99%E5%AD%97/">
 				<h2 class="index-title">
 					关键字及保留字
@@ -881,6 +851,36 @@ in
 try
 catch
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/js%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%8E%86%E5%8F%B2/">
+				<h2 class="index-title">
+					js简介及历史
+				</h2>
+				<div class="index-brief">
+					创造者：
+网景公司 的 Brendan Eich（布兰登 · 艾克）
+
+历史回顾：
+1995 年 为代替必要验证产生的与服务器端产生的数据交互；因此，网景公司创建 Mocha 并为赶上发布时间与Sun 公司结为开发联盟，共同完成 LiveScript 的开发。为搭上java 的顺风车将 LiveSc
 					...
 				</div>
 			</a>
@@ -964,6 +964,52 @@ es 中的一切都区分大小写，无论变量、函数名、还是操作符
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+				<h2 class="index-title">
+					01.操作符
+				</h2>
+				<div class="index-brief">
+					操作符
+ECMA-262描述一组可用于操作数据值的操作符，包括
+数学操作符（如：加、减）
+位操作符
+关系操作符
+相等操作符等
+
+
+es中操作符是独特的
+可用于各种值；包括
+字符串
+数值
+布尔值
+对象
+
+
+
+
+应用给对象时，操作符会调用valueOf()、/、toString()方法获取可计算的值
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 				<h2 class="index-title">
 					02.一元操作符
@@ -1015,52 +1061,6 @@ age = age + 1 //
 es中所有数值都以 IEEE 754 64位格式存储
 位操作并不直接应用到64位表示，而是先将值转为32位整数再进行位操作，之后将结果转为64位
 对开发者好像只有32位整数，64位置整数存储格式是不可见的，因此只需要考虑32位整数即可
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
-				<h2 class="index-title">
-					01.操作符
-				</h2>
-				<div class="index-brief">
-					操作符
-ECMA-262描述一组可用于操作数据值的操作符，包括
-数学操作符（如：加、减）
-位操作符
-关系操作符
-相等操作符等
-
-
-es中操作符是独特的
-可用于各种值；包括
-字符串
-数值
-布尔值
-对象
-
-
-
-
-应用给对象时，操作符会调用valueOf()、/、toString()方法获取可计算的值
-
 
 					...
 				</div>
