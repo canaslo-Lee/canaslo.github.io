@@ -90,7 +90,8 @@ a {
 	flex-grow:1;
 	flex-shrink:1;
 	flex-basis: 0;
-	width: 25%;
+	min-width: 250px;
+	max-width: 25%;
 	left: -25%;
 	height: 100%;
 	top: 0px;
