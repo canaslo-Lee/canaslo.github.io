@@ -766,9 +766,11 @@ var _hmt = _hmt || [];
 <li>浮点值的精确度最高答17位，在算数计算中不如整数精确。由于这种微小的舍入错误导致难以测试特定的浮点值<ul>
 <li>舍入错误是因为使用 <strong>IEEE 754</strong> 数值，使用该格式的语言均有此问题<br>```js<br>// 0.1 + 0.2 = 0.30000000000000004<br>// 示例：<br>if (a + b == 0.3) {<br>  console.log(“ You got 0.3.”)<br>}<br>/*<br>检测两个数值的和是否等于0.3 如果是 0.1 和 0.2 这两个特定数值测试将失败</li>
 </ul>
-  */<br>  ```<h2 id="5-值的范围"><a href="#5-值的范围" class="headerlink" title="5. 值的范围"></a>5. 值的范围</h2></li>
+  */<br>  ```</li>
 </ul>
 </li>
+</ul>
+<h2 id="5-值的范围"><a href="#5-值的范围" class="headerlink" title="5. 值的范围"></a>5. 值的范围</h2><ul>
 <li>因内存限制 es 不支持表示世界上所有数值；下列是特殊值<ul>
 <li>最小数值： <strong>Number.MIN_VALUE ==&gt; 5e-324</strong></li>
 <li>最大数值： <strong>Number.MAX_VALUE ==&gt; 1.7976931348623157e+308</strong></li>
