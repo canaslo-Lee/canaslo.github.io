@@ -23,7 +23,7 @@
 
 	<!-- search -->
 	<script>
-		var searchEngine = "";
+		var searchEngine = "https://cn.bing.com/search?q=";
 		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
 			searchEngine = "https://www.google.com/search?q=";
 		}
@@ -734,30 +734,28 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-cli/%E6%96%B0%E5%A2%9E%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
 				<h2 class="index-title">
-					新增自定义指令
+					03.undefined
 				</h2>
 				<div class="index-brief">
-					创建局部指令const app = new Vue(&#123;
-  el: &#39;#app&#39;,
-  data: &#123;...&#125;,
-  // 创建指令（可多个）
-  directives: &#123;
-      // 指令名称
-      dir1: &#123;
- 
+					描述
+undefined 类型只有一个值，即特殊值 undefined
+使用 var、let 声明变量但未初始化时，相当于给该变量赋值 undefined
+包含 undefined值的变量和未定义变量是有区别的
+对未声明的变量只能执行一个有用操作；即：调用 typeof 返回结果是该特殊值
+对未声明
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-11-24</span>
+				    <span>2019-12-03</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
+                                        <a href="/categories/javascript/">javascript</a>
 										
                                     </span>
                                 
@@ -767,31 +765,27 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
 				<h2 class="index-title">
-					01.vue是什么
+					04.null
 				</h2>
 				<div class="index-brief">
-					
-构建用户界面的渐进式框架
-基于数据驱动的单页面应用
-
-vue.js 的两个核心
-数据驱动
-条件渲染
-
-
+					描述
+null 类型只有一个值，即特殊值 null
+null 表示空对象指针；这也是 typeof null 返回 object 的原因
+初始化变量时推荐使用null初始化；只需要检查该变量的值就可以知道该变量是否重新赋值
+undefined 由 null 派生的来，因此它们表面相等；即：undef
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-11-24</span>
+				    <span>2019-12-03</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
+                                        <a href="/categories/javascript/">javascript</a>
 										
                                     </span>
                                 
@@ -801,27 +795,33 @@ vue.js 的两个核心
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/05.boolean/">
 				<h2 class="index-title">
-					02.mvvm模式
+					05.boolean
 				</h2>
 				<div class="index-brief">
-					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					描述
+boolean 类型有两个值
+true
+false
+
+
+布尔值字面量true、false区分大小写，因此True、False及其他大小混写形式是有效标识符但不是布尔值
+Boolean(其他类型值) 可以将其他类型的值转换为布尔值
+
+转换规则：
+理解转换规则非常重要，因为if等控制流语句会自动执
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-11-24</span>
+				    <span>2019-12-03</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
+                                        <a href="/categories/javascript/">javascript</a>
 										
                                     </span>
                                 
@@ -831,34 +831,36 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
 				<h2 class="index-title">
-					03.指令
+					06.number
 				</h2>
 				<div class="index-brief">
-					指令
-v-bind ==&gt; v-bind:href ==&gt; :href
-v-for
-v-if-else
-v-else
-v-show
-v-html
-v-model
-v-on ==&gt; v-on:click ==&gt; @click
+					描述
+Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称为双精度值）
+不同数值类型有对应的数值字面量格式；格式进制：
+十进制
+八进制
+十六进制
 
-v-if 和 v-show 的区别
-v-if 条件
+
+
+1. 八进制
+以8为基数
+第一个数字必须是0，然后是相应的八进制数字0~7
+超出范围会忽略前缀0后续数字当成十进制数字
+严格模式
 					...
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-11-24</span>
+				    <span>2019-12-03</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
+                                        <a href="/categories/javascript/">javascript</a>
 										
                                     </span>
                                 
@@ -868,88 +870,24 @@ v-if 条件
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/07.string/">
 				<h2 class="index-title">
-					04.生命周期
+					07.string
 				</h2>
 				<div class="index-brief">
-					生命周期是什么
-实例从创建到销毁的过程
-从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
+					描述
+表示零或多个16位unicode字符序列化
+字符串可使用双引号、单引号、反引号标示
+字符串引号开头和结尾必须一致
 
-生命周期的作用
-生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
-
-生命周期
-beforeCreate 创建前
-数据监听和初始
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
-				<h2 class="index-title">
-					06.数据双向绑定的原理
-				</h2>
-				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
-
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
-				<h2 class="index-title">
-					05.组件传值
-				</h2>
-				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+1. 字符字面量
+string类型包含字符字面量，用于表示非打印字符或其他用途字符
+这些字符字面量可出现再字符串中的任意位置且可作为单个字符被解释
+如下：
 
 
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
+字面量
+含义
 
 
 
@@ -957,110 +895,13 @@ eventBus；
 				</div>
 			</a>
                 <div class="article-meta">
-				    <span>2019-11-24</span>
+				    <span>2019-12-03</span>
                     
                             
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
-				<h2 class="index-title">
-					07.计算属性
-				</h2>
-				<div class="index-brief">
-					什么是vue的计算属性
-模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
-计算属性的优点
-数据处理结构清晰
-依赖于数据，数据更新，处理结果自动更新
-计算属性内部 this 指向 vm 实例
-template 调用时直接写计算属性名称即可
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
-				<h2 class="index-title">
-					08.keep-alive
-				</h2>
-				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
-
-
-
-使用方法：&l
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
-				<h2 class="index-title">
-					09.过滤器
-				</h2>
-				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
+                                        <a href="/categories/javascript/">javascript</a>
 										
                                     </span>
                                 
@@ -1072,7 +913,7 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/page/3/">&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/page/3/">&lt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/5/">&gt;</a>
 		
 	</div>
 </div>

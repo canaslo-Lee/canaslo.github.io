@@ -23,7 +23,7 @@
 
 	<!-- search -->
 	<script>
-		var searchEngine = "";
+		var searchEngine = "https://cn.bing.com/search?q=";
 		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
 			searchEngine = "https://www.google.com/search?q=";
 		}
@@ -798,43 +798,6 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
-				<h2 class="index-title">
-					03.指令
-				</h2>
-				<div class="index-brief">
-					指令
-v-bind ==&gt; v-bind:href ==&gt; :href
-v-for
-v-if-else
-v-else
-v-show
-v-html
-v-model
-v-on ==&gt; v-on:click ==&gt; @click
-
-v-if 和 v-show 的区别
-v-if 条件
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
 					04.生命周期
@@ -870,15 +833,23 @@ beforeCreate 创建前
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					06.数据双向绑定的原理
+					03.指令
 				</h2>
 				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
 
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
+v-if 和 v-show 的区别
+v-if 条件
 					...
 				</div>
 			</a>
@@ -940,6 +911,35 @@ eventBus；
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+				<h2 class="index-title">
+					06.数据双向绑定的原理
+				</h2>
+				<div class="index-brief">
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
 				<h2 class="index-title">
 					07.计算属性
@@ -953,6 +953,36 @@ eventBus；
 计算属性内部 this 指向 vm 实例
 template 调用时直接写计算属性名称即可
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+				<h2 class="index-title">
+					09.过滤器
+				</h2>
+				<div class="index-brief">
+					自定义过滤器
+过滤器接收表达式的值 msg 作为第一个参数
+capitalize 过滤器接收 msg 的值作为第一个参数
+html 代码：&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
@@ -987,36 +1017,6 @@ exclude 排除的组件不缓存，优先级大于 include
 
 
 使用方法：&l
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
-				<h2 class="index-title">
-					09.过滤器
-				</h2>
-				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
