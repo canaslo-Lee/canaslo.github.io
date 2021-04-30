@@ -1018,7 +1018,8 @@ console.log(b instanceof Baz)
 </li>
 </ul>
 <h2 id="7-Symbol-isConcatSpreadable"><a href="#7-Symbol-isConcatSpreadable" class="headerlink" title="7. Symbol.isConcatSpreadable"></a>7. Symbol.isConcatSpreadable</h2><ul>
-<li>根据es规范该符号作为一个属性表示为boolean值<ul>
+<li><p>根据es规范该符号作为一个属性表示为boolean值</p>
+<ul>
 <li>true：则对象应该用Array.prototype.concat()打平其数组元素<ul>
 <li>concat()方法根据接收的对象类型选择如何将一个类数组对象拼接成数组实例</li>
 <li>覆盖Symbol.isConcatSpreadable的值可修改该行为</li>
@@ -1026,174 +1027,235 @@ console.log(b instanceof Baz)
 </li>
 </ul>
 </li>
-<li>数组对象默认被打平到已有数组，false或假值：导致整个对象被追加到数组末尾</li>
-<li>类数组对象默认追加到数组末尾，true或真值：导致该类数组对象被打平到数组实例</li>
-<li>其他非类数组对象的对象在 Symbol.isConcatSpreadable 被设置为true时被忽略<br>``` js<br>let  initial = [‘foo’]<br>let array = [‘bar’]<br>console.log(array[Symbol.isConcatSpreadable])<br>// undefined<br>console.log(initial.concat(array))<br>// [“foo”, “bar”]<br>array[Symbol.isConcatSpreadable] = false<br>console.log(initial.concat(array))<br>/*<br>[<br>  “foo”,<br>  Array(1)<br>] ==&gt; [<pre><code>&quot;foo&quot;,
-[
-  &quot;bar&quot;,
-  Symbol(Symbol.isConcatSpreadable): false
-]
+<li><p>数组对象默认被打平到已有数组，false或假值：导致整个对象被追加到数组末尾</p>
+</li>
+<li><p>类数组对象默认追加到数组末尾，true或真值：导致该类数组对象被打平到数组实例</p>
+</li>
+<li><p>其他非类数组对象的对象在 Symbol.isConcatSpreadable 被设置为true时被忽略</p>
+<pre><code class="js">let  initial = [&#39;foo&#39;]
+let array = [&#39;bar&#39;]
+console.log(array[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(array))
+  // [&quot;foo&quot;, &quot;bar&quot;]
+array[Symbol.isConcatSpreadable] = false
+console.log(initial.concat(array))
+  /*
+  [
+    &quot;foo&quot;,
+    Array(1)
+  ] ==&gt; [
+      &quot;foo&quot;,
+      [
+        &quot;bar&quot;,
+        Symbol(Symbol.isConcatSpreadable): false
+      ]
+  ] */
+
+let arrayLikeObject = &#123; length: 1, 0: &#39;baz&#39; &#125;
+console.log(arrayLikeObject[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(arrayLikeObject))
+  /* [
+    &quot;foo&quot;,
+    &#123;...&#125;
+  ] ==&gt; [
+    &quot;foo&quot;,
+    &#123;
+      0:&quot;baz&quot;,
+      length:1,
+      Symbol(Symbol.isConcatSpreadable): true
+    &#125;
+  ] */
+arrayLikeObject[Symbol.isConcatSpreadable] = true
+console.log(initial.concat(arrayLikeObject))
+  // [&quot;foo&quot;, &quot;baz&quot;]
+
+let otherObject = new Set().add(&#39;qux&#39;)
+console.log(otherObject[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(otherObject))
+  // [&quot;foo&quot;, Set(1)] ==&gt; [0: &quot;foo&quot;, 1: Set(1) &#123;&quot;qux&quot;&#125;]
+otherObject[Symbol.isConcatSpreadable] = true
+console.log(initial.concat(otherObject))
+  // [&quot;foo&quot;]
 </code></pre>
-] */</li>
+</li>
 </ul>
-<p>  let arrayLikeObject = { length: 1, 0: ‘baz’ }<br>  console.log(arrayLikeObject[Symbol.isConcatSpreadable])<br>    // undefined<br>  console.log(initial.concat(arrayLikeObject))<br>    /* [<br>      “foo”,<br>      {…}<br>    ] ==&gt; [<br>      “foo”,<br>      {<br>        0:”baz”,<br>        length:1,<br>        Symbol(Symbol.isConcatSpreadable): true<br>      }<br>    ] */<br>  arrayLikeObject[Symbol.isConcatSpreadable] = true<br>  console.log(initial.concat(arrayLikeObject))<br>    // [“foo”, “baz”]</p>
-<p>  let otherObject = new Set().add(‘qux’)<br>  console.log(otherObject[Symbol.isConcatSpreadable])<br>    // undefined<br>  console.log(initial.concat(otherObject))<br>    // [“foo”, Set(1)] ==&gt; [0: “foo”, 1: Set(1) {“qux”}]<br>  otherObject[Symbol.isConcatSpreadable] = true<br>  console.log(initial.concat(otherObject))<br>    // [“foo”]</p>
-<pre><code>
-## 8. Symbol.iterator
-- 根据es规范该符号作为属性表示一个方法
-  - 该方法返回对象默认迭代器，由for-of语句使用；即：该符号表示实现迭代器API的函数
-  - for-of循环这样的语言结构利用该函数执行迭代器操作
-    - 循环时调用以Symbol.iterator为键的函数
-    - 默认该函数返回一个实现迭代器API的对象
-    - 返回的对象是实现该API的 Generator
-
-    ``` js
-    class Foo &#123;
-      *[Symbol.iterator] () &#123;&#125;
-    &#125;
-    let f = new Foo()
-    console.log(f[Symbol.iterator]())
-    // Generator &#123;&lt;suspended&gt;&#125; ==&gt;
-    /***
-    __proto__: Generator
-    [[GeneratorLocation]]: VM269:2
-    [[GeneratorState]]: &quot;suspended&quot;
-    [[GeneratorFunction]]: ƒ* [Symbol.iterator]()
-    [[GeneratorReceiver]]: Foo
-    [[Scopes]]: Scopes[3]
-    */
-    ```
-- 技术上这个由 Symbol.iterator 函数生成的对象应通过其next()方法陆续返回值
-  - 可通过显示调用next()方法返回
-  - 可隐式通过生成器函数返回
-  ``` js
-  class Emitter &#123;
-    constructor (max) &#123;
-      this.max = max
-      this.idx = 0
-    &#125;
-    *[Symbol.iterator] () &#123;
-      while (this.idx &lt; this.max) yield this.idx++
-    &#125;
-  &#125;
-  function count () &#123;
-    let emitter =  new Emitter(5)
-    for (const x of emitter) console.log(x)
-  &#125;
-  count()
-  /**
-    0
-    1
-    2
-    3
-    4
-  */
-  ```
-
-## 9. Symbol.match
-- 根据es规范该符号作为属性表示正则表达式方法
-  - 该方法用正则表达式匹配字符串
-  - 由String.prototype.match()方法使用
-- 该方法使用Symbol.match为键的函数对正则表达式求值
-  - 所有正则表达式实例默认该String方法的有效参数
-    - 正则表达式原型上默认有该函数定义
-  ``` js
-  console.log(RegExp.prototype[Symbol.match])
-    // [Symbol.match]() &#123;[native code]&#125;
-  console.log(&#39;foobar&#39;.match(/bar/))
-    // [&quot;bar&quot;, index: 3, input: &quot;foobar&quot;, groups: undefined]
-  ```
-- 该方法传入非正则表达式值会将该值转为RegExp对象；如果需要改变此行为
-  - 可通过方法直接使用参数，可重定义Symbol.match函数取代默认对正则表达式求值的行为
-    - 从而使match()方法使用非正则表达式实例
-- Symbol.match函数接收一个参数
-  - 调用match()方法的字符串实例
-- 返回值无限制
-  ``` js
-  class FooMatcher &#123;
-    static [Symbol.match] (target) &#123;
-      return target.includes(&#39;foo&#39;)
-    &#125;
-  &#125;
-  console.log(&#39;foobar&#39;.match(FooMatcher))
-    // true
-  console.log(&#39;barbaz&#39;.match(FooMatcher))
-    // false
-
-  class StringMatcher &#123;
-    constructor (str) &#123;
-      this.str = str
-    &#125;
-    [Symbol.match] (target) &#123;
-      return target.includes(this.str)
-    &#125;
-  &#125;
-  console.log(&#39;foobar&#39;.match(new StringMatcher(&#39;foo&#39;)))
-    // true
-  console.log(&#39;barbaz&#39;.match(new StringMatcher(&#39;qux&#39;)))
-    // false
-  ```
-
-## 10. Symbol.replace
-- 根据es规范该符号作为属性表示正则表达式方法
-  - 该方法替换字符串中匹配的子串
-  - 由String.prototype.replace()方法使用
-- 该方法使用Symbol.replace为键的函数对正则表达式求值
-- 所有正则表达式实例默认该String方法的有效参数
-  - 正则表达式原型上默认有该函数定义
-  ``` js
-  console.log(RegExp.prototype[Symbol.replace])
-    // f [Symbol.replace]() &#123;[native code]&#125;
-  console.log(&#39;foobar&#39;.replace(/bar/, &#39;qux&#39;))
-    // &#39;fooqux&#39;
-  ```
-  - 该方法传入非正则表达式值该值会转为RegExp对象；如果需要改变此行为
-    - 方法直接使用参数，可重定义Symbol.replace函数取代默认对正则表达式的求值行为
-      - 从而使 replace()方法使用非正则表达式实例
-- Symbol.replace函数接收两个参数
-  - 调用replace()方法的字符串实例
-  - 替换字符串
-- 返回值无限制
-  ``` js
-  class FooReplacer &#123;
-    static [Symbol.replace] (target, replacement) &#123;
-      return target.split(&#39;foo&#39;).join(replacement)
-    &#125;
-  &#125;
-  console.log(&#39;barfoobaz&#39;.replace(FooReplacer, &#39;qux&#39;))
-    // &quot;barquxbaz&quot;
-
-  class StringReplacer &#123;
-    constructor (str) &#123;
-      this.str = str
-    &#125;
-    [Symbol.replace] (target, replacement) &#123;
-      return target.split(this.str).join(replacement)
-    &#125;
-  &#125;
-  console.log(
-    &#39;barfoobaz&#39;.replace(
-      new StringReplacer(&#39;foo&#39;),
-      &#39;qux&#39;
-    )
-  )
-    // &quot;barquxbaz&quot;
-  ```
-
-## 11. Symbol.search
-- 根据es规范，该符号作为属性表示正则表达式方法
-  - 该方法返回字符串中匹配正则表达式的索引
-  - 由Symbol.prototype.search()方法使用
-- 该方法使用以Symbol.search为键的函数对正则表达式求值
-- 所有正则表达式实例默认是该String的有效参数
-  - 正则表达式原型上默认有该函数定义
-``` js
-console.log(RegExp.prototype[Symbol.search])
-  // f [Symbol.search]() &#123;[native code]&#125;
-console.log(&#39;foobar&#39;.search(/bar/))
-  // 3
-</code></pre>
+<h2 id="8-Symbol-iterator"><a href="#8-Symbol-iterator" class="headerlink" title="8. Symbol.iterator"></a>8. Symbol.iterator</h2><ul>
+<li><p>根据es规范该符号作为属性表示一个方法</p>
 <ul>
+<li><p>该方法返回对象默认迭代器，由for-of语句使用；即：该符号表示实现迭代器API的函数</p>
+</li>
+<li><p>for-of循环这样的语言结构利用该函数执行迭代器操作</p>
+<ul>
+<li>循环时调用以Symbol.iterator为键的函数</li>
+<li>默认该函数返回一个实现迭代器API的对象</li>
+<li>返回的对象是实现该API的 Generator</li>
+</ul>
+<pre><code class="js">class Foo &#123;
+  *[Symbol.iterator] () &#123;&#125;
+&#125;
+let f = new Foo()
+console.log(f[Symbol.iterator]())
+// Generator &#123;&lt;suspended&gt;&#125; ==&gt;
+/***
+__proto__: Generator
+[[GeneratorLocation]]: VM269:2
+[[GeneratorState]]: &quot;suspended&quot;
+[[GeneratorFunction]]: ƒ* [Symbol.iterator]()
+[[GeneratorReceiver]]: Foo
+[[Scopes]]: Scopes[3]
+*/
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>技术上这个由 Symbol.iterator 函数生成的对象应通过其next()方法陆续返回值</p>
+<ul>
+<li>可通过显示调用next()方法返回</li>
+<li>可隐式通过生成器函数返回<br>``` js<br>class Emitter {<br>constructor (max) {<br>  this.max = max<br>  this.idx = 0<br>}<br><em>[Symbol.iterator] () {<br>  while (this.idx &lt; this.max) yield this.idx++<br>}<br>}<br>function count () {<br>let emitter =  new Emitter(5)<br>for (const x of emitter) console.log(x)<br>}<br>count()<br>/</em>*<br>0<br>1<br>2<br>3<br>4</li>
+</ul>
+<p>*/<br>```</p>
+</li>
+</ul>
+<h2 id="9-Symbol-match"><a href="#9-Symbol-match" class="headerlink" title="9. Symbol.match"></a>9. Symbol.match</h2><ul>
+<li><p>根据es规范该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法用正则表达式匹配字符串</li>
+<li>由String.prototype.match()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用Symbol.match为键的函数对正则表达式求值</p>
+<ul>
+<li>所有正则表达式实例默认该String方法的有效参数<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.match])
+// [Symbol.match]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.match(/bar/))
+// [&quot;bar&quot;, index: 3, input: &quot;foobar&quot;, groups: undefined]
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>该方法传入非正则表达式值会将该值转为RegExp对象；如果需要改变此行为</p>
+<ul>
+<li>可通过方法直接使用参数，可重定义Symbol.match函数取代默认对正则表达式求值的行为<ul>
+<li>从而使match()方法使用非正则表达式实例</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Symbol.match函数接收一个参数</p>
+<ul>
+<li>调用match()方法的字符串实例</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooMatcher &#123;
+  static [Symbol.match] (target) &#123;
+    return target.includes(&#39;foo&#39;)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.match(FooMatcher))
+  // true
+console.log(&#39;barbaz&#39;.match(FooMatcher))
+  // false
+
+class StringMatcher &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.match] (target) &#123;
+    return target.includes(this.str)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.match(new StringMatcher(&#39;foo&#39;)))
+  // true
+console.log(&#39;barbaz&#39;.match(new StringMatcher(&#39;qux&#39;)))
+  // false
+</code></pre>
+</li>
+</ul>
+<h2 id="10-Symbol-replace"><a href="#10-Symbol-replace" class="headerlink" title="10. Symbol.replace"></a>10. Symbol.replace</h2><ul>
+<li><p>根据es规范该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法替换字符串中匹配的子串</li>
+<li>由String.prototype.replace()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用Symbol.replace为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认该String方法的有效参数</p>
+<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.replace])
+// f [Symbol.replace]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.replace(/bar/, &#39;qux&#39;))
+// &#39;fooqux&#39;
+</code></pre>
+</li>
+<li>该方法传入非正则表达式值该值会转为RegExp对象；如果需要改变此行为<ul>
+<li>方法直接使用参数，可重定义Symbol.replace函数取代默认对正则表达式的求值行为<ul>
+<li>从而使 replace()方法使用非正则表达式实例</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Symbol.replace函数接收两个参数</p>
+<ul>
+<li>调用replace()方法的字符串实例</li>
+<li>替换字符串</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooReplacer &#123;
+  static [Symbol.replace] (target, replacement) &#123;
+    return target.split(&#39;foo&#39;).join(replacement)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.replace(FooReplacer, &#39;qux&#39;))
+  // &quot;barquxbaz&quot;
+
+class StringReplacer &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.replace] (target, replacement) &#123;
+    return target.split(this.str).join(replacement)
+  &#125;
+&#125;
+console.log(
+  &#39;barfoobaz&#39;.replace(
+    new StringReplacer(&#39;foo&#39;),
+    &#39;qux&#39;
+  )
+)
+  // &quot;barquxbaz&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="11-Symbol-search"><a href="#11-Symbol-search" class="headerlink" title="11. Symbol.search"></a>11. Symbol.search</h2><ul>
+<li><p>根据es规范，该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法返回字符串中匹配正则表达式的索引</li>
+<li>由Symbol.prototype.search()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用以Symbol.search为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认是该String的有效参数</p>
+<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.search])
+// f [Symbol.search]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.search(/bar/))
+// 3
+</code></pre>
+</li>
+</ul>
+</li>
 <li><p>该方法传入非正则表达式值该值转为RegExp对象；若需要改变此行为</p>
 <ul>
 <li>方法直接使用参数，可重定义Symbol.search函数取代默认对正则表达式求值行为</li>
