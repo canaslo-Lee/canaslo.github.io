@@ -577,20 +577,19 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/08.keep-alive/">
+			<a href="/2019/11/24/vue/%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
 				<h2 class="index-title">
-					08.keep-alive
+					07.计算属性
 				</h2>
 				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
+					什么是vue的计算属性
+模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
+计算属性的优点
+数据处理结构清晰
+依赖于数据，数据更新，处理结果自动更新
+计算属性内部 this 指向 vm 实例
+template 调用时直接写计算属性名称即可
 
-
-
-使用方法：&l
 					...
 				</div>
 			</a>
