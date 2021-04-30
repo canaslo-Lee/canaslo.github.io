@@ -1114,9 +1114,30 @@ __proto__: Generator
 <li><p>技术上这个由 Symbol.iterator 函数生成的对象应通过其next()方法陆续返回值</p>
 <ul>
 <li>可通过显示调用next()方法返回</li>
-<li>可隐式通过生成器函数返回<br>``` js<br>class Emitter {<br>constructor (max) {<br>  this.max = max<br>  this.idx = 0<br>}<br><em>[Symbol.iterator] () {<br>  while (this.idx &lt; this.max) yield this.idx++<br>}<br>}<br>function count () {<br>let emitter =  new Emitter(5)<br>for (const x of emitter) console.log(x)<br>}<br>count()<br>/</em>*<br>0<br>1<br>2<br>3<br>4</li>
+<li>可隐式通过生成器函数返回<pre><code class="js">class Emitter &#123;
+  constructor (max) &#123;
+    this.max = max
+    this.idx = 0
+  &#125;
+  *[Symbol.iterator] () &#123;
+    while (this.idx &lt; this.max) yield this.idx++
+  &#125;
+&#125;
+function count () &#123;
+  let emitter =  new Emitter(5)
+  for (const x of emitter) console.log(x)
+&#125;
+count()
+/**
+  0
+  1
+  2
+  3
+  4
+*/
+</code></pre>
+</li>
 </ul>
-<p>*/<br>```</p>
 </li>
 </ul>
 <h2 id="9-Symbol-match"><a href="#9-Symbol-match" class="headerlink" title="9. Symbol.match"></a>9. Symbol.match</h2><ul>
@@ -1342,13 +1363,16 @@ console.log(baz instanceof Baz)
 </li>
 </ul>
 <h2 id="13-Symbol-split"><a href="#13-Symbol-split" class="headerlink" title="13. Symbol.split"></a>13. Symbol.split</h2><ul>
-<li>根据es规范，该符号作为属性表示正则表达式方法<ul>
+<li><p>根据es规范，该符号作为属性表示正则表达式方法</p>
+<ul>
 <li>该方法在匹配正则表达式的索引位置拆分字符串</li>
 <li>由String.prototype.split()方法使用</li>
 </ul>
 </li>
-<li>该方法使用以Symbol.split为键的函数对正则表达式求值</li>
-<li>所有正则表达式实例默认是这个String方法的有效参数<ul>
+<li><p>该方法使用以Symbol.split为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认是这个String方法的有效参数</p>
+<ul>
 <li>正则表达式原型上默认由该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.split])
 // f [Symbol.split] () &#123;[native code]&#125;
 console.log(&#39;foobarbaz&#39;.split(/bar/))
@@ -1357,145 +1381,181 @@ console.log(&#39;foobarbaz&#39;.split(/bar/))
 </li>
 </ul>
 </li>
-<li>给该方法传入非正则表达式值，值转为RegExp对象；若需要改变此行为<ul>
+<li><p>给该方法传入非正则表达式值，值转为RegExp对象；若需要改变此行为</p>
+<ul>
 <li>方法直接使用参数，可重定义Symbol.split函数取代默认对正则表达式求值行为</li>
 <li>从而让split()方法使用非正则表达式实例</li>
 </ul>
 </li>
-<li>Symbol.split 函数接收一个参数<ul>
+<li><p>Symbol.split 函数接收一个参数</p>
+<ul>
 <li>调用match()方法的字符串实例</li>
 </ul>
 </li>
-<li>返回值无限制<br>``` js<br>class FooSpliter {<br>static [Symbol.split] (target) {<br>  return target.split(‘foo’)<br>}<br>}<br>console.log(‘barfoobaz’.split(FooSpliter))<br>// [“bar”, “baz”]</li>
-</ul>
-<p>  class StringSplitter {<br>    constructor (str) {<br>      this.str = str<br>    }<br>    [Symbol.split] (target) {<br>      return target.split(this.str)<br>    }<br>  }<br>  console.log(‘barfoobaz’.split(new StringSplitter(‘foo’)))<br>    // [“bar”, “baz”]</p>
-<pre><code>
-## 14. Symbol.toPrimitive
-- 根据es规范，该符号作为属性表示一个方法
-  - 该方法将对象转为相应原始值由ToPrimitive抽象操作使用
-- 很多内置操作都会尝试强制将对象转为原始值
-  - 包括字符串、数值、未指定的原始类型
-- 对一个自定义对象实例，通过该实例的Symbol.toPrimitive属性上定义一个可改变默认行为的函数
-  - 根据提供给该函数的参数（string、number、default）可控制返回的原始值
-  ``` js
-  class Foo &#123;&#125;
-  let foo = new Foo()
-  console.log(3 + foo)
-    // &quot;3[object Object]&quot;
-  console.log(3 - foo)
-    // &quot;NaN&quot;
-  console.log(String(foo))
-    // &quot;[object Object]&quot;
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooSpliter &#123;
+  static [Symbol.split] (target) &#123;
+    return target.split(&#39;foo&#39;)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.split(FooSpliter))
+  // [&quot;bar&quot;, &quot;baz&quot;]
 
-  class Bar &#123;
-    constructor () &#123;
-      this[Symbol.toPrimitive] = function (hint) &#123;
-        switch (hint) &#123;
-          case &#39;number&#39;:
-            return 3
-          case &#39;string&#39;:
-            return &#39;string bar&#39;
-          case &#39;default&#39;:
-          default:
-            return &#39;default bar&#39;
-        &#125;
+class StringSplitter &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.split] (target) &#123;
+    return target.split(this.str)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.split(new StringSplitter(&#39;foo&#39;)))
+  // [&quot;bar&quot;, &quot;baz&quot;]
+</code></pre>
+</li>
+</ul>
+<h2 id="14-Symbol-toPrimitive"><a href="#14-Symbol-toPrimitive" class="headerlink" title="14. Symbol.toPrimitive"></a>14. Symbol.toPrimitive</h2><ul>
+<li><p>根据es规范，该符号作为属性表示一个方法</p>
+<ul>
+<li>该方法将对象转为相应原始值由ToPrimitive抽象操作使用</li>
+</ul>
+</li>
+<li><p>很多内置操作都会尝试强制将对象转为原始值</p>
+<ul>
+<li>包括字符串、数值、未指定的原始类型</li>
+</ul>
+</li>
+<li><p>对一个自定义对象实例，通过该实例的Symbol.toPrimitive属性上定义一个可改变默认行为的函数</p>
+<ul>
+<li><p>根据提供给该函数的参数（string、number、default）可控制返回的原始值</p>
+<pre><code class="js">class Foo &#123;&#125;
+let foo = new Foo()
+console.log(3 + foo)
+  // &quot;3[object Object]&quot;
+console.log(3 - foo)
+  // &quot;NaN&quot;
+console.log(String(foo))
+  // &quot;[object Object]&quot;
+
+class Bar &#123;
+  constructor () &#123;
+    this[Symbol.toPrimitive] = function (hint) &#123;
+      switch (hint) &#123;
+        case &#39;number&#39;:
+          return 3
+        case &#39;string&#39;:
+          return &#39;string bar&#39;
+        case &#39;default&#39;:
+        default:
+          return &#39;default bar&#39;
       &#125;
     &#125;
   &#125;
-  let bar = new Bar()
-  console.log(3 + bar)
-    // &quot;3 default bar&quot;
-  console.log(3 - bar)
-    // 0
-  console.log(String(bar))
-    // &quot;string bar&quot;
-  ```
-
-## 15. Symbol.toStringTag
-- 根据es规范，该符号作为一个属性表示一个字符串
-  - 该字符串用于创建对象的默认字符串描述
-  - 由内置方法 Object.prototype.toString使用
-- 通过toString方法获取对象标识时
-  - 检索由Symbol.toString指定的实例标识符,默认为 &quot;Object&quot;
-  - 内置类型指定该值，但自定义类实例需明确定义
-  ``` js
-  let s = new Set()
-  console.log(s)
-    // Set(0) &#123;&#125;
-  /**
-  [[Entries]]
-  No properties
-  size: 0
-  __proto__: Set
-  */
-  console.log(s.toString())
-    // [object Object]
-  console.log(s[Symbol.toStringTag])
-    // Set
-
-  class Foo &#123;&#125;
-  let foo = new Foo()
-  console.log(foo)
-    // Foo &#123;&#125;
-  console.log(foo.toString())
-    // [object Object]
-  console.log(foo[Symbol.toStringTag])
-    // undefined
-
-  class Bar &#123;
-    constructor () &#123;
-      this[Symbol.toStringTag] = &#39;Bar&#39;
-    &#125;
-  &#125;
-  let bar = new Bar()
-  console.log(bar)
-    // Bar &#123;&#125; ==&gt; Bar &#123;Symbol(Symbol.toStringTag): &quot;Bar&quot;&#125;
-  console.log(bar.toString())
-    // [object Bar]
-  console.log(bar[Symbol.toStringTag])
-    // Bar
-  ```
-
-## 16. Symbol.unscopables
-- 根据es规范，该符号作为属性表示对象
-  - 该对象所有的以及继承的属性，都会从关联对象的with环境中绑定排除
-- 设置该符号并使其映射对应属性的键值为true即可阻止该属性出现在with环境绑定中
-  ``` js
-  let o = &#123; foo: &#39;bar&#39; &#125;
-  with (o) &#123; console.log(foo) &#125;
-    // bar
-  o[Symbol.unscopables] = &#123; foo: true &#125;
-  with (o) &#123; console.log(foo) &#125;
-    // ReferenceError: foo is not defined
-  ```
-- ==**注意：不推荐使用with，因此也不推荐使用该方法 **==
-
-## 总结：
-### symbol类型作用
-- 确保对象属性使用唯一标识符，避免属性冲突
-
-### 描述
-- 虽然和私有属性类似，但符号并不是为提供私有属性增加；尤其是因Object Api提供方法可更方便发现符号属性
-- 符号用于创建唯一记号，用于非字符串形式的对象属性
-- 没有字面量语法
-- 不能和 new 关键字一起使用成为构造函数
-
-### 方法
-- Symbol.for() ==&gt; 重用已有符号
-- Symbol.keyfor() ==&gt; 查询全局注册表
-- Symbol.asyncIterator ==&gt; 返回异步迭代器对象
-- Symbol.iterator ==&gt; 实现迭代器API的函数
-- Symbol.hasInstance ==&gt; 确定对象实例的原型链上是否有原型
-- Symbol.isConcatSpreadable ==&gt; 类数组对象拼接为数组实例
-- Symbol.match ==&gt; 正则表达式匹配字符串
-- Symbol.replace ==&gt; 正则表达式 替换字符串中匹配的子串
-- Symbol.search ==&gt; 返回字符串中匹配正则表达式的索引
-- Symbol.species ==&gt; 作为创建派生对象的构造函数
-- Symbol.split ==&gt; 在匹配正则表达式的索引位置拆分字符串
-- Symbol.toPrimitive ==&gt; 将对象转为相应的原始值
-- Symbol.toStringTag ==&gt; 创建对象的默认字符串描述
-- Symbol.unscopables ==&gt; 该对象所有的及继承的属性都从关联对象的with环境中绑定排除（不推荐）
+&#125;
+let bar = new Bar()
+console.log(3 + bar)
+  // &quot;3 default bar&quot;
+console.log(3 - bar)
+  // 0
+console.log(String(bar))
+  // &quot;string bar&quot;
 </code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-Symbol-toStringTag"><a href="#15-Symbol-toStringTag" class="headerlink" title="15. Symbol.toStringTag"></a>15. Symbol.toStringTag</h2><ul>
+<li><p>根据es规范，该符号作为一个属性表示一个字符串</p>
+<ul>
+<li>该字符串用于创建对象的默认字符串描述</li>
+<li>由内置方法 Object.prototype.toString使用</li>
+</ul>
+</li>
+<li><p>通过toString方法获取对象标识时</p>
+<ul>
+<li><p>检索由Symbol.toString指定的实例标识符,默认为 “Object”</p>
+</li>
+<li><p>内置类型指定该值，但自定义类实例需明确定义</p>
+<pre><code class="js">let s = new Set()
+console.log(s)
+  // Set(0) &#123;&#125;
+/**
+[[Entries]]
+No properties
+size: 0
+__proto__: Set
+*/
+console.log(s.toString())
+  // [object Object]
+console.log(s[Symbol.toStringTag])
+  // Set
+
+class Foo &#123;&#125;
+let foo = new Foo()
+console.log(foo)
+  // Foo &#123;&#125;
+console.log(foo.toString())
+  // [object Object]
+console.log(foo[Symbol.toStringTag])
+  // undefined
+
+class Bar &#123;
+  constructor () &#123;
+    this[Symbol.toStringTag] = &#39;Bar&#39;
+  &#125;
+&#125;
+let bar = new Bar()
+console.log(bar)
+  // Bar &#123;&#125; ==&gt; Bar &#123;Symbol(Symbol.toStringTag): &quot;Bar&quot;&#125;
+console.log(bar.toString())
+  // [object Bar]
+console.log(bar[Symbol.toStringTag])
+  // Bar
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="16-Symbol-unscopables"><a href="#16-Symbol-unscopables" class="headerlink" title="16. Symbol.unscopables"></a>16. Symbol.unscopables</h2><ul>
+<li>根据es规范，该符号作为属性表示对象<ul>
+<li>该对象所有的以及继承的属性，都会从关联对象的with环境中绑定排除</li>
+</ul>
+</li>
+<li>设置该符号并使其映射对应属性的键值为true即可阻止该属性出现在with环境绑定中<pre><code class="js">let o = &#123; foo: &#39;bar&#39; &#125;
+with (o) &#123; console.log(foo) &#125;
+  // bar
+o[Symbol.unscopables] = &#123; foo: true &#125;
+with (o) &#123; console.log(foo) &#125;
+  // ReferenceError: foo is not defined
+</code></pre>
+</li>
+</ul>
+<p>  **注意：不推荐使用with，因此也不推荐使用该方法 **</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><h3 id="symbol类型作用"><a href="#symbol类型作用" class="headerlink" title="symbol类型作用"></a>symbol类型作用</h3><ul>
+<li>确保对象属性使用唯一标识符，避免属性冲突</li>
+</ul>
+<h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h3><ul>
+<li>虽然和私有属性类似，但符号并不是为提供私有属性增加；尤其是因Object Api提供方法可更方便发现符号属性</li>
+<li>符号用于创建唯一记号，用于非字符串形式的对象属性</li>
+<li>没有字面量语法</li>
+<li>不能和 new 关键字一起使用成为构造函数</li>
+</ul>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>Symbol.for() ==&gt; 重用已有符号</li>
+<li>Symbol.keyfor() ==&gt; 查询全局注册表</li>
+<li>Symbol.asyncIterator ==&gt; 返回异步迭代器对象</li>
+<li>Symbol.iterator ==&gt; 实现迭代器API的函数</li>
+<li>Symbol.hasInstance ==&gt; 确定对象实例的原型链上是否有原型</li>
+<li>Symbol.isConcatSpreadable ==&gt; 类数组对象拼接为数组实例</li>
+<li>Symbol.match ==&gt; 正则表达式匹配字符串</li>
+<li>Symbol.replace ==&gt; 正则表达式 替换字符串中匹配的子串</li>
+<li>Symbol.search ==&gt; 返回字符串中匹配正则表达式的索引</li>
+<li>Symbol.species ==&gt; 作为创建派生对象的构造函数</li>
+<li>Symbol.split ==&gt; 在匹配正则表达式的索引位置拆分字符串</li>
+<li>Symbol.toPrimitive ==&gt; 将对象转为相应的原始值</li>
+<li>Symbol.toStringTag ==&gt; 创建对象的默认字符串描述</li>
+<li>Symbol.unscopables ==&gt; 该对象所有的及继承的属性都从关联对象的with环境中绑定排除（不推荐）</li>
+</ul>
 
 </div>
 
