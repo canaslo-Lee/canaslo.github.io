@@ -8,6 +8,8 @@
 	<!-- title -->
 	
 	<title>
+	
+		当前项目加样式前缀 | 
 	 
 	静思
 	</title>
@@ -622,7 +624,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 										当前项目加样式前缀
 									</a>
@@ -749,43 +751,172 @@ var _hmt = _hmt || [];
 
 	<!-- 引入正文 -->
 	<div id="content">
-		<div id="index">
+		<h1 id="article-title">
+
+	当前项目加样式前缀
+</h1>
+<div class="article-meta">
 	
-		<div class="index-li">
-			<a href="/2021/04/30/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E5%85%A8%E9%83%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/">
-				<h2 class="index-title">
-					全部基础配置
-				</h2>
-				<div class="index-brief">
-					vscode 基础配置 全&#123;
-  &quot;diffEditor.codeLens&quot;: true,
-  &quot;diffEditor.ignoreTrimWhitespace&quot;: true,
-  &quot;diffEditor.maxComputationTim
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-04-30</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/工具类/">工具类</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
+		<span>
+			阅读量:<span id="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/" class="leancloud_visitors" data-flag-title="当前项目加样式前缀"></span>
+		</span>
 	
-	
-	<div id="index-paginator">
-		
-	</div>
+	<span>静思</span>
+	<span>2019-11-18 19:46:16</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/vue/">vue</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/配置/">配置</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
 </div>
 
+<div id="article-content">
+	<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><ul>
+<li><code>npm install postcss-plugin-namespace post-loader</code></li>
+</ul>
+<h2 id="postcss配置"><a href="#postcss配置" class="headerlink" title="postcss配置"></a>postcss配置</h2><ul>
+<li><p>在vue.config.js同级创建<code>postcss.config.js</code>文件</p>
+</li>
+<li><p>在postcss.config.js文件内输入</p>
+<pre><code class="js">module.exports = &#123;
+  plugins: [
+    /*
+      .main-project: 根节点标签
+      ignore：设置过滤规则
+    */
+    require(&#39;postcss-plugin-namespace&#39;)(&#39;.main-project&#39;, &#123;
+      ignore: [
+        &#39;@&#39;,
+        /data-/
+      ]
+    &#125;)
+
+  ]
+&#125;
+</code></pre>
+<h2 id="vue-config配置"><a href="#vue-config配置" class="headerlink" title="vue.config配置"></a>vue.config配置</h2></li>
+<li><p>在vue.config.js内输入</p>
+<pre><code class="js">module.exports = &#123;
+  chainWebpack: config =&gt; &#123;
+    config.module
+      .rule()
+      .test(/\.css$/)
+      .use(&#39;post-loader&#39;)
+        .loader(&#39;post-loader&#39;)
+        .end()
+  &#125;
+&#125;
+</code></pre>
+</li>
+</ul>
+<h2 id="main-js-导入"><a href="#main-js-导入" class="headerlink" title="main.js 导入"></a>main.js 导入</h2><ul>
+<li>在main.js输入<pre><code class="js">process.env.VUE_APP_ProjectName = require(&#39;./package.json&#39;).name
+</code></pre>
+</li>
+<li>将该环境变量挂到app上即可</li>
+</ul>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  全局挂载less
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E9%85%8D%E7%BD%AE/">
+                配置
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
 	</div>
 	<div id="footer">
 	<p>
