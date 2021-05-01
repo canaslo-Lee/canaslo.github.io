@@ -873,17 +873,19 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 				<h2 class="index-title">
-					03.undefined
+					02.typeof操作符
 				</h2>
 				<div class="index-brief">
 					描述
-undefined 类型只有一个值，即特殊值 undefined
-使用 var、let 声明变量但未初始化时，相当于给该变量赋值 undefined
-包含 undefined值的变量和未定义变量是有区别的
-对未声明的变量只能执行一个有用操作；即：调用 typeof 返回结果是该特殊值
-对未声明
+typeof 用于确定任意变量的数据类型；因typeof是操作符不是函数，所以不需要参数，但可以使用参数
+返回下列字符串之一
+“undefined”: 未定义
+“boolean”  : 布尔值
+“string”   : 字符串
+“number”   : 数值
+“object”   : 对象（不
 					...
 				</div>
 			</a>
@@ -904,19 +906,17 @@ undefined 类型只有一个值，即特殊值 undefined
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
 				<h2 class="index-title">
-					02.typeof操作符
+					03.undefined
 				</h2>
 				<div class="index-brief">
 					描述
-typeof 用于确定任意变量的数据类型；因typeof是操作符不是函数，所以不需要参数，但可以使用参数
-返回下列字符串之一
-“undefined”: 未定义
-“boolean”  : 布尔值
-“string”   : 字符串
-“number”   : 数值
-“object”   : 对象（不
+undefined 类型只有一个值，即特殊值 undefined
+使用 var、let 声明变量但未初始化时，相当于给该变量赋值 undefined
+包含 undefined值的变量和未定义变量是有区别的
+对未声明的变量只能执行一个有用操作；即：调用 typeof 返回结果是该特殊值
+对未声明
 					...
 				</div>
 			</a>
@@ -1003,45 +1003,6 @@ Boolean(其他类型值) 可以将其他类型的值转换为布尔值
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
-				<h2 class="index-title">
-					06.number
-				</h2>
-				<div class="index-brief">
-					描述
-Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称为双精度值）
-不同数值类型有对应的数值字面量格式；格式进制：
-十进制
-八进制
-十六进制
-
-
-
-1. 八进制
-以8为基数
-第一个数字必须是0，然后是相应的八进制数字0~7
-超出范围会忽略前缀0后续数字当成十进制数字
-严格模式
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/07.string/">
 				<h2 class="index-title">
 					07.string
@@ -1063,6 +1024,45 @@ string类型包含字符字面量，用于表示非打印字符或其他用途�
 
 
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
+				<h2 class="index-title">
+					06.number
+				</h2>
+				<div class="index-brief">
+					描述
+Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称为双精度值）
+不同数值类型有对应的数值字面量格式；格式进制：
+十进制
+八进制
+十六进制
+
+
+
+1. 八进制
+以8为基数
+第一个数字必须是0，然后是相应的八进制数字0~7
+超出范围会忽略前缀0后续数字当成十进制数字
+严格模式
 					...
 				</div>
 			</a>

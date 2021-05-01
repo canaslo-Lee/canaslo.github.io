@@ -873,55 +873,21 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
-					路由实现
+					04.生命周期
 				</h2>
 				<div class="index-brief">
-					hash 模式
-浏览器中符号 # 及后面字符称为 hash
-读取方法：
-使用 window.location.hash 读取
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
 
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
 
-特点：
-hash 虽然在 URL 中，但不包括在 HTTP 请求中
-用于指导浏览器行为，对服务器安全无用
-hash 不会重加载页面
-该模式下 只有 hash 符号之前的内
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
-				<h2 class="index-title">
-					钩子函数
-				</h2>
-				<div class="index-brief">
-					
-可控制导航跳转，beforeEach，afterEach 等
-一般用于页面标题修改
-需要登陆才能调整页面重定向
-beforeEach 的参数
-to route 即将进入的目标路由对象
-from route 当前导航要离开的路由
-next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>
@@ -1138,16 +1104,17 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
 				<h2 class="index-title">
-					生产模式错误定位
+					优缺点
 				</h2>
 				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
+					优点：
+vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
+mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
+不支持低版本浏览器，最低支持到 ie9
+不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
+首次加载首
 					...
 				</div>
 			</a>
@@ -1182,6 +1149,48 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 都需要编译后使用
 核心思想一致
 一切都是组件、组件实例间可嵌
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+				<h2 class="index-title">
+					基础
+				</h2>
+				<div class="index-brief">
+					vuex 是什么
+状态机 用于存储、更改状态的组件
+
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
+
+
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
+
 					...
 				</div>
 			</a>
