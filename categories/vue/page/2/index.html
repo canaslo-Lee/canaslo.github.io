@@ -882,19 +882,20 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
 				<h2 class="index-title">
-					钩子函数
+					01.vue是什么
 				</h2>
 				<div class="index-brief">
 					
-可控制导航跳转，beforeEach，afterEach 等
-一般用于页面标题修改
-需要登陆才能调整页面重定向
-beforeEach 的参数
-to route 即将进入的目标路由对象
-from route 当前导航要离开的路由
-next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+构建用户界面的渐进式框架
+基于数据驱动的单页面应用
+
+vue.js 的两个核心
+数据驱动
+条件渲染
+
+
 					...
 				</div>
 			</a>
@@ -915,20 +916,22 @@ next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+			<a href="/2019/11/24/vue/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
 				<h2 class="index-title">
-					01.vue是什么
+					路由实现
 				</h2>
 				<div class="index-brief">
-					
-构建用户界面的渐进式框架
-基于数据驱动的单页面应用
-
-vue.js 的两个核心
-数据驱动
-条件渲染
+					hash 模式
+浏览器中符号 # 及后面字符称为 hash
+读取方法：
+使用 window.location.hash 读取
 
 
+特点：
+hash 虽然在 URL 中，但不包括在 HTTP 请求中
+用于指导浏览器行为，对服务器安全无用
+hash 不会重加载页面
+该模式下 只有 hash 符号之前的内
 					...
 				</div>
 			</a>
@@ -979,23 +982,19 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
 				<h2 class="index-title">
-					03.指令
+					钩子函数
 				</h2>
 				<div class="index-brief">
-					指令
-v-bind ==&gt; v-bind:href ==&gt; :href
-v-for
-v-if-else
-v-else
-v-show
-v-html
-v-model
-v-on ==&gt; v-on:click ==&gt; @click
-
-v-if 和 v-show 的区别
-v-if 条件
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 					...
 				</div>
 			</a>
@@ -1016,27 +1015,23 @@ v-if 条件
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					05.组件传值
+					03.指令
 				</h2>
 				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
 
-
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
+v-if 和 v-show 的区别
+v-if 条件
 					...
 				</div>
 			</a>
