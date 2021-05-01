@@ -885,16 +885,20 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
 				<h2 class="index-title">
-					生产模式错误定位
+					和其他框架的区别
 				</h2>
 				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
+					vue 和 react、angular 的区别
+angular 学习成本高，使用率不大，版本间存在断层。未学习使用过
+react
+共同点：
+react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
+对文件内容有约定
+都需要编译后使用
+核心思想一致
+一切都是组件、组件实例间可嵌
 					...
 				</div>
 			</a>
@@ -944,6 +948,37 @@ module.exports = &#123;
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+				<h2 class="index-title">
+					全局挂载less
+				</h2>
+				<div class="index-brief">
+					vue中全局挂载less项目搭建完成后使用cmd 运行命令
+vue add style-resources-loader
+
+添加完成后 在 vue.config.js内进行配置
+// url: 全局挂载的less文件在项目内的位置
+const path = require(&#39;path&#39
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-18</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 				<h2 class="index-title">
 					当前项目加样式前缀
@@ -977,56 +1012,19 @@ module.exports = &#123
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/%E5%91%BD%E4%BB%A4/">
 				<h2 class="index-title">
-					全局挂载less
+					命令
 				</h2>
 				<div class="index-brief">
-					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-vue add style-resources-loader
-
-添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置
-const path = require(&#39;path&#39
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-18</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/ssh/">
-				<h2 class="index-title">
-					ssh
-				</h2>
-				<div class="index-brief">
-					1.校验是否已配置密钥
-cd ~/.ssh
-
-2. 创建ssh
-ssh-keygen -t rsa -C ‘18678193919@163.com’
-
-
-之后一直enter
-
-3. 查看生成的公钥
-cat ~/.ssh/id_rsa.pub
-
-创建多个ssh
-ssh-keygen -t rsa -C
+					1. 常用命令
+pwd (print working directory) 查看当前所在目录
+cd (change directory) 切换目录
+ls (list) 查看当前目录下内容
+clear 清屏
+mkdir (make directory) 创建目录
+touch 创建文件
+cat 查看文件
 					...
 				</div>
 			</a>
