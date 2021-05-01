@@ -759,6 +759,15 @@
 			
 							<ul>
 								<li class="file">
+									<a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/hexo/">
+										hexo
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/05/01/%E5%B7%A5%E5%85%B7%E7%B1%BB/sourcetree/">
 										sourcetree
 									</a>
@@ -873,27 +882,21 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
-					05.组件传值
+					04.生命周期
 				</h2>
 				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
 
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
 
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>
@@ -1010,15 +1013,16 @@ exclude 排除的组件不缓存，优先级大于 include
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
 				<h2 class="index-title">
-					10.css只在当前组件生效
+					09.过滤器
 				</h2>
 				<div class="index-brief">
-					style 标签中添加 scoped
-&lt;style scoped&gt;&lt;/style&gt;
-
-
+					自定义过滤器
+过滤器接收表达式的值 msg 作为第一个参数
+capitalize 过滤器接收 msg 的值作为第一个参数
+html 代码：&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
