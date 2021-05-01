@@ -873,16 +873,20 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
 				<h2 class="index-title">
-					09.过滤器
+					08.keep-alive
 				</h2>
 				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
+					对 keep-alive 的了解
+keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
+vue 2.1.0 版本之后，keep-alive 新增两个属性
+include 包含的组件缓存
+exclude 排除的组件不缓存，优先级大于 include
+
+
+
+使用方法：&l
 					...
 				</div>
 			</a>
@@ -912,6 +916,36 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 &lt;style scoped&gt;&lt;/style&gt;
 
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+				<h2 class="index-title">
+					09.过滤器
+				</h2>
+				<div class="index-brief">
+					自定义过滤器
+过滤器接收表达式的值 msg 作为第一个参数
+capitalize 过滤器接收 msg 的值作为第一个参数
+html 代码：&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
@@ -977,48 +1011,6 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 都需要编译后使用
 核心思想一致
 一切都是组件、组件实例间可嵌
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
-				<h2 class="index-title">
-					基础
-				</h2>
-				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
-
-
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
 					...
 				</div>
 			</a>
