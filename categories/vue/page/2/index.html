@@ -943,6 +943,40 @@ eventBus；
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+				<h2 class="index-title">
+					08.keep-alive
+				</h2>
+				<div class="index-brief">
+					对 keep-alive 的了解
+keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
+vue 2.1.0 版本之后，keep-alive 新增两个属性
+include 包含的组件缓存
+exclude 排除的组件不缓存，优先级大于 include
+
+
+
+使用方法：&l
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
 				<h2 class="index-title">
 					07.计算属性
@@ -1006,20 +1040,16 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					08.keep-alive
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
-
-
-
-使用方法：&l
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
@@ -1134,36 +1164,6 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
-				<h2 class="index-title">
-					生产模式错误定位
-				</h2>
-				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
 				<h2 class="index-title">
 					全局挂载less
@@ -1215,7 +1215,7 @@ const path = require(&#39;path&#39
 		</span>
 		|
 		<span id="busuanzi_container_site_uv">
-			访问次
+			访客数
 			<span id="busuanzi_value_site_uv"></span>
 		</span>
 		
