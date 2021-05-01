@@ -915,17 +915,19 @@ module.exports = &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 				<h2 class="index-title">
-					全局挂载less
+					当前项目加样式前缀
 				</h2>
 				<div class="index-brief">
-					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-vue add style-resources-loader
+					安装插件
+npm install postcss-plugin-namespace post-loader
 
-添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置
-const path = require(&#39;path&#39
+postcss配置
+在vue.config.js同级创建postcss.config.js文件
+
+在postcss.config.js文件内输入
+module.exports = &#123
 					...
 				</div>
 			</a>
@@ -946,19 +948,17 @@ const path = require(&#39;path&#39
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
 				<h2 class="index-title">
-					当前项目加样式前缀
+					全局挂载less
 				</h2>
 				<div class="index-brief">
-					安装插件
-npm install postcss-plugin-namespace post-loader
+					vue中全局挂载less项目搭建完成后使用cmd 运行命令
+vue add style-resources-loader
 
-postcss配置
-在vue.config.js同级创建postcss.config.js文件
-
-在postcss.config.js文件内输入
-module.exports = &#123
+添加完成后 在 vue.config.js内进行配置
+// url: 全局挂载的less文件在项目内的位置
+const path = require(&#39;path&#39
 					...
 				</div>
 			</a>
