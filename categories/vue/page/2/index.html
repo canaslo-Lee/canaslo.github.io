@@ -885,21 +885,15 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
 				<h2 class="index-title">
-					04.生命周期
+					06.数据双向绑定的原理
 				</h2>
 				<div class="index-brief">
-					生命周期是什么
-实例从创建到销毁的过程
-从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
 
-生命周期的作用
-生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
-
-生命周期
-beforeCreate 创建前
-数据监听和初始
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -941,35 +935,6 @@ eventBus；
 
 
 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
-				<h2 class="index-title">
-					06.数据双向绑定的原理
-				</h2>
-				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
-
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -1161,6 +1126,36 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 都需要编译后使用
 核心思想一致
 一切都是组件、组件实例间可嵌
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+				<h2 class="index-title">
+					生产模式错误定位
+				</h2>
+				<div class="index-brief">
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
