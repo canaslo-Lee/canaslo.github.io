@@ -885,6 +885,48 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+				<h2 class="index-title">
+					基础
+				</h2>
+				<div class="index-brief">
+					vuex 是什么
+状态机 用于存储、更改状态的组件
+
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
+
+
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
 				<h2 class="index-title">
 					route和router的区别
@@ -1012,48 +1054,6 @@ next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
-				<h2 class="index-title">
-					基础
-				</h2>
-				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
-
-
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
 				<h2 class="index-title">
 					01.vue是什么
@@ -1088,16 +1088,16 @@ vue.js 的两个核心
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					生产模式错误定位
+					02.mvvm模式
 				</h2>
 				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
+					
+model view viewmodel 的缩写
+model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
+view 表示视图层；负责将 model 的数据展示在页面上
+viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
 					...
 				</div>
 			</a>
@@ -1118,16 +1118,27 @@ module.exports = &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
 				<h2 class="index-title">
-					02.mvvm模式
+					05.组件传值
 				</h2>
 				<div class="index-brief">
-					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					组件间传值
+父传子
+子组件通过 props 方法接收父组件传入值
+
+
+子传父
+子组件通过 $emit 方法传递给父组件
+
+
+非父子、兄弟组件
+eventBus；
+创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
+
+
+
+
 					...
 				</div>
 			</a>
@@ -1185,27 +1196,21 @@ v-if 条件
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
-					05.组件传值
+					04.生命周期
 				</h2>
 				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
 
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
 
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>

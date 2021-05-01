@@ -885,19 +885,100 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 				<h2 class="index-title">
-					02.typeof操作符
+					04.布尔操作符
 				</h2>
 				<div class="index-brief">
 					描述
-typeof 用于确定任意变量的数据类型；因typeof是操作符不是函数，所以不需要参数，但可以使用参数
-返回下列字符串之一
-“undefined”: 未定义
-“boolean”  : 布尔值
-“string”   : 字符串
-“number”   : 数值
-“object”   : 对象（不
+布尔操作符跟相等操作符几乎同样重要
+如果没能力测试两个值的关系，那么循环和判断语句就没用了
+布尔操作符有
+逻辑非
+逻辑或
+逻辑与
+
+
+
+1. 逻辑非
+描述：
+
+一个叹号（!）表示
+应用给es中任何值
+返回布尔值
+无论任何数据类型
+
+
+转换步骤：
+将操作符转为布尔值
+对结果取反
+
+
+将任意值转为
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+				<h2 class="index-title">
+					05.乘性操作符
+				</h2>
+				<div class="index-brief">
+					描述
+es中定义3个成型操作符
+乘法
+除法
+取模
+
+
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
+				<h2 class="index-title">
+					04.null
+				</h2>
+				<div class="index-brief">
+					描述
+null 类型只有一个值，即特殊值 null
+null 表示空对象指针；这也是 typeof null 返回 object 的原因
+初始化变量时推荐使用null初始化；只需要检查该变量的值就可以知道该变量是否重新赋值
+undefined 由 null 派生的来，因此它们表面相等；即：undef
 					...
 				</div>
 			</a>
@@ -949,16 +1030,25 @@ undefined 类型只有一个值，即特殊值 undefined
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
 				<h2 class="index-title">
-					04.null
+					06.number
 				</h2>
 				<div class="index-brief">
 					描述
-null 类型只有一个值，即特殊值 null
-null 表示空对象指针；这也是 typeof null 返回 object 的原因
-初始化变量时推荐使用null初始化；只需要检查该变量的值就可以知道该变量是否重新赋值
-undefined 由 null 派生的来，因此它们表面相等；即：undef
+Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称为双精度值）
+不同数值类型有对应的数值字面量格式；格式进制：
+十进制
+八进制
+十六进制
+
+
+
+1. 八进制
+以8为基数
+第一个数字必须是0，然后是相应的八进制数字0~7
+超出范围会忽略前缀0后续数字当成十进制数字
+严格模式
 					...
 				</div>
 			</a>
@@ -995,45 +1085,6 @@ Boolean(其他类型值) 可以将其他类型的值转换为布尔值
 
 转换规则：
 理解转换规则非常重要，因为if等控制流语句会自动执
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
-				<h2 class="index-title">
-					06.number
-				</h2>
-				<div class="index-brief">
-					描述
-Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称为双精度值）
-不同数值类型有对应的数值字面量格式；格式进制：
-十进制
-八进制
-十六进制
-
-
-
-1. 八进制
-以8为基数
-第一个数字必须是0，然后是相应的八进制数字0~7
-超出范围会忽略前缀0后续数字当成十进制数字
-严格模式
 					...
 				</div>
 			</a>
@@ -1117,40 +1168,6 @@ object是什么：es中object是一组数据和功能的集合
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/03/styles/css/demo/%E6%95%85%E9%9A%9C%E9%A3%8E%E6%8C%89%E9%92%AE/">
-				<h2 class="index-title">
-					故障风按钮
-				</h2>
-				<div class="index-brief">
-					描述
-鼠标移入显示效果
-
-html结构&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/styles/">styles</a>
 										
                                     </span>
                                 
