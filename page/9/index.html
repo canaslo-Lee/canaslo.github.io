@@ -2,82 +2,70 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-		name="viewport">
+		name="viewport"
+	/>
 
 	<!-- title -->
 	
-		<title>
-			
-						静思
-		</title>
+	<title>  静思 </title>
 
-		<!-- keywords,description -->
-		
-					
+	<!-- keywords,description -->
+	 
 
-								<!-- favicon -->
-								
-									<link rel="shortcut icon" href="/favicon.ico">
-										
+	<!-- favicon -->
+	 <link rel="shortcut icon" href="/favicon.ico"> 
 
+	<!-- search -->
+	<script>
+		var searchEngine = 'https://cn.bing.com/search?q='
+		if (
+			typeof searchEngine == 'undefined' ||
+			searchEngine == null ||
+			searchEngine == ''
+		) {
+			// searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = ''
+		if (typeof homeHost == 'undefined' || homeHost == null || homeHost == '') {
+			homeHost = window.location.host
+		}
+	</script>
 
-											<!-- search -->
-											<script>
-												var searchEngine = "https://cn.bing.com/search?q=";
-												if ( typeof searchEngine == "undefined" || searchEngine == null || searchEngine == "" ) {
-													// searchEngine = "https://www.google.com/search?q=";
-												}
-												var homeHost = "";
-												if ( typeof homeHost == "undefined" || homeHost == null || homeHost == "" ) {
-													homeHost = window.location.host;
-												}
-											</script>
-
-
-											
+	
 <link rel="stylesheet" href="/css/main.css">
-
-												
+ 
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
-
-													
+ 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
-
-														
+ 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-
-
-															
+ 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-																
+	
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-																	
+ 
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-
-																		
+ 
 <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-
-																			
+ 
 <script src="/js/main.js"></script>
-
-																				
-																					
+  
 <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-
-																						
+ 
 <script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
-
-																							
-																								
-																									<script async
-																										src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-																									
+ 
+	
+	<script
+		async
+		src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+	></script>
+	
 <meta name="generator" content="Hexo 5.4.0"></head>
+
 
 <body>
 	<script>
@@ -885,16 +873,23 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					02.mvvm模式
+					03.指令
 				</h2>
 				<div class="index-brief">
-					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
+
+v-if 和 v-show 的区别
+v-if 条件
 					...
 				</div>
 			</a>
@@ -930,43 +925,6 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 生命周期
 beforeCreate 创建前
 数据监听和初始
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
-				<h2 class="index-title">
-					03.指令
-				</h2>
-				<div class="index-brief">
-					指令
-v-bind ==&gt; v-bind:href ==&gt; :href
-v-for
-v-if-else
-v-else
-v-show
-v-html
-v-model
-v-on ==&gt; v-on:click ==&gt; @click
-
-v-if 和 v-show 的区别
-v-if 条件
 					...
 				</div>
 			</a>
@@ -1056,6 +1014,39 @@ eventBus；
                 </div>
 		</div>	
 	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+				<h2 class="index-title">
+					07.计算属性
+				</h2>
+				<div class="index-brief">
+					什么是vue的计算属性
+模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
+计算属性的优点
+数据处理结构清晰
+依赖于数据，数据更新，处理结果自动更新
+计算属性内部 this 指向 vm 实例
+template 调用时直接写计算属性名称即可
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
 	
 	<div id="index-paginator">
 		
@@ -1067,30 +1058,32 @@ eventBus；
 	</div>
 	<div id="footer">
 	<p>
-	©2019-<span id="footerYear"></span> 
-	<a href="/">静思</a> 
-	
-	
-		|
+		©2019-<span id="footerYear"></span>
+		<a href="/"> 静思 </a>
+
+		 |
 		<span id="busuanzi_container_site_pv">
-			pv
+			总访问量
 			<span id="busuanzi_value_site_pv"></span>
 		</span>
 		|
-		<span id="busuanzi_container_site_uv"> 
-			uv
+		<span id="busuanzi_container_site_uv">
+			访问次
 			<span id="busuanzi_value_site_uv"></span>
 		</span>
-	
-	<br>
-	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
-	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+		
+		<br />
+		主题
+		<a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+		作者 <a href="//github.com/wujun234" target="_blank">WuJun</a> 技术
+		<a href="//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>
-<script type="text/javascript"> 
-	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML =
+		new Date().getFullYear() + ''
 </script>
+
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
 </html>

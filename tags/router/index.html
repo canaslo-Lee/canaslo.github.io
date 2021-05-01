@@ -2,82 +2,70 @@
 <html lang="en">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-		name="viewport">
+		name="viewport"
+	/>
 
 	<!-- title -->
 	
-		<title>
-			
-						静思
-		</title>
+	<title>  静思 </title>
 
-		<!-- keywords,description -->
-		
-					
+	<!-- keywords,description -->
+	 
 
-								<!-- favicon -->
-								
-									<link rel="shortcut icon" href="/favicon.ico">
-										
+	<!-- favicon -->
+	 <link rel="shortcut icon" href="/favicon.ico"> 
 
+	<!-- search -->
+	<script>
+		var searchEngine = 'https://cn.bing.com/search?q='
+		if (
+			typeof searchEngine == 'undefined' ||
+			searchEngine == null ||
+			searchEngine == ''
+		) {
+			// searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = ''
+		if (typeof homeHost == 'undefined' || homeHost == null || homeHost == '') {
+			homeHost = window.location.host
+		}
+	</script>
 
-											<!-- search -->
-											<script>
-												var searchEngine = "https://cn.bing.com/search?q=";
-												if ( typeof searchEngine == "undefined" || searchEngine == null || searchEngine == "" ) {
-													// searchEngine = "https://www.google.com/search?q=";
-												}
-												var homeHost = "";
-												if ( typeof homeHost == "undefined" || homeHost == null || homeHost == "" ) {
-													homeHost = window.location.host;
-												}
-											</script>
-
-
-											
+	
 <link rel="stylesheet" href="/css/main.css">
-
-												
+ 
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
-
-													
+ 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
-
-														
+ 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-
-
-															
+ 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 
-																
+	
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-																	
+ 
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-
-																		
+ 
 <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-
-																			
+ 
 <script src="/js/main.js"></script>
-
-																				
-																					
+  
 <script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-
-																						
+ 
 <script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
-
-																							
-																								
-																									<script async
-																										src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-																									
+ 
+	
+	<script
+		async
+		src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+	></script>
+	
 <meta name="generator" content="Hexo 5.4.0"></head>
+
 
 <body>
 	<script>
@@ -943,39 +931,6 @@ $router 路由实例，对象包含路由跳转方法、钩子函数等
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
-				<h2 class="index-title">
-					钩子函数
-				</h2>
-				<div class="index-brief">
-					
-可控制导航跳转，beforeEach，afterEach 等
-一般用于页面标题修改
-需要登陆才能调整页面重定向
-beforeEach 的参数
-to route 即将进入的目标路由对象
-from route 当前导航要离开的路由
-next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
 				<h2 class="index-title">
 					路由实现
@@ -1011,6 +966,39 @@ hash 不会重加载页面
                 </div>
 		</div>	
 	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+				<h2 class="index-title">
+					钩子函数
+				</h2>
+				<div class="index-brief">
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
 	
 	<div id="index-paginator">
 		
@@ -1020,30 +1008,32 @@ hash 不会重加载页面
 	</div>
 	<div id="footer">
 	<p>
-	©2019-<span id="footerYear"></span> 
-	<a href="/">静思</a> 
-	
-	
-		|
+		©2019-<span id="footerYear"></span>
+		<a href="/"> 静思 </a>
+
+		 |
 		<span id="busuanzi_container_site_pv">
-			pv
+			总访问量
 			<span id="busuanzi_value_site_pv"></span>
 		</span>
 		|
-		<span id="busuanzi_container_site_uv"> 
-			uv
+		<span id="busuanzi_container_site_uv">
+			访问次
 			<span id="busuanzi_value_site_uv"></span>
 		</span>
-	
-	<br>
-	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
-	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+		
+		<br />
+		主题
+		<a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+		作者 <a href="//github.com/wujun234" target="_blank">WuJun</a> 技术
+		<a href="//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>
-<script type="text/javascript"> 
-	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML =
+		new Date().getFullYear() + ''
 </script>
+
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
 </html>
