@@ -69,49 +69,52 @@
 
 <body>
 	<script>
-	var _hmt = _hmt || [];
-	( function () {
-		var hm = document.createElement( "script" );
-		hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
-		var s = document.getElementsByTagName( "script" )[ 0 ];
-		s.parentNode.insertBefore( hm, s );
-	} )();
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
 </script>
 
 <header id="header">
-	<a id="title" href="/" class="logo">
-		静思
-	</a>
+	<a id="title" href="/" class="logo"> 静思 </a>
 
 	<ul id="menu">
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
 		
-			<li class="menu-item">
-				<a href="/tags" class="menu-item-link">标签</a>
-			</li>
-			
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
 
-				
-					<li class="menu-item">
-						<a href="/categories" class="menu-item-link">分类</a>
-					</li>
-					
-
-						<!-- <li class="menu-item">
+		<!-- <li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li> -->
-						<li class="menu-item">
-							<a href="https://github.com/canaslo" class="menu-item-link"
-								target="_blank">
-								<i class="fa fa-github fa-2x"></i>
-							</a>
-						</li>
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
 	</ul>
 </header>
+
 	
 <div id="sidebar">
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
@@ -882,6 +885,70 @@
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+				<h2 class="index-title">
+					02.typeof操作符
+				</h2>
+				<div class="index-brief">
+					描述
+typeof 用于确定任意变量的数据类型；因typeof是操作符不是函数，所以不需要参数，但可以使用参数
+返回下列字符串之一
+“undefined”: 未定义
+“boolean”  : 布尔值
+“string”   : 字符串
+“number”   : 数值
+“object”   : 对象（不
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
+				<h2 class="index-title">
+					03.undefined
+				</h2>
+				<div class="index-brief">
+					描述
+undefined 类型只有一个值，即特殊值 undefined
+使用 var、let 声明变量但未初始化时，相当于给该变量赋值 undefined
+包含 undefined值的变量和未定义变量是有区别的
+对未声明的变量只能执行一个有用操作；即：调用 typeof 返回结果是该特殊值
+对未声明
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
 				<h2 class="index-title">
 					04.null
@@ -948,47 +1015,6 @@ Boolean(其他类型值) 可以将其他类型的值转换为布尔值
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/07.string/">
-				<h2 class="index-title">
-					07.string
-				</h2>
-				<div class="index-brief">
-					描述
-表示零或多个16位unicode字符序列化
-字符串可使用双引号、单引号、反引号标示
-字符串引号开头和结尾必须一致
-
-1. 字符字面量
-string类型包含字符字面量，用于表示非打印字符或其他用途字符
-这些字符字面量可出现再字符串中的任意位置且可作为单个字符被解释
-如下：
-
-
-字面量
-含义
-
-
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
 				<h2 class="index-title">
 					06.number
@@ -1008,40 +1034,6 @@ Number 类型使用IEEE 754格式表示整数和浮点值（某些语言中称�
 第一个数字必须是0，然后是相应的八进制数字0~7
 超出范围会忽略前缀0后续数字当成十进制数字
 严格模式
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/javascript/">javascript</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
-				<h2 class="index-title">
-					05.乘性操作符
-				</h2>
-				<div class="index-brief">
-					描述
-es中定义3个成型操作符
-乘法
-除法
-取模
-
-
-
-
 					...
 				</div>
 			</a>

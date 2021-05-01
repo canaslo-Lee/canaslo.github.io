@@ -69,49 +69,52 @@
 
 <body>
 	<script>
-	var _hmt = _hmt || [];
-	( function () {
-		var hm = document.createElement( "script" );
-		hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
-		var s = document.getElementsByTagName( "script" )[ 0 ];
-		s.parentNode.insertBefore( hm, s );
-	} )();
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
 </script>
 
 <header id="header">
-	<a id="title" href="/" class="logo">
-		静思
-	</a>
+	<a id="title" href="/" class="logo"> 静思 </a>
 
 	<ul id="menu">
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
 		
-			<li class="menu-item">
-				<a href="/tags" class="menu-item-link">标签</a>
-			</li>
-			
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
 
-				
-					<li class="menu-item">
-						<a href="/categories" class="menu-item-link">分类</a>
-					</li>
-					
-
-						<!-- <li class="menu-item">
+		<!-- <li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li> -->
-						<li class="menu-item">
-							<a href="https://github.com/canaslo" class="menu-item-link"
-								target="_blank">
-								<i class="fa fa-github fa-2x"></i>
-							</a>
-						</li>
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
 	</ul>
 </header>
+
 	
 <div id="sidebar">
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
@@ -882,16 +885,20 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
 				<h2 class="index-title">
-					02.mvvm模式
+					01.vue是什么
 				</h2>
 				<div class="index-brief">
 					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+构建用户界面的渐进式框架
+基于数据驱动的单页面应用
+
+vue.js 的两个核心
+数据驱动
+条件渲染
+
+
 					...
 				</div>
 			</a>
@@ -912,19 +919,16 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					钩子函数
+					02.mvvm模式
 				</h2>
 				<div class="index-brief">
 					
-可控制导航跳转，beforeEach，afterEach 等
-一般用于页面标题修改
-需要登陆才能调整页面重定向
-beforeEach 的参数
-to route 即将进入的目标路由对象
-from route 当前导航要离开的路由
-next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+model view viewmodel 的缩写
+model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
+view 表示视图层；负责将 model 的数据展示在页面上
+viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
 					...
 				</div>
 			</a>

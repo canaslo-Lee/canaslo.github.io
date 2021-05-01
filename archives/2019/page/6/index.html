@@ -69,49 +69,52 @@
 
 <body>
 	<script>
-	var _hmt = _hmt || [];
-	( function () {
-		var hm = document.createElement( "script" );
-		hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
-		var s = document.getElementsByTagName( "script" )[ 0 ];
-		s.parentNode.insertBefore( hm, s );
-	} )();
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
 </script>
 
 <header id="header">
-	<a id="title" href="/" class="logo">
-		静思
-	</a>
+	<a id="title" href="/" class="logo"> 静思 </a>
 
 	<ul id="menu">
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
 		
-			<li class="menu-item">
-				<a href="/tags" class="menu-item-link">标签</a>
-			</li>
-			
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
 
-				
-					<li class="menu-item">
-						<a href="/categories" class="menu-item-link">分类</a>
-					</li>
-					
-
-						<!-- <li class="menu-item">
+		<!-- <li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li> -->
-						<li class="menu-item">
-							<a href="https://github.com/canaslo" class="menu-item-link"
-								target="_blank">
-								<i class="fa fa-github fa-2x"></i>
-							</a>
-						</li>
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
 	</ul>
 </header>
+
 	
 <div id="sidebar">
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
@@ -1011,19 +1014,16 @@ node(附带npm包):​    选择长期支持版，最新版容易出b
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue-cli/%E6%96%B0%E5%A2%9E%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
 				<h2 class="index-title">
-					新增自定义指令
+					route和router的区别
 				</h2>
 				<div class="index-brief">
-					创建局部指令const app = new Vue(&#123;
-  el: &#39;#app&#39;,
-  data: &#123;...&#125;,
-  // 创建指令（可多个）
-  directives: &#123;
-      // 指令名称
-      dir1: &#123;
- 
+					$route 和 $router 的区别
+$route 路由信息对象，包含 path、params、hash、query、fullPath、matched、name 等路由信息参数
+$router 路由实例，对象包含路由跳转方法、钩子函数等
+
+
 					...
 				</div>
 			</a>

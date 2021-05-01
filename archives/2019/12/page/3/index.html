@@ -69,49 +69,52 @@
 
 <body>
 	<script>
-	var _hmt = _hmt || [];
-	( function () {
-		var hm = document.createElement( "script" );
-		hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
-		var s = document.getElementsByTagName( "script" )[ 0 ];
-		s.parentNode.insertBefore( hm, s );
-	} )();
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
 </script>
 
 <header id="header">
-	<a id="title" href="/" class="logo">
-		静思
-	</a>
+	<a id="title" href="/" class="logo"> 静思 </a>
 
 	<ul id="menu">
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
 		
-			<li class="menu-item">
-				<a href="/tags" class="menu-item-link">标签</a>
-			</li>
-			
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
 
-				
-					<li class="menu-item">
-						<a href="/categories" class="menu-item-link">分类</a>
-					</li>
-					
-
-						<!-- <li class="menu-item">
+		<!-- <li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li> -->
-						<li class="menu-item">
-							<a href="https://github.com/canaslo" class="menu-item-link"
-								target="_blank">
-								<i class="fa fa-github fa-2x"></i>
-							</a>
-						</li>
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
 	</ul>
 </header>
+
 	
 <div id="sidebar">
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
@@ -882,21 +885,19 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E8%AF%AD%E6%B3%95/">
+			<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF/">
 				<h2 class="index-title">
-					语法
+					获取当前页面及浏览器相关信息
 				</h2>
 				<div class="index-brief">
-					
-ECMAScript 语法很大程度上借鉴 c和其他类 c 语言，如：Java 和 Perl
-
-区分大小写：
-es 中的一切都区分大小写，无论变量、函数名、还是操作符
-
-标识符：
-变量、函数、属性、函数参数的名称。由一或多个下列字符组成
-首字符必须是字母、下划线（_）、美元符（$）其中之一
-其余字符
+					/**
+ * * 获取当前页面及浏览器相关信息
+ * ! window.navigator.userAgent
+ */
+function browserInfo() &#123;
+    const browser = &#123;
+        versions () &#123;
+      
 					...
 				</div>
 			</a>
@@ -1004,40 +1005,6 @@ age = age + 1 //
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/styles/css/demo/%E6%95%85%E9%9A%9C%E9%A3%8E%E6%8C%89%E9%92%AE/">
-				<h2 class="index-title">
-					故障风按钮
-				</h2>
-				<div class="index-brief">
-					描述
-鼠标移入显示效果
-
-html结构&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-03</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/styles/">styles</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 				<h2 class="index-title">
 					03.位操作符
@@ -1049,6 +1016,56 @@ es中所有数值都以 IEEE 754 64位格式存储
 位操作并不直接应用到64位表示，而是先将值转为32位整数再进行位操作，之后将结果转为64位
 对开发者好像只有32位整数，64位置整数存储格式是不可见的，因此只需要考虑32位整数即可
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-03</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/javascript/">javascript</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/03/javascript/js%E5%9F%BA%E7%A1%80/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+				<h2 class="index-title">
+					04.布尔操作符
+				</h2>
+				<div class="index-brief">
+					描述
+布尔操作符跟相等操作符几乎同样重要
+如果没能力测试两个值的关系，那么循环和判断语句就没用了
+布尔操作符有
+逻辑非
+逻辑或
+逻辑与
+
+
+
+1. 逻辑非
+描述：
+
+一个叹号（!）表示
+应用给es中任何值
+返回布尔值
+无论任何数据类型
+
+
+转换步骤：
+将操作符转为布尔值
+对结果取反
+
+
+将任意值转为
 					...
 				</div>
 			</a>

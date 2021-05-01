@@ -69,49 +69,52 @@
 
 <body>
 	<script>
-	var _hmt = _hmt || [];
-	( function () {
-		var hm = document.createElement( "script" );
-		hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
-		var s = document.getElementsByTagName( "script" )[ 0 ];
-		s.parentNode.insertBefore( hm, s );
-	} )();
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
 </script>
 
 <header id="header">
-	<a id="title" href="/" class="logo">
-		静思
-	</a>
+	<a id="title" href="/" class="logo"> 静思 </a>
 
 	<ul id="menu">
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
 		
-			<li class="menu-item">
-				<a href="/tags" class="menu-item-link">标签</a>
-			</li>
-			
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
 
-				
-					<li class="menu-item">
-						<a href="/categories" class="menu-item-link">分类</a>
-					</li>
-					
-
-						<!-- <li class="menu-item">
+		<!-- <li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li> -->
-						<li class="menu-item">
-							<a href="https://github.com/canaslo" class="menu-item-link"
-								target="_blank">
-								<i class="fa fa-github fa-2x"></i>
-							</a>
-						</li>
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
 	</ul>
 </header>
+
 	
 <div id="sidebar">
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
@@ -912,17 +915,15 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
 				<h2 class="index-title">
-					优缺点
+					10.css只在当前组件生效
 				</h2>
 				<div class="index-brief">
-					优点：
-vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
-mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
-不支持低版本浏览器，最低支持到 ie9
-不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
-首次加载首
+					style 标签中添加 scoped
+&lt;style scoped&gt;&lt;/style&gt;
+
+
 					...
 				</div>
 			</a>
@@ -943,15 +944,17 @@ mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
 				<h2 class="index-title">
-					10.css只在当前组件生效
+					优缺点
 				</h2>
 				<div class="index-brief">
-					style 标签中添加 scoped
-&lt;style scoped&gt;&lt;/style&gt;
-
-
+					优点：
+vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
+mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
+不支持低版本浏览器，最低支持到 ie9
+不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
+首次加载首
 					...
 				</div>
 			</a>
