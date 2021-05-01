@@ -913,12 +913,24 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<h2 id="1-校验是否已配置密钥"><a href="#1-校验是否已配置密钥" class="headerlink" title="1.校验是否已配置密钥"></a>1.校验是否已配置密钥</h2><p>  <code>cd ~/.ssh</code></p>
-<h2 id="2-创建ssh"><a href="#2-创建ssh" class="headerlink" title="2. 创建ssh"></a>2. 创建ssh</h2><p>  <code>ssh-keygen -t rsa -C &#39;18678193919@163.com&#39;</code></p>
+	<h2 id="1-校验是否已配置密钥"><a href="#1-校验是否已配置密钥" class="headerlink" title="1.校验是否已配置密钥"></a>1.校验是否已配置密钥</h2><blockquote>
+<p>cd ~/.ssh</p>
+</blockquote>
+<h2 id="2-创建ssh"><a href="#2-创建ssh" class="headerlink" title="2. 创建ssh"></a>2. 创建ssh</h2><blockquote>
+<p>ssh-keygen -t rsa -C ‘18678193919@163.com’</p>
+</blockquote>
 <ul>
 <li>之后一直enter</li>
 </ul>
-<h2 id="3-查看生成的公钥"><a href="#3-查看生成的公钥" class="headerlink" title="3. 查看生成的公钥"></a>3. 查看生成的公钥</h2><p>  <code>cat ~/.ssh/id_rsa.pub </code></p>
+<h2 id="3-查看生成的公钥"><a href="#3-查看生成的公钥" class="headerlink" title="3. 查看生成的公钥"></a>3. 查看生成的公钥</h2><blockquote>
+<p>cat ~/.ssh/id_rsa.pub</p>
+</blockquote>
+<h2 id="创建多个ssh"><a href="#创建多个ssh" class="headerlink" title="创建多个ssh"></a>创建多个ssh</h2><blockquote>
+<p>ssh-keygen -t rsa -C “email@*.com” -f ~/.ssh/创建的ssh名称</p>
+</blockquote>
+<ul>
+<li>之后一直enter</li>
+</ul>
 
 </div>
 
