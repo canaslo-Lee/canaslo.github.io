@@ -117,7 +117,7 @@
 			</a>
 		</li> -->
 						<li class="menu-item">
-							<a href="https://github.com/canaslo-Lee" class="menu-item-link"
+							<a href="https://github.com/canaslo" class="menu-item-link"
 								target="_blank">
 								<i class="fa fa-github fa-2x"></i>
 							</a>
@@ -885,27 +885,21 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
-					05.组件传值
+					04.生命周期
 				</h2>
 				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
 
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
 
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>
@@ -988,20 +982,16 @@ template 调用时直接写计算属性名称即可
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
 				<h2 class="index-title">
-					08.keep-alive
+					09.过滤器
 				</h2>
 				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
-
-
-
-使用方法：&l
+					自定义过滤器
+过滤器接收表达式的值 msg 作为第一个参数
+capitalize 过滤器接收 msg 的值作为第一个参数
+html 代码：&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
@@ -1022,16 +1012,20 @@ exclude 排除的组件不缓存，优先级大于 include
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
 				<h2 class="index-title">
-					09.过滤器
+					08.keep-alive
 				</h2>
 				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
+					对 keep-alive 的了解
+keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
+vue 2.1.0 版本之后，keep-alive 新增两个属性
+include 包含的组件缓存
+exclude 排除的组件不缓存，优先级大于 include
+
+
+
+使用方法：&l
 					...
 				</div>
 			</a>
