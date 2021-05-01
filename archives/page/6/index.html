@@ -764,6 +764,15 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
+								<li class="file">
+									<a href="/2021/05/01/%E5%B7%A5%E5%85%B7%E7%B1%BB/sourcetree/">
+										sourcetree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
@@ -870,6 +879,36 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+				<h2 class="index-title">
+					生产模式错误定位
+				</h2>
+				<div class="index-brief">
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/18/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/">
 				<h2 class="index-title">
 					自定义主题
@@ -899,17 +938,19 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 				<h2 class="index-title">
-					全局挂载less
+					当前项目加样式前缀
 				</h2>
 				<div class="index-brief">
-					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-vue add style-resources-loader
+					安装插件
+npm install postcss-plugin-namespace post-loader
 
-添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置
-const path = require(&#39;path&#39
+postcss配置
+在vue.config.js同级创建postcss.config.js文件
+
+在postcss.config.js文件内输入
+module.exports = &#123
 					...
 				</div>
 			</a>
@@ -930,19 +971,17 @@ const path = require(&#39;path&#39
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
 				<h2 class="index-title">
-					当前项目加样式前缀
+					全局挂载less
 				</h2>
 				<div class="index-brief">
-					安装插件
-npm install postcss-plugin-namespace post-loader
+					vue中全局挂载less项目搭建完成后使用cmd 运行命令
+vue add style-resources-loader
 
-postcss配置
-在vue.config.js同级创建postcss.config.js文件
-
-在postcss.config.js文件内输入
-module.exports = &#123
+添加完成后 在 vue.config.js内进行配置
+// url: 全局挂载的less文件在项目内的位置
+const path = require(&#39;path&#39
 					...
 				</div>
 			</a>

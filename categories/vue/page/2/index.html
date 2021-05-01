@@ -764,6 +764,15 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
+								<li class="file">
+									<a href="/2021/05/01/%E5%B7%A5%E5%85%B7%E7%B1%BB/sourcetree/">
+										sourcetree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
@@ -870,109 +879,6 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
-				<h2 class="index-title">
-					05.组件传值
-				</h2>
-				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
-
-
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
-				<h2 class="index-title">
-					06.数据双向绑定的原理
-				</h2>
-				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
-
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
-				<h2 class="index-title">
-					07.计算属性
-				</h2>
-				<div class="index-brief">
-					什么是vue的计算属性
-模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
-计算属性的优点
-数据处理结构清晰
-依赖于数据，数据更新，处理结果自动更新
-计算属性内部 this 指向 vm 实例
-template 调用时直接写计算属性名称即可
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
 				<h2 class="index-title">
 					08.keep-alive
@@ -987,6 +893,34 @@ exclude 排除的组件不缓存，优先级大于 include
 
 
 使用方法：&l
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue-router/%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1/">
+				<h2 class="index-title">
+					动态路由
+				</h2>
+				<div class="index-brief">
+					如何定义 vue-router 的动态路由  router 目录下 index.js 文件中 对 path 属性添加/:id
+值如何获取  使用 router 对象的 params.id 获取
+
 					...
 				</div>
 			</a>
@@ -1037,14 +971,60 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
 				<h2 class="index-title">
-					10.css只在当前组件生效
+					钩子函数
 				</h2>
 				<div class="index-brief">
-					style 标签中添加 scoped
-&lt;style scoped&gt;&lt;/style&gt;
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+				<h2 class="index-title">
+					基础
+				</h2>
+				<div class="index-brief">
+					vuex 是什么
+状态机 用于存储、更改状态的组件
 
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
+
+
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
 
 					...
 				</div>
@@ -1066,17 +1046,15 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
 				<h2 class="index-title">
-					优缺点
+					10.css只在当前组件生效
 				</h2>
 				<div class="index-brief">
-					优点：
-vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
-mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
-不支持低版本浏览器，最低支持到 ie9
-不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
-首次加载首
+					style 标签中添加 scoped
+&lt;style scoped&gt;&lt;/style&gt;
+
+
 					...
 				</div>
 			</a>
@@ -1131,6 +1109,37 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+				<h2 class="index-title">
+					优缺点
+				</h2>
+				<div class="index-brief">
+					优点：
+vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
+mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
+不支持低版本浏览器，最低支持到 ie9
+不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
+首次加载首
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
 					生产模式错误定位
@@ -1161,17 +1170,19 @@ module.exports = &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 				<h2 class="index-title">
-					全局挂载less
+					当前项目加样式前缀
 				</h2>
 				<div class="index-brief">
-					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-vue add style-resources-loader
+					安装插件
+npm install postcss-plugin-namespace post-loader
 
-添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置
-const path = require(&#39;path&#39
+postcss配置
+在vue.config.js同级创建postcss.config.js文件
+
+在postcss.config.js文件内输入
+module.exports = &#123
 					...
 				</div>
 			</a>
