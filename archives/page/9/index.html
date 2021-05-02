@@ -83,6 +83,9 @@
 
 	<ul id="menu">
 		<li class="menu-item">
+			<a href="/" class="menu-item-link">HOME</a>
+		</li>
+		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
 		<li class="menu-item">
@@ -905,20 +908,16 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					01.vue是什么
+					生产模式错误定位
 				</h2>
 				<div class="index-brief">
-					
-构建用户界面的渐进式框架
-基于数据驱动的单页面应用
-
-vue.js 的两个核心
-数据驱动
-条件渲染
-
-
+					vue配置错误定位如果是vue-cli3创建的项目的话
+vue.config.js文件内添加
++const debug = process.env.NODE_ENV !== &#39;production&#39;
+module.exports = &#123;
++  configureWebpac
 					...
 				</div>
 			</a>
@@ -939,23 +938,20 @@ vue.js 的两个核心
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
 				<h2 class="index-title">
-					03.指令
+					01.vue是什么
 				</h2>
 				<div class="index-brief">
-					指令
-v-bind ==&gt; v-bind:href ==&gt; :href
-v-for
-v-if-else
-v-else
-v-show
-v-html
-v-model
-v-on ==&gt; v-on:click ==&gt; @click
+					
+构建用户界面的渐进式框架
+基于数据驱动的单页面应用
 
-v-if 和 v-show 的区别
-v-if 条件
+vue.js 的两个核心
+数据驱动
+条件渲染
+
+
 					...
 				</div>
 			</a>
@@ -1006,27 +1002,23 @@ viewmodel 监听模型数据的改变和控制视图行为、处理用户交互�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					05.组件传值
+					03.指令
 				</h2>
 				<div class="index-brief">
-					组件间传值
-父传子
-子组件通过 props 方法接收父组件传入值
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
 
-
-子传父
-子组件通过 $emit 方法传递给父组件
-
-
-非父子、兄弟组件
-eventBus；
-创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
-
-
-
-
+v-if 和 v-show 的区别
+v-if 条件
 					...
 				</div>
 			</a>

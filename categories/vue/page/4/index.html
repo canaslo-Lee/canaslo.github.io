@@ -83,6 +83,9 @@
 
 	<ul id="menu">
 		<li class="menu-item">
+			<a href="/" class="menu-item-link">HOME</a>
+		</li>
+		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
 		<li class="menu-item">
@@ -905,45 +908,16 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
 				<h2 class="index-title">
-					10.css只在当前组件生效
+					09.过滤器
 				</h2>
 				<div class="index-brief">
-					style 标签中添加 scoped
-&lt;style scoped&gt;&lt;/style&gt;
-
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
-				<h2 class="index-title">
-					生产模式错误定位
-				</h2>
-				<div class="index-brief">
-					vue配置错误定位如果是vue-cli3创建的项目的话
-vue.config.js文件内添加
-+const debug = process.env.NODE_ENV !== &#39;production&#39;
-module.exports = &#123;
-+  configureWebpac
+					自定义过滤器
+过滤器接收表达式的值 msg 作为第一个参数
+capitalize 过滤器接收 msg 的值作为第一个参数
+html 代码：&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
@@ -975,6 +949,35 @@ mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友�
 不支持低版本浏览器，最低支持到 ie9
 不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
 首次加载首
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+				<h2 class="index-title">
+					10.css只在当前组件生效
+				</h2>
+				<div class="index-brief">
+					style 标签中添加 scoped
+&lt;style scoped&gt;&lt;/style&gt;
+
+
 					...
 				</div>
 			</a>
@@ -1029,17 +1032,19 @@ react 采用 jsx 语法，vue 组件开发中推荐使用 .vue 的特殊格式
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+			<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
 				<h2 class="index-title">
-					全局挂载less
+					当前项目加样式前缀
 				</h2>
 				<div class="index-brief">
-					vue中全局挂载less项目搭建完成后使用cmd 运行命令
-vue add style-resources-loader
+					安装插件
+npm install postcss-plugin-namespace post-loader
 
-添加完成后 在 vue.config.js内进行配置
-// url: 全局挂载的less文件在项目内的位置
-const path = require(&#39;path&#39
+postcss配置
+在vue.config.js同级创建postcss.config.js文件
+
+在postcss.config.js文件内输入
+module.exports = &#123
 					...
 				</div>
 			</a>

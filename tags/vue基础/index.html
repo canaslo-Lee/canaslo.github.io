@@ -83,6 +83,9 @@
 
 	<ul id="menu">
 		<li class="menu-item">
+			<a href="/" class="menu-item-link">HOME</a>
+		</li>
+		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
 		<li class="menu-item">
@@ -939,6 +942,36 @@ vue.js 的两个核心
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+				<h2 class="index-title">
+					02.mvvm模式
+				</h2>
+				<div class="index-brief">
+					
+model view viewmodel 的缩写
+model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
+view 表示视图层；负责将 model 的数据展示在页面上
+viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
 					03.指令
@@ -976,16 +1009,21 @@ v-if 条件
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 				<h2 class="index-title">
-					02.mvvm模式
+					04.生命周期
 				</h2>
 				<div class="index-brief">
-					
-model view viewmodel 的缩写
-model 表示数据模型 可在 model 中定义数据修改和操作的业务逻辑
-view 表示视图层；负责将 model 的数据展示在页面上
-viewmodel 监听模型数据的改变和控制视图行为、处理用户交互；简单理解为：同步视图层和数据层的对象，链接
+					生命周期是什么
+实例从创建到销毁的过程
+从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
+
+生命周期的作用
+生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
+
+生命周期
+beforeCreate 创建前
+数据监听和初始
 					...
 				</div>
 			</a>
@@ -1027,41 +1065,6 @@ eventBus；
 
 
 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
-				<h2 class="index-title">
-					04.生命周期
-				</h2>
-				<div class="index-brief">
-					生命周期是什么
-实例从创建到销毁的过程
-从开始创建、初始化数据、编译模板、挂载 DOM -&gt;渲染、更新-&gt;渲染、销毁等一系列过程称为声明周期
-
-生命周期的作用
-生命周期中有多个事件钩子，在控制整个实例的过程时更容易形成逻辑闭环
-
-生命周期
-beforeCreate 创建前
-数据监听和初始
 					...
 				</div>
 			</a>
