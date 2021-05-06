@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		name="viewport"
+	/>
+
+	<!-- title -->
+	
+	<title>  symbol类型 |  静思 </title>
+
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	 <link rel="shortcut icon" href="/favicon.ico"> 
+
+	<!-- search -->
+	<script>
+		var searchEngine = 'https://cn.bing.com/search?q='
+		if (
+			typeof searchEngine == 'undefined' ||
+			searchEngine == null ||
+			searchEngine == ''
+		) {
+			// searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = ''
+		if (typeof homeHost == 'undefined' || homeHost == null || homeHost == '') {
+			homeHost = window.location.host
+		}
+	</script>
+
+	
+<link rel="stylesheet" href="/css/main.css">
+ 
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+ 
+<script src="/js/main.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+ 
+	
+	<script
+		async
+		src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+	></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+	<script>
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
+</script>
+
+<header id="header">
+	<a id="title" href="/" class="logo"> 静思 </a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/" class="menu-item-link">HOME</a>
+		</li>
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
+		
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
+
+		<!-- <li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li> -->
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										html
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/html/html%E7%AF%87/">
+										html篇
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										demo
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/demo/%E5%88%A4%E6%96%ADc3%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%8F%8A%E5%9B%9E%E8%B0%83/">
+										判断c3动画结束及回调
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										es6总结
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.1.es6%E7%AE%80%E4%BB%8B/">
+										01.1.es6简介
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.2.%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5/">
+										01.2.参考链接
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
+										01.3.提案
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.4.%E5%8D%95%E6%8C%87%E4%BB%A4/">
+										01.4.单指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.5.es6%E8%A7%84%E6%A0%BC/">
+										01.5.es6规格
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.6.%E7%BC%96%E7%A8%8B%E9%A3%8E%E6%A0%BC/">
+										01.6.编程风格
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/02.let-const/">
+										02.let-const
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/03.1.array/">
+										03.1.array
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/03.2.arraybuffer/">
+										03.2.arraybuffer
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/04.string/">
+										04.string
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/05.object/">
+										05.object
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/06.number/">
+										06.number
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/07.symbol/">
+										07.symbol
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.1.class/">
+										08.1.class
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.2.class-extends/">
+										08.2.class-extends
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/09.regex/">
+										09.regex
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/10.1.generator/">
+										10.1.generator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/10.2.generator-async/">
+										10.2.generator-async
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/11.1.function/">
+										11.1.function
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/11.2.fp/">
+										11.2.fp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/12.async/">
+										12.async
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/13.decorator/">
+										13.decorator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/14.destructuring/">
+										14.destructuring
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/15.iterator/">
+										15.iterator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/16.mixin/">
+										16.mixin
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/17.1.module/">
+										17.1.module
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/17.2.module-loader/">
+										17.2.module-loader
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/18.promise/">
+										18.promise
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/19.proxy/">
+										19.proxy
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/20.reflect/">
+										20.reflect
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/21.set-map/">
+										21.set-map
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										功能
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/cookie/">
+										cookie
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%86%E9%A1%B5/">
+										分页
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8F/">
+										列表排序
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D/">
+										获取地图定位
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF/">
+										获取当前页面及浏览器相关信息
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										红宝书4笔记
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/js%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%8E%86%E5%8F%B2/">
+										js简介及历史
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E5%AD%97%E5%8F%8A%E4%BF%9D%E7%95%99%E5%AD%97/">
+										关键字及保留字
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E5%8F%98%E9%87%8F/">
+										变量
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操作符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										01.操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.一元操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										03.位操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										04.布尔操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										05.乘性操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										数据类型
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+										01.数据类型
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.typeof操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
+										03.undefined
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
+										04.null
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/05.boolean/">
+										05.boolean
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
+										06.number
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/07.string/">
+										07.string
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/08.object/">
+										08.object
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/09.symbol/">
+										09.symbol
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E8%AF%AD%E6%B3%95/">
+										语法
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										styles
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										demo
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/demo/%E6%95%85%E9%9A%9C%E9%A3%8E%E6%8C%89%E9%92%AE/">
+										故障风按钮
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										uniapp
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/uniapp/uniapp/">
+										uniapp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue-cli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-cli/%E6%96%B0%E5%A2%9E%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">
+										新增自定义指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue-router
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
+										route和router的区别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1/">
+										动态路由
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
+										路由实现
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+										钩子函数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vuex
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+										基础
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+										01.vue是什么
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+										02.mvvm模式
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+										03.指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+										04.生命周期
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+										05.组件传值
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+										06.数据双向绑定的原理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+										07.计算属性
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+										08.keep-alive
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+										09.过滤器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+										10.css只在当前组件生效
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+										优缺点
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
+										和其他框架的区别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										配置
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+										全局挂载less
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
+										当前项目加样式前缀
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+										生产模式错误定位
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										工具类
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										git
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/ssh/">
+										ssh
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/%E5%91%BD%E4%BB%A4/">
+										命令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/hexo/">
+										hexo
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/01/%E5%B7%A5%E5%85%B7%E7%B1%BB/sourcetree/">
+										sourcetree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										sublime
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/28/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E7%A0%B4%E8%A7%A3/">
+										破解
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E9%85%8D%E7%BD%AE/">
+										配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vscode
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/04/30/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E5%85%A8%E9%83%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/">
+										全部基础配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/">
+										自定义主题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E9%85%8D%E7%BD%AEvue/">
+										配置vue
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										win10
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/win10/bat%E5%8A%9F%E8%83%BD/">
+										bat功能
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/04/30/%E5%B7%A5%E5%85%B7%E7%B1%BB/win10/%E6%9B%BF%E6%8D%A2%E5%AD%97%E4%BD%93/">
+										替换字体
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/28/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE/">
+										前端环境开发配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/">
+										抓包工具
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	09.symbol
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/09.symbol/" class="leancloud_visitors" data-flag-title="symbol类型"></span>
+		</span>
+	
+	<span>静思</span>
+	<span>2019-12-03 10:18:12</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/javascript/">javascript</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-tag" aria-hidden="true">
+                        <a href="/tags/js基础/">js基础</a>
+                        </i>
+                    </span>
+                
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><ul>
+<li>es6新增数据类型</li>
+<li>符号是原始值且符号实例唯一不可变</li>
+<li>作用：<ul>
+<li>确保对象属性使用唯一标识符，避免属性冲突</li>
+</ul>
+</li>
+<li>描述：<ul>
+<li>虽然和私有属性类似，但符号并不是为提供私有属性增加；尤其是因 Object Api提供方法可更方便发现符号属性</li>
+<li>符号用于创建唯一记号，用于非字符串形式的对象属性</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-符号基本用法"><a href="#1-符号基本用法" class="headerlink" title="1. 符号基本用法"></a>1. 符号基本用法</h2><ul>
+<li>使用Symbol()函数初始化</li>
+<li>符号本身是原始类型 typeof 操作符返回 symbol<pre><code class="js">console.log(typeof Symbol())
+  // &quot;symbol&quot;
+</code></pre>
+</li>
+<li>调用该函数可传入一个字符串参数作为对符号的描述（description）<ul>
+<li>通过该字符串可调试代码</li>
+<li>该字符串参数与符号定义、标识完全无关<pre><code class="js">console.log(Symbol() == Symbol(&#39;foo&#39;))
+  // false
+</code></pre>
+</li>
+</ul>
+</li>
+<li>符号没有字面量语法<ul>
+<li>按照规范，只要创建symbol()实例并用作对象新属性就可保证其不会覆盖已有对象属性，无论是符号属性或字符串属性<pre><code class="js">let sym = Symbol()
+let sym1 = Symbol(&#39;foo&#39;)
+console.log(sym, sym1)
+  // Symbol(), Symbol(&#39;foo&#39;)
+</code></pre>
+</li>
+</ul>
+</li>
+<li>symbol()函数不能与new关键字一起作为构造函数<pre><code class="js">console.log(typeof new Boolean())
+  // &quot;object&quot;
+console.log(typeof new String())
+  // &quot;object&quot;
+console.log(typeof new Number())
+  // &quot;object&quot;
+console.log(typeof new Symbol())
+  // TypeError: Symbol is not a constructor
+</code></pre>
+</li>
+<li>通过Object()函数可使用符号包装对象<pre><code class="js">console.log(typeof Object(Symbol()))
+  // &quot;object&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="2-使用全局符号注册表"><a href="#2-使用全局符号注册表" class="headerlink" title="2. 使用全局符号注册表"></a>2. 使用全局符号注册表</h2><h3 id="2-1-symbol-for"><a href="#2-1-symbol-for" class="headerlink" title="2.1 symbol.for()"></a>2.1 symbol.for()</h3><ul>
+<li>运行时，不同部分需要共享和重用符号实例，可用一个字符串作为键，在全局符号注册表中创建并重用符号<pre><code class="js">console.log(typeof Symbol.for(&#39;foo&#39;))
+  // symbol
+</code></pre>
+</li>
+<li>对每个字符串键都执行幂等操作，第一次调用时检查全局运行时注册表<ul>
+<li>检索到不存在的对应符号时生成新符号实例并添加到注册表</li>
+<li>检索到对应符号则返回该符号实例<pre><code class="js">let GloSym = Symbol.for(&#39;foo&#39;)
+  // 创建新符号
+let othGloSym = Symbol.for(&#39;foo&#39;)
+  // 重用已有符号
+console.log(GloSym === othGloSym)
+  // true
+</code></pre>
+</li>
+</ul>
+</li>
+<li>使用相同的符号描述在全局注册表中定义的符号和使用symbol()定义的符号不等同<pre><code class="js">let locSym = Symbol(&#39;foo&#39;)
+let gloSym = Symbol.for(&#39;foo&#39;)
+console.log(locSym === gloSym)
+  // false
+</code></pre>
+</li>
+<li>全局注册表中符号必须使用字符串键创建<ul>
+<li>作为参数传给Symbol.for()的任何值都被转为字符串</li>
+<li>注册表中使用相同键被用作符号描述<pre><code class="js">console.log(Symbol.for())
+// Symbol(undefined)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-Symbol-keyFor"><a href="#2-2-Symbol-keyFor" class="headerlink" title="2.2 Symbol.keyFor()"></a>2.2 Symbol.keyFor()</h3><ul>
+<li>用于查询全局注册表</li>
+<li>方法接收符号</li>
+<li>返回该全局符号对应的字符串键，查询的不是全局符号返回 undefined<pre><code class="js">// 全局符号
+let s = Symbol.for(&#39;foo&#39;)
+console.log(Symbol.keyFor(s))
+// foo
+// 普通符号
+let s1 = Symbol(&#39;bar&#39;)
+console.log(Symbol.keyFor(s1))
+// undefined
+// 传给keyFor 的不是符号抛出 TypeError
+Symbol.keyFor(123)
+// TypeError: 123 is not a symbol
+</code></pre>
+</li>
+</ul>
+<h2 id="3-使用符号作为属性"><a href="#3-使用符号作为属性" class="headerlink" title="3. 使用符号作为属性"></a>3. 使用符号作为属性</h2><ul>
+<li>任何可使用字符串或数值作为属性的地方都可以使用符号</li>
+<li>包括对象字面量属性和 Object.defineProperty()/Object.defineProperties()定义的属性</li>
+<li>对象字面量只能在计算属性语法中使用符号作为属性<pre><code class="js">let s1 = Symbol(&#39;foo&#39;),
+    s2 = Symbol(&#39;bar&#39;),
+    s3 = Symbol(&#39;baz&#39;),
+    s4 = Symbol(&#39;qux&#39;),
+    o = &#123; [s1]: &#39;foo val&#39; &#125;;
+console.log(&#39;o&#39;, o)
+  // o, &#123;symbol(foo): &quot;foo val&quot;&#125;
+o[s1] = &#39;foo val&#39;;
+console.log(&#39;o1&#39;, o)
+  // o1, &#123;symbol(foo): &quot;foo val&quot;&#125;
+Object.defineProperty(o, s2, &#123; value: &#39;bar val&#39; &#125;)
+console.log(&#39;o&#39;, o)
+  // o, &#123;symbol(foo): &quot;foo val&quot;&#125;, &#123;symbol(bar): &quot;bar val&quot;&#125;
+Object.defineProperties(o, &#123;
+  [s3]: &#123; value: &#39;baz value&#39; &#125;,
+  [s4]: &#123; value: &#39;qux value&#39; &#125;
+&#125;)
+console.log(o)
+  /**
+   * o,
+   * &#123;symbol(foo): &quot;foo val&quot;&#125;,
+   * &#123;symbol(bar): &quot;bar val&quot;&#125;,
+   * &#123;symbol(baz): &quot;baz val&quot;&#125;,
+   * &#123;symbol(qux): &quot;qux val&quot;&#125;
+  */
+</code></pre>
+</li>
+<li>类似下列返回<ul>
+<li>Object.getOwnPropertyNames() 返回对象实例的常规属性数组；与下一种返回值相斥</li>
+<li>Object.getOwnPropertySymbols() 返回对象实例的符号属性数组；与上一种返回值相斥</li>
+<li>Object.getOwnPropertyDescriptors() 返回同时包含常规和符号属性描述符的对象</li>
+<li>Reflect.ownKeys() 返回两种类型的键<pre><code class="js">let s1 = Symbol(&#39;foo&#39;),
+  s2 = Symbol(&#39;bar&#39;),
+  o = &#123;
+    [s1]: &#39;foo val&#39;,
+    [s2]: &#39;bar val&#39;,
+    baz: &#39;baz val&#39;,
+    qux: &#39;qux val&#39;
+  &#125;;
+console.log(Object.getOwnPropertySymbols(o))
+// [Symbol(foo), Symbol(bar)]
+console.log(Object.getOwnPropertyNames(o))
+// [&quot;baz&quot;, &quot;qux&quot;]
+console.log(Object.getOwnPropertyDescriptors(o))
+/**
+ * baz: &#123;value: &quot;baz val&quot;, writable: true, enumerable: true, configurable: true&#125;
+ * qux: &#123;value: &quot;qux val&quot;, writable: true, enumerable: true, configurable: true&#125;
+ * Symbol(bar): &#123;value: &quot;bar val&quot;, writable: true, enumerable: true, configurable: true&#125;
+ * Symbol(foo): &#123;value: &quot;foo val&quot;, writable: true, enumerable: true, configurable: true&#125;
+*/
+console.log(Reflect.ownKeys(o))
+// [&quot;baz&quot;, &quot;qux&quot;, Symbol(foo), Symbol(bar)]
+</code></pre>
+</li>
+</ul>
+</li>
+<li>直接作为属性创建的符号不会丢失，如果不显示保存这些属性的引用必须遍历对象的所有符号属性才能找到对应属性键<pre><code class="js">let o = &#123;
+  [Symbol(&#39;foo&#39;)]: &#39;foo val&#39;,
+  [Symbol(&#39;bar&#39;)]: &#39;bar val&#39;
+&#125;
+console.log(o)
+  // &#123;Symbol(foo): &quot;foo val&quot;, Symbol(bar): &quot;bar val&quot;&#125;
+console.log(Object.getOwnPropertySymbols(o).find(
+  symbol =&gt; symbol.toString().match(/bar/)
+))
+  // Symbol(bar)
+</code></pre>
+</li>
+</ul>
+<h2 id="4-常用内置符号"><a href="#4-常用内置符号" class="headerlink" title="4. 常用内置符号"></a>4. 常用内置符号</h2><ul>
+<li>es6 引入一批常用内置符号（well-known symbol）</li>
+<li>作用：<ul>
+<li>暴露语言内部行为</li>
+<li>开发者直接访问、重写、模型这些行为</li>
+<li>以Symbol工厂函数、字符串属性的形式存在</li>
+<li>最重要的用途之一就是重新定义而改变原生结构的行为；如：<ul>
+<li>for-of 循环会在相关对象上使用 Symbol.iterator属性</li>
+<li>可以通过自定义对象上重新定义该Symbol.iterator的值来改变 for-of 迭代对象时的行为</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内置符号是全局函数Symbol的普通字符串属性，指向一个符号的实例</li>
+<li>所有内置符号属性都是不可写、不可枚举、不可配置</li>
+<li>es规范，引用符号在规范中的名称，前缀为@@；如：@@iterator指的是 Symbol.iterator</li>
+</ul>
+<h2 id="5-Symbol-asyncIterator"><a href="#5-Symbol-asyncIterator" class="headerlink" title="5. Symbol.asyncIterator"></a>5. Symbol.asyncIterator</h2><ul>
+<li>根据es 2018规范定义，该符号作为一个属性表示<ul>
+<li>“一个方法，返回对象默认的AsyncIterator。由for-await-of语句使用”</li>
+<li>该符号表示实现异步迭代器API的函数</li>
+</ul>
+</li>
+<li>for-await-of循环会利用该函数执行异步迭代操作<ul>
+<li>循环时调用以 Symbol.asyncIterator为键的函数</li>
+<li>期望该函数返回一个实现迭代器API的对象</li>
+<li>大多时返回的对象是实现该API的AsyncIterator<pre><code class="js">class Foo &#123; async *[Symbol.asyncIterator] () &#123;&#125; &#125;
+let f = new Foo()
+console.log(f[Symbol.asyncIterator]())
+// AsyncGenerator &#123;&lt;suspended&gt;&#125;
+/**
+ * __proto__: AsyncGenerator
+* [[GeneratorLocation]]: VM375:1  ==&gt; class Foo 对象所在行数
+* [[GeneratorState]]: &quot;suspended&quot;
+* [[GeneratorFunction]]: ƒ async *[Symbol.asyncIterator]()
+* [[GeneratorReceiver]]: Foo
+* [[Scopes]]: Scopes[3]
+*/
+</code></pre>
+</li>
+</ul>
+</li>
+<li>技术上由Symbol.asyncIterator函数生成的对象<ul>
+<li>应通过其 next() 方法陆续返回 Promise 实例</li>
+<li>可通过显示调用 next() 方法返回</li>
+<li>可隐式通过异步生成器函数返回<pre><code class="js">class Emitter &#123;
+constructor (max) &#123;
+  this.max = max
+  this.asyncIdx = 0
+&#125;
+async *[Symbol.asyncIterator] () &#123;
+  while (this.asyncIdx &lt; this.max) &#123;
+    yield new Promise((resolve) =&gt; resolve(this.asyncIdx++))
+  &#125;
+&#125;
+&#125;
+async function asyncCount () &#123;
+let emitter = new Emitter(5)
+for await(const x of emitter) console.log(x)
+&#125;
+asyncCount()
+/**
+ * 0
+ * 1
+ * 2
+ * 3
+ * 4
+ * Promise&#123;&lt;fulfilled&gt;: undefined&#125;
+    __proto__: Promise
+    [[PromiseState]]: &quot;fulfilled&quot;
+    [[PromiseResult]]: undefined
+ */
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-Symbol-hasInstance"><a href="#6-Symbol-hasInstance" class="headerlink" title="6. Symbol.hasInstance"></a>6. Symbol.hasInstance</h2><ul>
+<li>根据es规范，该符号作为一个属性表示<ul>
+<li>一个方法，该方法决定一个构造器对象是否认可一个对象是它的实例</li>
+<li>由 instanceof 操作符使用。该操作符可确定一个对象实例的原型链上是否有原型<pre><code class="js">// 使用场景
+function Foo () &#123;&#125;
+console.log(new Foo() instanceof Foo)
+  // true
+class Bar &#123;&#125;
+console.log(new Bar() instanceof Bar)
+  // true
+</code></pre>
+</li>
+</ul>
+</li>
+<li>es6 中 instanceof操作符使用Symbol.hasInstance 函数确定关系<ul>
+<li>以该方法为键的函数会执行相同操作，只是操作数对调<pre><code class="js">function Foo () &#123;&#125;
+console.log(Foo[Symbol.hasInstance](new Foo()))
+  // true
+class Bar &#123;&#125;
+console.log(Bar[Symbol.hasInstance](new Bar()))
+  // true
+</code></pre>
+</li>
+</ul>
+</li>
+<li>该属性在Function原型上定义</li>
+<li>默认在所有函数和类上都可以调用</li>
+<li>可在继承的类上通过静态方法重定义该函数<ul>
+<li>因 instanceof 操作符会在原型上查找该属性定义</li>
+<li>等同在原型链上查找其他属性一样<pre><code class="js">class Bar &#123;&#125;
+class Baz extends Bar &#123;
+static [Symbol.hasInstance] () &#123; return false &#125;
+&#125;
+let b = new Baz()
+console.log(Bar[Symbol.hasInstance](b))
+// true
+console.log(b instanceof Bar)
+// true
+console.log(Baz[Symbol.hasInstance](b))
+// false
+console.log(b instanceof Baz)
+// false
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-Symbol-isConcatSpreadable"><a href="#7-Symbol-isConcatSpreadable" class="headerlink" title="7. Symbol.isConcatSpreadable"></a>7. Symbol.isConcatSpreadable</h2><ul>
+<li><p>根据es规范该符号作为一个属性表示为boolean值</p>
+<ul>
+<li>true：则对象应该用Array.prototype.concat()打平其数组元素<ul>
+<li>concat()方法根据接收的对象类型选择如何将一个类数组对象拼接成数组实例</li>
+<li>覆盖Symbol.isConcatSpreadable的值可修改该行为</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数组对象默认被打平到已有数组，false或假值：导致整个对象被追加到数组末尾</p>
+</li>
+<li><p>类数组对象默认追加到数组末尾，true或真值：导致该类数组对象被打平到数组实例</p>
+</li>
+<li><p>其他非类数组对象的对象在 Symbol.isConcatSpreadable 被设置为true时被忽略</p>
+<pre><code class="js">let  initial = [&#39;foo&#39;]
+let array = [&#39;bar&#39;]
+console.log(array[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(array))
+  // [&quot;foo&quot;, &quot;bar&quot;]
+array[Symbol.isConcatSpreadable] = false
+console.log(initial.concat(array))
+  /*
+  [
+    &quot;foo&quot;,
+    Array(1)
+  ] ==&gt; [
+      &quot;foo&quot;,
+      [
+        &quot;bar&quot;,
+        Symbol(Symbol.isConcatSpreadable): false
+      ]
+  ] */
+
+let arrayLikeObject = &#123; length: 1, 0: &#39;baz&#39; &#125;
+console.log(arrayLikeObject[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(arrayLikeObject))
+  /* [
+    &quot;foo&quot;,
+    &#123;...&#125;
+  ] ==&gt; [
+    &quot;foo&quot;,
+    &#123;
+      0:&quot;baz&quot;,
+      length:1,
+      Symbol(Symbol.isConcatSpreadable): true
+    &#125;
+  ] */
+arrayLikeObject[Symbol.isConcatSpreadable] = true
+console.log(initial.concat(arrayLikeObject))
+  // [&quot;foo&quot;, &quot;baz&quot;]
+
+let otherObject = new Set().add(&#39;qux&#39;)
+console.log(otherObject[Symbol.isConcatSpreadable])
+  // undefined
+console.log(initial.concat(otherObject))
+  // [&quot;foo&quot;, Set(1)] ==&gt; [0: &quot;foo&quot;, 1: Set(1) &#123;&quot;qux&quot;&#125;]
+otherObject[Symbol.isConcatSpreadable] = true
+console.log(initial.concat(otherObject))
+  // [&quot;foo&quot;]
+</code></pre>
+</li>
+</ul>
+<h2 id="8-Symbol-iterator"><a href="#8-Symbol-iterator" class="headerlink" title="8. Symbol.iterator"></a>8. Symbol.iterator</h2><ul>
+<li><p>根据es规范该符号作为属性表示一个方法</p>
+<ul>
+<li><p>该方法返回对象默认迭代器，由for-of语句使用；即：该符号表示实现迭代器API的函数</p>
+</li>
+<li><p>for-of循环这样的语言结构利用该函数执行迭代器操作</p>
+<ul>
+<li>循环时调用以Symbol.iterator为键的函数</li>
+<li>默认该函数返回一个实现迭代器API的对象</li>
+<li>返回的对象是实现该API的 Generator</li>
+</ul>
+<pre><code class="js">class Foo &#123;
+  *[Symbol.iterator] () &#123;&#125;
+&#125;
+let f = new Foo()
+console.log(f[Symbol.iterator]())
+// Generator &#123;&lt;suspended&gt;&#125; ==&gt;
+/***
+__proto__: Generator
+[[GeneratorLocation]]: VM269:2
+[[GeneratorState]]: &quot;suspended&quot;
+[[GeneratorFunction]]: ƒ* [Symbol.iterator]()
+[[GeneratorReceiver]]: Foo
+[[Scopes]]: Scopes[3]
+*/
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>技术上这个由 Symbol.iterator 函数生成的对象应通过其next()方法陆续返回值</p>
+<ul>
+<li>可通过显示调用next()方法返回</li>
+<li>可隐式通过生成器函数返回<pre><code class="js">class Emitter &#123;
+  constructor (max) &#123;
+    this.max = max
+    this.idx = 0
+  &#125;
+  *[Symbol.iterator] () &#123;
+    while (this.idx &lt; this.max) yield this.idx++
+  &#125;
+&#125;
+function count () &#123;
+  let emitter =  new Emitter(5)
+  for (const x of emitter) console.log(x)
+&#125;
+count()
+/**
+  0
+  1
+  2
+  3
+  4
+*/
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="9-Symbol-match"><a href="#9-Symbol-match" class="headerlink" title="9. Symbol.match"></a>9. Symbol.match</h2><ul>
+<li><p>根据es规范该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法用正则表达式匹配字符串</li>
+<li>由String.prototype.match()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用Symbol.match为键的函数对正则表达式求值</p>
+<ul>
+<li>所有正则表达式实例默认该String方法的有效参数<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.match])
+// [Symbol.match]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.match(/bar/))
+// [&quot;bar&quot;, index: 3, input: &quot;foobar&quot;, groups: undefined]
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>该方法传入非正则表达式值会将该值转为RegExp对象；如果需要改变此行为</p>
+<ul>
+<li>可通过方法直接使用参数，可重定义Symbol.match函数取代默认对正则表达式求值的行为<ul>
+<li>从而使match()方法使用非正则表达式实例</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Symbol.match函数接收一个参数</p>
+<ul>
+<li>调用match()方法的字符串实例</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooMatcher &#123;
+  static [Symbol.match] (target) &#123;
+    return target.includes(&#39;foo&#39;)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.match(FooMatcher))
+  // true
+console.log(&#39;barbaz&#39;.match(FooMatcher))
+  // false
+
+class StringMatcher &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.match] (target) &#123;
+    return target.includes(this.str)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.match(new StringMatcher(&#39;foo&#39;)))
+  // true
+console.log(&#39;barbaz&#39;.match(new StringMatcher(&#39;qux&#39;)))
+  // false
+</code></pre>
+</li>
+</ul>
+<h2 id="10-Symbol-replace"><a href="#10-Symbol-replace" class="headerlink" title="10. Symbol.replace"></a>10. Symbol.replace</h2><ul>
+<li><p>根据es规范该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法替换字符串中匹配的子串</li>
+<li>由String.prototype.replace()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用Symbol.replace为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认该String方法的有效参数</p>
+<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.replace])
+// f [Symbol.replace]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.replace(/bar/, &#39;qux&#39;))
+// &#39;fooqux&#39;
+</code></pre>
+</li>
+<li>该方法传入非正则表达式值该值会转为RegExp对象；如果需要改变此行为<ul>
+<li>方法直接使用参数，可重定义Symbol.replace函数取代默认对正则表达式的求值行为<ul>
+<li>从而使 replace()方法使用非正则表达式实例</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Symbol.replace函数接收两个参数</p>
+<ul>
+<li>调用replace()方法的字符串实例</li>
+<li>替换字符串</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooReplacer &#123;
+  static [Symbol.replace] (target, replacement) &#123;
+    return target.split(&#39;foo&#39;).join(replacement)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.replace(FooReplacer, &#39;qux&#39;))
+  // &quot;barquxbaz&quot;
+
+class StringReplacer &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.replace] (target, replacement) &#123;
+    return target.split(this.str).join(replacement)
+  &#125;
+&#125;
+console.log(
+  &#39;barfoobaz&#39;.replace(
+    new StringReplacer(&#39;foo&#39;),
+    &#39;qux&#39;
+  )
+)
+  // &quot;barquxbaz&quot;
+</code></pre>
+</li>
+</ul>
+<h2 id="11-Symbol-search"><a href="#11-Symbol-search" class="headerlink" title="11. Symbol.search"></a>11. Symbol.search</h2><ul>
+<li><p>根据es规范，该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法返回字符串中匹配正则表达式的索引</li>
+<li>由Symbol.prototype.search()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用以Symbol.search为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认是该String的有效参数</p>
+<ul>
+<li>正则表达式原型上默认有该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.search])
+// f [Symbol.search]() &#123;[native code]&#125;
+console.log(&#39;foobar&#39;.search(/bar/))
+// 3
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>该方法传入非正则表达式值该值转为RegExp对象；若需要改变此行为</p>
+<ul>
+<li>方法直接使用参数，可重定义Symbol.search函数取代默认对正则表达式求值行为</li>
+<li>从而让search()方法使用非正则表达式实例</li>
+</ul>
+</li>
+<li><p>Symbol.search函数接收一个参数</p>
+<ul>
+<li>调用match()方法的字符串实例</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooSearcher &#123;
+  static [Symbol.search] (target) &#123;
+    return target.indexOf(&#39;foo&#39;)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.search(FooSearcher))
+  // 0
+console.log(&#39;barfoo&#39;.search(FooSearcher))
+  // 3
+console.log(&#39;barbaz&#39;.search(FooSearcher))
+  // -1
+
+class StringSearcher &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.search] (target) &#123;
+    return target.indexOf(this.str)
+  &#125;
+&#125;
+console.log(&#39;foobar&#39;.search(new StringSearcher(&#39;foo&#39;)))
+  // 0
+console.log(&#39;barfoo&#39;.search(new StringSearcher(&#39;foo&#39;)))
+  // 3
+console.log(&#39;barbaz&#39;.search(new StringSearcher(&#39;qux&#39;)))
+  // -1
+</code></pre>
+</li>
+</ul>
+<h2 id="12-Symbol-species"><a href="#12-Symbol-species" class="headerlink" title="12. Symbol.species"></a>12. Symbol.species</h2><ul>
+<li><p>根据es规范，该符号作为属性表示一个函数值</p>
+<ul>
+<li>该函数作为创建派生对象的构造函数</li>
+</ul>
+</li>
+<li><p>该属性常用于内置类型</p>
+<ul>
+<li>用于对内置类型实例方法的返回值暴露实例化派生对象的方法</li>
+</ul>
+</li>
+<li><p>用于Symbol.species定义静态获取器（getter）方法</p>
+</li>
+<li><p>可覆盖新创建实例的原型定义</p>
+<pre><code class="js">class Bar extends Array &#123;&#125;
+class Baz extends Array &#123;
+  static get [Symbol.species] () &#123;
+    return Array
+  &#125;
+&#125;
+let bar = new Bar()
+console.log(bar instanceof Array)
+  // true
+console.log(bar instanceof Bar)
+  // true
+bar = bar.concat(&#39;bar&#39;)
+console.log(bar instanceof Array)
+  // true
+console.log(bar instanceof Bar)
+  // true
+
+let baz = new Baz()
+console.log(baz instanceof Array)
+  // true
+console.log(baz instanceof Baz)
+  // true
+baz = baz.concat(&#39;baz&#39;)
+console.log(baz instanceof Array)
+  // true
+console.log(baz instanceof Baz)
+  // false
+</code></pre>
+</li>
+</ul>
+<h2 id="13-Symbol-split"><a href="#13-Symbol-split" class="headerlink" title="13. Symbol.split"></a>13. Symbol.split</h2><ul>
+<li><p>根据es规范，该符号作为属性表示正则表达式方法</p>
+<ul>
+<li>该方法在匹配正则表达式的索引位置拆分字符串</li>
+<li>由String.prototype.split()方法使用</li>
+</ul>
+</li>
+<li><p>该方法使用以Symbol.split为键的函数对正则表达式求值</p>
+</li>
+<li><p>所有正则表达式实例默认是这个String方法的有效参数</p>
+<ul>
+<li>正则表达式原型上默认由该函数定义<pre><code class="js">console.log(RegExp.prototype[Symbol.split])
+// f [Symbol.split] () &#123;[native code]&#125;
+console.log(&#39;foobarbaz&#39;.split(/bar/))
+// [&quot;foo&quot;, &quot;baz&quot;]
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>给该方法传入非正则表达式值，值转为RegExp对象；若需要改变此行为</p>
+<ul>
+<li>方法直接使用参数，可重定义Symbol.split函数取代默认对正则表达式求值行为</li>
+<li>从而让split()方法使用非正则表达式实例</li>
+</ul>
+</li>
+<li><p>Symbol.split 函数接收一个参数</p>
+<ul>
+<li>调用match()方法的字符串实例</li>
+</ul>
+</li>
+<li><p>返回值无限制</p>
+<pre><code class="js">class FooSpliter &#123;
+  static [Symbol.split] (target) &#123;
+    return target.split(&#39;foo&#39;)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.split(FooSpliter))
+  // [&quot;bar&quot;, &quot;baz&quot;]
+
+class StringSplitter &#123;
+  constructor (str) &#123;
+    this.str = str
+  &#125;
+  [Symbol.split] (target) &#123;
+    return target.split(this.str)
+  &#125;
+&#125;
+console.log(&#39;barfoobaz&#39;.split(new StringSplitter(&#39;foo&#39;)))
+  // [&quot;bar&quot;, &quot;baz&quot;]
+</code></pre>
+</li>
+</ul>
+<h2 id="14-Symbol-toPrimitive"><a href="#14-Symbol-toPrimitive" class="headerlink" title="14. Symbol.toPrimitive"></a>14. Symbol.toPrimitive</h2><ul>
+<li><p>根据es规范，该符号作为属性表示一个方法</p>
+<ul>
+<li>该方法将对象转为相应原始值由ToPrimitive抽象操作使用</li>
+</ul>
+</li>
+<li><p>很多内置操作都会尝试强制将对象转为原始值</p>
+<ul>
+<li>包括字符串、数值、未指定的原始类型</li>
+</ul>
+</li>
+<li><p>对一个自定义对象实例，通过该实例的Symbol.toPrimitive属性上定义一个可改变默认行为的函数</p>
+<ul>
+<li><p>根据提供给该函数的参数（string、number、default）可控制返回的原始值</p>
+<pre><code class="js">class Foo &#123;&#125;
+let foo = new Foo()
+console.log(3 + foo)
+  // &quot;3[object Object]&quot;
+console.log(3 - foo)
+  // &quot;NaN&quot;
+console.log(String(foo))
+  // &quot;[object Object]&quot;
+
+class Bar &#123;
+  constructor () &#123;
+    this[Symbol.toPrimitive] = function (hint) &#123;
+      switch (hint) &#123;
+        case &#39;number&#39;:
+          return 3
+        case &#39;string&#39;:
+          return &#39;string bar&#39;
+        case &#39;default&#39;:
+        default:
+          return &#39;default bar&#39;
+      &#125;
+    &#125;
+  &#125;
+&#125;
+let bar = new Bar()
+console.log(3 + bar)
+  // &quot;3 default bar&quot;
+console.log(3 - bar)
+  // 0
+console.log(String(bar))
+  // &quot;string bar&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="15-Symbol-toStringTag"><a href="#15-Symbol-toStringTag" class="headerlink" title="15. Symbol.toStringTag"></a>15. Symbol.toStringTag</h2><ul>
+<li><p>根据es规范，该符号作为一个属性表示一个字符串</p>
+<ul>
+<li>该字符串用于创建对象的默认字符串描述</li>
+<li>由内置方法 Object.prototype.toString使用</li>
+</ul>
+</li>
+<li><p>通过toString方法获取对象标识时</p>
+<ul>
+<li><p>检索由Symbol.toString指定的实例标识符,默认为 “Object”</p>
+</li>
+<li><p>内置类型指定该值，但自定义类实例需明确定义</p>
+<pre><code class="js">let s = new Set()
+console.log(s)
+  // Set(0) &#123;&#125;
+/**
+[[Entries]]
+No properties
+size: 0
+__proto__: Set
+*/
+console.log(s.toString())
+  // [object Object]
+console.log(s[Symbol.toStringTag])
+  // Set
+
+class Foo &#123;&#125;
+let foo = new Foo()
+console.log(foo)
+  // Foo &#123;&#125;
+console.log(foo.toString())
+  // [object Object]
+console.log(foo[Symbol.toStringTag])
+  // undefined
+
+class Bar &#123;
+  constructor () &#123;
+    this[Symbol.toStringTag] = &#39;Bar&#39;
+  &#125;
+&#125;
+let bar = new Bar()
+console.log(bar)
+  // Bar &#123;&#125; ==&gt; Bar &#123;Symbol(Symbol.toStringTag): &quot;Bar&quot;&#125;
+console.log(bar.toString())
+  // [object Bar]
+console.log(bar[Symbol.toStringTag])
+  // Bar
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="16-Symbol-unscopables"><a href="#16-Symbol-unscopables" class="headerlink" title="16. Symbol.unscopables"></a>16. Symbol.unscopables</h2><ul>
+<li>根据es规范，该符号作为属性表示对象<ul>
+<li>该对象所有的以及继承的属性，都会从关联对象的with环境中绑定排除</li>
+</ul>
+</li>
+<li>设置该符号并使其映射对应属性的键值为true即可阻止该属性出现在with环境绑定中<pre><code class="js">let o = &#123; foo: &#39;bar&#39; &#125;
+with (o) &#123; console.log(foo) &#125;
+  // bar
+o[Symbol.unscopables] = &#123; foo: true &#125;
+with (o) &#123; console.log(foo) &#125;
+  // ReferenceError: foo is not defined
+</code></pre>
+</li>
+</ul>
+<p>  **注意：不推荐使用with，因此也不推荐使用该方法 **</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><h3 id="symbol类型作用"><a href="#symbol类型作用" class="headerlink" title="symbol类型作用"></a>symbol类型作用</h3><ul>
+<li>确保对象属性使用唯一标识符，避免属性冲突</li>
+</ul>
+<h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h3><ul>
+<li>虽然和私有属性类似，但符号并不是为提供私有属性增加；尤其是因Object Api提供方法可更方便发现符号属性</li>
+<li>符号用于创建唯一记号，用于非字符串形式的对象属性</li>
+<li>没有字面量语法</li>
+<li>不能和 new 关键字一起使用成为构造函数</li>
+</ul>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><ul>
+<li>Symbol.for() ==&gt; 重用已有符号</li>
+<li>Symbol.keyfor() ==&gt; 查询全局注册表</li>
+<li>Symbol.asyncIterator ==&gt; 返回异步迭代器对象</li>
+<li>Symbol.iterator ==&gt; 实现迭代器API的函数</li>
+<li>Symbol.hasInstance ==&gt; 确定对象实例的原型链上是否有原型</li>
+<li>Symbol.isConcatSpreadable ==&gt; 类数组对象拼接为数组实例</li>
+<li>Symbol.match ==&gt; 正则表达式匹配字符串</li>
+<li>Symbol.replace ==&gt; 正则表达式 替换字符串中匹配的子串</li>
+<li>Symbol.search ==&gt; 返回字符串中匹配正则表达式的索引</li>
+<li>Symbol.species ==&gt; 作为创建派生对象的构造函数</li>
+<li>Symbol.split ==&gt; 在匹配正则表达式的索引位置拆分字符串</li>
+<li>Symbol.toPrimitive ==&gt; 将对象转为相应的原始值</li>
+<li>Symbol.toStringTag ==&gt; 创建对象的默认字符串描述</li>
+<li>Symbol.unscopables ==&gt; 该对象所有的及继承的属性都从关联对象的with环境中绑定排除（不推荐）</li>
+</ul>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/21.set-map/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/05.object/">
+                
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+		©2019-<span id="footerYear"></span>
+		<a href="/"> 静思 </a>
+
+		 |
+		<span id="busuanzi_container_site_pv">
+			总访问量
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv">
+			访客数
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+		
+		<br />
+		主题
+		<a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+		作者 <a href="//github.com/wujun234" target="_blank">WuJun</a> 技术
+		<a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML =
+		new Date().getFullYear() + ''
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
