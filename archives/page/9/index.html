@@ -1341,12 +1341,19 @@ ECMAScript® 2017 Language
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.4.%E5%8D%95%E6%8C%87%E4%BB%A4/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
 				<h2 class="index-title">
-					01.4.单指令
+					01.3.提案
 				</h2>
 				<div class="index-brief">
-					概述SIMD（发音/sim-dee/）是“Single Instruction/Multiple Data”的缩写，意为“单指令，多数据”。它是 JavaScript 操作 CPU 对应指令的接口，你可以看做这是一种不同的运算执行模式。与它相对的是 SISD（“Single Instruction/
+					本章介绍一些尚未进入标准、但很有希望的最新提案。
+do 表达式本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。
+&#123;
+  let t = f();
+  t = t * t + 1;
+&#125;
+
+上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得
 					...
 				</div>
 			</a>
@@ -1367,19 +1374,12 @@ ECMAScript® 2017 Language
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.4.%E5%8D%95%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					01.3.提案
+					01.4.单指令
 				</h2>
 				<div class="index-brief">
-					本章介绍一些尚未进入标准、但很有希望的最新提案。
-do 表达式本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。
-&#123;
-  let t = f();
-  t = t * t + 1;
-&#125;
-
-上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得
+					概述SIMD（发音/sim-dee/）是“Single Instruction/Multiple Data”的缩写，意为“单指令，多数据”。它是 JavaScript 操作 CPU 对应指令的接口，你可以看做这是一种不同的运算执行模式。与它相对的是 SISD（“Single Instruction/
 					...
 				</div>
 			</a>
