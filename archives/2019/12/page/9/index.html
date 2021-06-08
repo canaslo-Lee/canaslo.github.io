@@ -1238,6 +1238,26 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										面试题类(加密文件)
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/vue/">
+										vue
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
 		</div>
 	</div>
 </div>
@@ -1247,16 +1267,17 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/06.number/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/04.string/">
 				<h2 class="index-title">
-					06.number
+					04.string
 				</h2>
 				<div class="index-brief">
-					二进制和八进制表示法ES6 提供了二进制和八进制数值的新的写法，分别用前缀0b（或0B）和0o（或0O）表示。
-0b111110111 === 503 // true
-0o767 === 503 // true
+					ES6 加强了对 Unicode 的支持，并且扩展了字符串对象。
+字符的 Unicode 表示法JavaScript 允许采用\uxxxx形式表示一个字符，其中xxxx表示字符的 Unicode 码点。
+&quot;\u0061&quot;
+// &quot;a&quot;
 
-从 ES5 开始，在严格模式之中，八进制就不再允许使用前缀0表示，ES6 进一步明确，
+但是，这种表示法只限于
 					...
 				</div>
 			</a>
@@ -1277,12 +1298,16 @@
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/07.symbol/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/06.number/">
 				<h2 class="index-title">
-					07.symbol
+					06.number
 				</h2>
 				<div class="index-brief">
-					概述ES5 的对象属性名都是字符串，这容易造成属性名的冲突。比如，你使用了一个他人提供的对象，但又想为这个对象添加新的方法（mixin 模式），新方法的名字就有可能与现有方法产生冲突。如果有一种机制，保证每个属性的名字都是独一无二的就好了，这样就从根本上防止属性名的冲突。这就是 ES6 引入Symb
+					二进制和八进制表示法ES6 提供了二进制和八进制数值的新的写法，分别用前缀0b（或0B）和0o（或0O）表示。
+0b111110111 === 503 // true
+0o767 === 503 // true
+
+从 ES5 开始，在严格模式之中，八进制就不再允许使用前缀0表示，ES6 进一步明确，
 					...
 				</div>
 			</a>
@@ -1335,19 +1360,12 @@ Point.prototype.toString = function () &#
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.2.class-extends/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/07.symbol/">
 				<h2 class="index-title">
-					08.2.class-extends
+					07.symbol
 				</h2>
 				<div class="index-brief">
-					简介Class 可以通过extends关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。
-class Point &#123;
-&#125;
-
-class ColorPoint extends Point &#123;
-&#125;
-
-上面代码定义了一个ColorPoint类
+					概述ES5 的对象属性名都是字符串，这容易造成属性名的冲突。比如，你使用了一个他人提供的对象，但又想为这个对象添加新的方法（mixin 模式），新方法的名字就有可能与现有方法产生冲突。如果有一种机制，保证每个属性的名字都是独一无二的就好了，这样就从根本上防止属性名的冲突。这就是 ES6 引入Symb
 					...
 				</div>
 			</a>
@@ -1368,16 +1386,19 @@ class ColorPoint extends Point &#123;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/09.regex/">
+			<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.2.class-extends/">
 				<h2 class="index-title">
-					09.regex
+					08.2.class-extends
 				</h2>
 				<div class="index-brief">
-					RegExp 构造函数在 ES5 中，RegExp构造函数的参数有两种情况。
-第一种情况是，参数是字符串，这时第二个参数表示正则表达式的修饰符（flag）。
-var regex = new RegExp(&#39;xyz&#39;, &#39;i&#39;);
-// 等价于
-var regex = 
+					简介Class 可以通过extends关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。
+class Point &#123;
+&#125;
+
+class ColorPoint extends Point &#123;
+&#125;
+
+上面代码定义了一个ColorPoint类
 					...
 				</div>
 			</a>
