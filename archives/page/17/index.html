@@ -779,6 +779,15 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/">
+										清除浮动
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -1247,6 +1256,15 @@
 									
 							<ul>
 								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/css/">
+										css
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/vue/">
 										vue
 									</a>
@@ -1267,18 +1285,63 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
 				<h2 class="index-title">
-					07.计算属性
+					03.指令
 				</h2>
 				<div class="index-brief">
-					什么是vue的计算属性
-模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
-计算属性的优点
-数据处理结构清晰
-依赖于数据，数据更新，处理结果自动更新
-计算属性内部 this 指向 vm 实例
-template 调用时直接写计算属性名称即可
+					指令
+v-bind ==&gt; v-bind:href ==&gt; :href
+v-for
+v-if-else
+v-else
+v-show
+v-html
+v-model
+v-on ==&gt; v-on:click ==&gt; @click
+
+v-if 和 v-show 的区别
+v-if 条件
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+				<h2 class="index-title">
+					05.组件传值
+				</h2>
+				<div class="index-brief">
+					组件间传值
+父传子
+子组件通过 props 方法接收父组件传入值
+
+
+子传父
+子组件通过 $emit 方法传递给父组件
+
+
+非父子、兄弟组件
+eventBus；
+创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
+
+
+
 
 					...
 				</div>
@@ -1329,50 +1392,19 @@ template 调用时直接写计算属性名称即可
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
 				<h2 class="index-title">
-					08.keep-alive
+					07.计算属性
 				</h2>
 				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
+					什么是vue的计算属性
+模板中放入过多的逻辑会让模板过重且难以维护，在需要对数据进行负责处理，且可能多次使用时，尽量采取计算属性的方式
+计算属性的优点
+数据处理结构清晰
+依赖于数据，数据更新，处理结果自动更新
+计算属性内部 this 指向 vm 实例
+template 调用时直接写计算属性名称即可
 
-
-
-使用方法：&l
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
-				<h2 class="index-title">
-					09.过滤器
-				</h2>
-				<div class="index-brief">
-					自定义过滤器
-过滤器接收表达式的值 msg 作为第一个参数
-capitalize 过滤器接收 msg 的值作为第一个参数
-html 代码：&lt;div id=&quot;app&quot;&gt;
-    &lt;input type=&quot;text&quot; v-model=&quot;
 					...
 				</div>
 			</a>
@@ -1424,7 +1456,7 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/archives/page/16/">&lt;</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/15/">15</a><a class="page-number" href="/archives/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/archives/page/18/">18</a><a class="page-number" href="/archives/page/19/">19</a><a class="extend next" rel="next" href="/archives/page/18/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/archives/page/16/">&lt;</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/15/">15</a><a class="page-number" href="/archives/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/archives/page/18/">18</a><a class="page-number" href="/archives/page/19/">19</a><a class="page-number" href="/archives/page/20/">20</a><a class="extend next" rel="next" href="/archives/page/18/">&gt;</a>
 		
 	</div>
 </div>
