@@ -1331,28 +1331,19 @@ hash 不会重加载页面
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+			<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
 				<h2 class="index-title">
-					基础
+					钩子函数
 				</h2>
 				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
-
-
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
+					
+可控制导航跳转，beforeEach，afterEach 等
+一般用于页面标题修改
+需要登陆才能调整页面重定向
+beforeEach 的参数
+to route 即将进入的目标路由对象
+from route 当前导航要离开的路由
+next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 					...
 				</div>
 			</a>
