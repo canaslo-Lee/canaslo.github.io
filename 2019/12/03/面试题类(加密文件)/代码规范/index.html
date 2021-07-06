@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		name="viewport"
+	/>
+
+	<!-- title -->
+	
+	<title>  前端代码规范 |  静思 </title>
+
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	 <link rel="shortcut icon" href="/favicon.ico"> 
+
+	<!-- search -->
+	<script>
+		var searchEngine = 'https://cn.bing.com/search?q='
+		if (
+			typeof searchEngine == 'undefined' ||
+			searchEngine == null ||
+			searchEngine == ''
+		) {
+			// searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = ''
+		if (typeof homeHost == 'undefined' || homeHost == null || homeHost == '') {
+			homeHost = window.location.host
+		}
+	</script>
+
+	
+<link rel="stylesheet" href="/css/main.css">
+ 
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+ 
+<script src="/js/main.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+ 
+	
+	<script
+		async
+		src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+	></script>
+	
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+	<script>
+	var _hmt = _hmt || []
+	;(function () {
+		var hm = document.createElement('script')
+		hm.src = 'https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1'
+		var s = document.getElementsByTagName('script')[0]
+		s.parentNode.insertBefore(hm, s)
+	})()
+</script>
+
+<header id="header">
+	<a id="title" href="/" class="logo"> 静思 </a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/" class="menu-item-link">HOME</a>
+		</li>
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+		<li class="menu-item">
+			<a href="/links" class="menu-item-link">LINKS</a>
+		</li>
+		
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+		 
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+		
+
+		<!-- <li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li> -->
+		<li class="menu-item">
+			<a
+				href="https://github.com/canaslo"
+				class="menu-item-link"
+				target="_blank"
+			>
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										html
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/html/html%E7%AF%87/">
+										html篇
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										demo
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/demo/%E5%88%A4%E6%96%ADc3%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%8F%8A%E5%9B%9E%E8%B0%83/">
+										判断c3动画结束及回调
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										es6总结
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.1.es6%E7%AE%80%E4%BB%8B/">
+										01.1.es6简介
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.2.%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5/">
+										01.2.参考链接
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
+										01.3.提案
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.4.%E5%8D%95%E6%8C%87%E4%BB%A4/">
+										01.4.单指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.5.es6%E8%A7%84%E6%A0%BC/">
+										01.5.es6规格
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/01.6.%E7%BC%96%E7%A8%8B%E9%A3%8E%E6%A0%BC/">
+										01.6.编程风格
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/02.let-const/">
+										02.let-const
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/03.1.array/">
+										03.1.array
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/03.2.arraybuffer/">
+										03.2.arraybuffer
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/04.string/">
+										04.string
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/05.object/">
+										05.object
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/06.number/">
+										06.number
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/07.symbol/">
+										07.symbol
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.1.class/">
+										08.1.class
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/08.2.class-extends/">
+										08.2.class-extends
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/09.regex/">
+										09.regex
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/10.1.generator/">
+										10.1.generator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/10.2.generator-async/">
+										10.2.generator-async
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/11.1.function/">
+										11.1.function
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/11.2.fp/">
+										11.2.fp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/12.async/">
+										12.async
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/13.decorator/">
+										13.decorator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/14.destructuring/">
+										14.destructuring
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/15.iterator/">
+										15.iterator
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/16.mixin/">
+										16.mixin
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/17.1.module/">
+										17.1.module
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/17.2.module-loader/">
+										17.2.module-loader
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/18.promise/">
+										18.promise
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/19.proxy/">
+										19.proxy
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/20.reflect/">
+										20.reflect
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/es6%E6%80%BB%E7%BB%93/21.set-map/">
+										21.set-map
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										功能
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/cookie/">
+										cookie
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%86%E9%A1%B5/">
+										分页
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8F/">
+										列表排序
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D/">
+										获取地图定位
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E5%8F%8A%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF/">
+										获取当前页面及浏览器相关信息
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										红宝书4笔记
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/js%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%8E%86%E5%8F%B2/">
+										js简介及历史
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E5%85%B3%E9%94%AE%E5%AD%97%E5%8F%8A%E4%BF%9D%E7%95%99%E5%AD%97/">
+										关键字及保留字
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E5%8F%98%E9%87%8F/">
+										变量
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操作符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/01.%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										01.操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.一元操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										03.位操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/04.%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										04.布尔操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%93%8D%E4%BD%9C%E7%AC%A6/05.%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										05.乘性操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										数据类型
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+										01.数据类型
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/02.typeof%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+										02.typeof操作符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/03.undefined/">
+										03.undefined
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
+										04.null
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/05.boolean/">
+										05.boolean
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/06.number/">
+										06.number
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/07.string/">
+										07.string
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/08.object/">
+										08.object
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/09.symbol/">
+										09.symbol
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/%E8%AF%AD%E6%B3%95/">
+										语法
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										styles
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										demo
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/demo/%E6%95%85%E9%9A%9C%E9%A3%8E%E6%8C%89%E9%92%AE/">
+										故障风按钮
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										常用工具
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E5%8D%95%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9C%81%E7%95%A5/">
+										单多行文本省略
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">
+										水平垂直居中
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/">
+										清除浮动
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										uniapp
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/uniapp/uniapp/">
+										uniapp
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue-cli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-cli/%E6%96%B0%E5%A2%9E%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4/">
+										新增自定义指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue-router
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/route%E5%92%8Crouter%E7%9A%84%E5%8C%BA%E5%88%AB/">
+										route和router的区别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1/">
+										动态路由
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
+										路由实现
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue-router/%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0/">
+										钩子函数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vuex
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vuex/%E5%9F%BA%E7%A1%80/">
+										基础
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/01.vue%E6%98%AF%E4%BB%80%E4%B9%88/">
+										01.vue是什么
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/02.mvvm%E6%A8%A1%E5%BC%8F/">
+										02.mvvm模式
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/03.%E6%8C%87%E4%BB%A4/">
+										03.指令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/04.%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+										04.生命周期
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
+										05.组件传值
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+										06.数据双向绑定的原理
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/07.%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/">
+										07.计算属性
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+										08.keep-alive
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
+										09.过滤器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
+										10.css只在当前组件生效
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+										优缺点
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/vue%E5%9F%BA%E7%A1%80/%E5%92%8C%E5%85%B6%E4%BB%96%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8C%BA%E5%88%AB/">
+										和其他框架的区别
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										配置
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%85%A8%E5%B1%80%E6%8C%82%E8%BD%BDless/">
+										全局挂载less
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/vue/%E9%85%8D%E7%BD%AE/%E5%BD%93%E5%89%8D%E9%A1%B9%E7%9B%AE%E5%8A%A0%E6%A0%B7%E5%BC%8F%E5%89%8D%E7%BC%80/">
+										当前项目加样式前缀
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/24/vue/%E9%85%8D%E7%BD%AE/%E7%94%9F%E4%BA%A7%E6%A8%A1%E5%BC%8F%E9%94%99%E8%AF%AF%E5%AE%9A%E4%BD%8D/">
+										生产模式错误定位
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										工具类
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										git
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/ssh/">
+										ssh
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/git/%E5%91%BD%E4%BB%A4/">
+										命令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/hexo/">
+										hexo
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/01/%E5%B7%A5%E5%85%B7%E7%B1%BB/sourcetree/">
+										sourcetree
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										sublime
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/11/28/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E7%A0%B4%E8%A7%A3/">
+										破解
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/sublime/%E9%85%8D%E7%BD%AE/">
+										配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vscode
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/04/30/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E5%85%A8%E9%83%A8%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/">
+										全部基础配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/18/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/">
+										自定义主题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/10/11/%E5%B7%A5%E5%85%B7%E7%B1%BB/vscode/%E9%85%8D%E7%BD%AEvue/">
+										配置vue
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										win10
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/win10/bat%E5%8A%9F%E8%83%BD/">
+										bat功能
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/04/30/%E5%B7%A5%E5%85%B7%E7%B1%BB/win10/%E6%9B%BF%E6%8D%A2%E5%AD%97%E4%BD%93/">
+										替换字体
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/11/28/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E5%89%8D%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE/">
+										前端环境开发配置
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/">
+										抓包工具
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										面试题类(加密文件)
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/ajax/">
+										ajax
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/css/">
+										css
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/html/">
+										html
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										javascript
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/javascript/es%E9%9D%A2%E8%AF%95%E9%A2%98/">
+										es面试题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/javascript/%E4%BB%A3%E7%A0%81%E9%9D%A2%E8%AF%95%E9%A2%98/">
+										代码面试题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/javascript/%E7%90%86%E8%AE%BA%E9%9D%A2%E8%AF%95%E9%A2%98/">
+										理论面试题
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/jquery/">
+										jquery
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/node/">
+										node
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/sass_scss/">
+										sass_scss
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/vue/">
+										vue
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/webpack/">
+										webpack
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/wechat/">
+										wechat
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/">
+										代码规范
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										浏览器及性能优化
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E9%9D%A2%E8%AF%95/">
+										面试
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	代码规范
+</h1>
+<div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" class="leancloud_visitors" data-flag-title="前端代码规范"></span>
+		</span>
+	
+	<span>静思</span>
+	<span>2019-12-03 10:18:12</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true">
+                        <a href="/categories/规范/">规范</a>
+                        </i>
+                      
+                    </span>
+                
+            
+    
+
+    
+		<span>Tags：</span>
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a4ba441ad0ed4e98819f0bb978a1207932aa0d766f9e1740d827c10fa5b2ef7e">c3f9f4e056c834de07221efc9ebe8f92361d7c5d7d8a59efbe3fd20df12e62794aeb538259b96ce3d4b25d69f552fbd6fd281fc1d41aa5417fdd1ebbb2d3e5c95d61f85af36b85a8522bc1c10f2e135a37e1a48f1c061a34162f6ff830807e3978c8c5fd86c9044c55ad33a80366eab379ecaa0cbade2f0fb23ed7224bd968f3d80e5e7a62e7dce02c6551d666963e93d66aaf1a59bd7baca36d1f1f28e821ff9a4edb003bc1f7fe75bb47fbb178d41e8a26b5d9691d83573631f553c0cef531de1d890a3b8b7aa0ca2f13e052f80d8afd251beeb5e233adffd90bfef9e3a55d074a44f492d6ca08834a13bd2a99403b91822cd13d06ed8405abf68ccbf1eb43e3cd3ca8256c7c27125b35ffbc3fdb2a0e75182f1d8e3f2544dd8ca69856291124009b6db82a87c9f60b22c2d37e7a60cb0c549a787fea17e009fec0805c5ee06cf27431e9981d8052269bf3110662199a4ddd105f1bd176df88640539f0eecaa23be09948af20b0144e745145f7bd38e4c641e7427b3ed1174448d09ef4072be83c4ed673ed350e55870946b014c460100023acda59bacd4b8f1d1aac8ac03718e7aefce6e873d167ef5f7e6bde33ddbb9ddf4d5f67f769cac1d4f8fb9e5f25edffd964487042224c7b13f6e4603de6952a3919e36d8c8bf9e832aceeb89db940bb9e1766f54a0392f8f66eed9b9a9d2d2f54548b1271942b5309048c095aa77cae4f4e5d8a2c042deb102cb419303173b0365c4c8658870c5805e6b29bafab44576d9f286df4eabbe093f353dc52d76580e7e0fb54f3d4446838f14842d3dc7dec5870ee95aac883925eeb22fd5ba05009a8e3e75969f81d0140b6addf07d73eaf2d816af797ae92295b58cba3e58ab7dbd48efbf4248199f147d0eb35783dbf37caf5f8dd6f7aac5be4a4007c1002b4c9b64529d5e12a5d24fc5a7351dcdabadcf3915bd78832aaf09f63f23ffef2a5de4583d0473b3c8d4ddcdfbc99a1fef311ff3ea378a78335f347abeb56aa495bda8cce54b10152c686ebf8b70d42a9d7602fd7ec737a9c8476f295c9f236b1321e0eedb65b55fb9a342e3e2546eeb21ef7fa0eb2e2e9fec1ee88fee56f29658a400c8671b1d9c69d2b215bca340de6436ae1031125e038ac66976a491a273ab918dd138a77353a540239ebef7e3ab1bf6cab21c758ab2c43d40260cb5b3b4ecb4242b67dea0005b2924011041b2884abb566a6cebf9abce7a840fc4ee247a0dc92aec1452da0278b17acb60e4ee6f0eee240c9ad8f1e6571afcdb964a13bb02e0f8770378bb81b69811e928f282770a0feb77beef3fa2ff85edd3ec3b2d5e3706219ef2ea2e7a3346620e3c63e8ad9c7868f6a932d6a70b94eba4f578b03386960770b0e6b6b7c24d465d849cc6b89cd7c29dee06a7459a4ffeecea51205be6dbee3e3d77c5e9a5ec085f7aac62e6142bf672fe7169eb00811ed575587886592383bf9a216df9e84bd4d5c43f15b122141d9a19a6312e94a3397d6186cf5a5e91849859082e496a916d52a45ceef421dba70c233ca73367c5adcaf66e78abb0c487e94468834adb8b049a8a9a7aa36b0fd211b9df15001fe14977ddbfc7d2102b45955529d419bd47e8b86a4895474a04fc7c56ced18effc8a9ef7127f511aa5a6081c60ea2cbffbb9a309308017cf00500a917de730c3a812186884d05ff239f990617197708c866671ac8b19b0b6343dbf8dd31a03b12e37cd3ef0af5ede9c83a5384a1b60dfc2d3d56063a8a04da1e44e934fd9f03ca0018a2afb664219419298621095079e0aff4759c5bae9490c6ab94ec55256fcd214e32f58bb12d834ffd6e21a42fd8e782072bbee0d5a7bdcc05f9ced3b0578c9454c3c6e2feadb632044fc56230aaac97dc6d7a5eb632870d57479a71aa21e935dc7d4268a038286b2344541652bb0f24fb7187e481a7448f7663c61ad8ec396376bc549de30d2e3ee66c17e57da8bc729eeee9f9bbbce70df5ad69c560e454f6f4f37758f4fba5be8f42530f9f9a5f7510fc5d352627dd783de0da278ee9203bfaad15ef818d480a94005c8530197392b9b3f33b3e4f08656d06ea8c2d2f28bf6cccedadc1c7c845119fd877b186d3e3d1c418ab4e15bb8b68921696f734a62c123f551da164dabfcae47716730277777560130e13d97fbd8f09a97087c128533b27a2b235b3a84d66a0568081f1608d070c559c3472c19f63fccd573f5894452cfee1d280f8f8c592f9d63a0ae7c454bbb6b93d757177b799886f07f33f7cf3b3f137376096f0b15086f4c0cc0e5a214cae861f1fefa5c9f956c1230ff5db60b734ccdf6726d4e7bf696aa9691e7dba54da5eddcf6e50c62099c5dfb477719d9ea39b62cc13ca0e768c778f14639f83f999cb1312596220c55ee2387b574abe9e0c143d576a16ed26f0d57712471534935bdc17af072af6060e3b0fd20375cfd0b60689e6dd0996bae9ef59e4aa2f8de2d89dca275973d8b4480acde03f672f46320a8b12c481b97f7af5d12e901b46adfd0dfb96479c0a12516e2bc315ff5e52432e6b306490b4fab3eea0ffc573d29fa5827d7fd604781520c261588bf698fcd0f5c490779b6d6c458d7476f534a81fc7b8debab314b50c5209db3207a05db839ba2ae1dba7967cb8eacb12cc3fda3af6927cc5e137e783ea7fde05b806c7fd12cd049991d04a2577e207f8313c233549e089bde671aeb664c48bd1bff7b795c4488b1553f69f973df926466255ead25b61a983f4787cfdf657d8fc1f571c421bfaef10209dadf35a86f7ce3aacd31cf03fe00006df98e612aeaaf09965ce080901e686fb2172e7b2499d72910370dfc6f0829f8672a711b911020c702b8c39db83431d8cdb25c7603f3cd7ce4c7cf7a2c8b4e21516abb7b8630c0ba67ff8f6812be60d1b7d55893a9470cd473abe9838e9c95403ca2b31b94024027561aea2370b85da8553764f507f5e6db7575676db78b7674c4a741be7b892725c056e43e54c4e87bb9dc0e3dbea64cf005742cf29468b5dfce4bc61a4bbec6282c0769294212b16528790133e8877b7b072219a48df4f4df51c5e833eb98c45211acf50b4b3d5f834c54d7a61f05a955ca0477571eb0a35fbd6ae562859aef8360d17607d3c74bf134d48eca69c1473c529c47c3d49549b43110ae900fcc810c546a743c1649df388be7d5e82e5a265e7fad49adaaf62fc37fcaf7d0e3bec95a1ddee573d70a99527460866f3d93c97e6405c0a7b4f6e88ebbad32468923930d0038aed0d638425f9382b3c4800c4e6a2ec7b26d4dd8f3356f4d221de10d9513a363a3c97166f8ebb3134617639a32013971ca57c077a8b7ebb54ffcd3e85f097b6caa875feb9587d392474068fedecb43195e135248d9951fc3f692d29d5fd23499e6a54b7cd62b1062e13910f13a1929101afb47e3d0931f956e0b0c4c368efcb87628dc3444795a4a5e1fec0c12fb52dd54aad37f9387972f3a3c4af4a0c9b67138f4fd2608e927d9abf80159fb30727a37e1320f81a63b877f6bff568eec736fd222789a4a547689e6f001bc38e266878cc15b99f337e6b2beaff8fccf61e261c3a2956e36a5ee274925ae139b7ab59927d9985370bbd61360e47954bbb732068ecca2ff3b132bc03c9c9e811eb062886813204aecd0a72e2a8edb9f5b8cb57c974631c7ff37e400efa83bb80a62d3db32a3ecb160cd1f8dec83d84ba9623be450b16daae042776e76739bf2931f66c15f5ce4fddd81771f78ad67e21f442c49113839e05b8c0261af3cce951ca2c0e84a4a51f15461f166e542ccf71385242e1816dde1f814956264377d495d8ed242217f4656b8b734c0e39276893caa279ee23dedef277626c7d5698e51e907df9ae2ee7f8b8d94b150b972868fb0038e2cac264368d34c79f616dc336f7167faa801f52b5e5912b7975c90a41816b3246731aaa15c0679b6f44b3146d555441400ca72f421ffd18d909073edddbba0d0d0b4937c09b75d264513372f15cde1a86f27f63f88cef47b65ddd1607420567cc058579044f3f05a26c53bae7d7688f8432c9b6694ba69d1af29c1363ab3a348293530e04cf1f6b57d11840a385e2094484ef8e7381457cda1d4f2e5a21a1622de865f74af0785511b22b1daaba1c615d71a3d6a635aa1ddf6cf7ba16669f3857a46ac209f5d8b5b58d8a6f948709d952a1dde685daf23b485a5ec5aebe018e9a3807187d25f546588b09282827458f303e734150813cbba628cffda7dafcb700041bcaebaf3689dcd1aa93c8d86c23088425ab13dd366546cc6875e40121b0b9136c8789daf9f794e91681a567c306da7b1d29d7b53c88aa8967c033d49cdabf33ba6e4adb4e66b86583f5aa16600137aad8bb1af732ad804014c1aa63e7d345994e89a767fed331e45d08b3b9a670ec2d06cd0b6b16724ef82fd2de9630128ea70d4a6521e6cf9093ed973a6e6d3301ca993b05c390bfa74bf70e337a1af610835855be5d6a0c5f5f0be78cb0a65528a96e907a2e43473b17ee253293de908a9854e1f840c78db55e92249b6786471be8338d7f4410004c8372c093e8b76c6d30a08bd162ae805f4eacd130d023aa7ddb214b913bd0896fd766cc43e4443c9e01c88bf03955ec15d8acc3190f1e18a61e3ddae78e70d14577fe00564fde19d8c161849a87b0772406d8845888e85f0689884529ffc162bff2e0c03939122e8230dfd5a432c8587076add0bcf5dc81a709744b49d38dbb38fdbf5fd444cd4de88a54543d6ccfdba3e5001a1e4f3a0d46e6709ee75102904849f8d33c6fc8ca7db4f055841a34fb4f3564ef8860330c8610a804495eef1a3cba99244565b59e76ac60bb42e978b71aead4d1b8b9d2dd10be9923e6acf75acd75dbcc1da2acfe0428307e5dfdb7a2f21feb3e5326f32699618c97a68ef714a4c6f5db0aa2056e80f5efdb664362690cb17304a44a13c8d47e9a85afab97429fc37e66e87218d495627b563d7a89446739c5b2e2c808818fafc00cb4c0dee16a6a60816b64c88aa35c15fdc53d03f0328791b6aa8ae0389740621e5fa82df734ef7d9e9ca942cb8ac1164ec37e4c3373e1de289892d8b447da89474d8fff64d5d7dea5110f38b44a4dacba4632da118813bfaff3c4f763b76d1720df4024db77d1f37b1297cff6c0171659723a574822f518deaaf5c90a1acfbbb50a95214db429337ff3c04c11c453eb7a5f7c403f202e748985a23c6c2e9ff96c1ee13604650bb1feaa853b3dbf025e42752da47e813ac3343b06cc8fccf0f75ba4a5fdadddfd4a0f2bfb09a210d3069eb9743e6bdc608c2abb865e3e9b856d3da2683804f38f36c5fa1980ab8545fd0297aebe4ab9cebd2c97cc3d4fc84caa133b6a121452a6eb53ecff35459138837c4da29772772c9688dfe14066862b905bcb0221a1fd112ea81a69d00260c5c09fde58f52363337b9beacf9bd25f9404da8b543524d63f76aa522f4c22a26c268c3aa32264b87e3b657bc633b60ecb2af629c8f2178538e6a7256e3d039cbb0c7c51ed67e43350f4c0f69b9b12b7cc32bce8de61009e5d4e6b0ba43cca54bf9dfda8b3cf8bc16e86cfc579d4a312e37d034dd173d9a0f3f222553f7cfa945ea98b5de592efb0e0e801aeb23db307ccc360e8e94d91d8c60d2872cd0e088879877f26f8ba082c71c31899ec610a9f55d3ab575043556e22207b5464897d2cd26e7b9e635afa9ea8544465a54098ab5250049d62ec5e109f43d75c41fbdba579fbeab69828dc9c418719b64c015ff4e56d0d8b16ad0c5c542307cdea05b14475a63a772484ff209490d9f141ff0c47affeb15ac749ce4117863187a22fdee1b2d0852315c2bd53460b87e0007f1d3ff3b13c6a33260973f0ecc0a65b55bc6bb02ea50dde4d7593d7c7b4b67fc961e2ac5b1e09ca4fcf06040ca332a27ccf13c9bc6363a9844eb29b7fc6a61e6bc39ea832f9ea1d8eccc54cc7fb225b4bd0a86a74642a99af4243591947b864ee1f8ba522fab48ed14b78b7842073417060672fdbc889b52a8e12563b2c07107cff9b23c95f0beb7514322a8af3c7e7c3bb7441baebc5869fcfb2123068acc240367eb4bed1d46b492061f8850500ac9098cf46d2cc26e33f6a6be917979d31d94f55bfea80ca631e66844633d984e61fb8a4402027cf3083826c48c500da9f5325123ce5a26c2da51cf422bcd486331727b068773289cae067a88a1c90ebf9ca930a47d092037e52dc00a71e6e46f0feb76b0b1f6aa5e7180e332a9fc653b84beac21d0b873f9c69715c2d31a18957657b012b08439cb39527415730f27ad0de7bca0af69561122cdaec19904e6a847cfc422d200c9cd54757e3619d1c93975dfe5790daf0c3fe949cdf010fb6f83f17987ec60bbde3dcb16a6cbb74c232635ef3aba250dd1d025aae780177eb474ba92297d5f9096d735e532d6d9c5d3dc19915906240e8300eeccb27b7bdb78e96ef7d0db55fd76a877102a57e81755b2ea9bec3fdd509d79179e96c73dc51cd3d2ee09580ab9c80c75616a7080c6c2da308ffa541b8d323e6121b97e6d20b98fa73636bbdf28bb12bf7b26e15af38beeff97215c14193124dfdde0b82a457394243fdad73252480e6c200b8f684d913de29f98f76837a481fa1d8976c014c10e3d5d104f8ada1011454bca99f1cb53fc6ea33ee4b9544c86c9e144fc1a5fac061e9ae042be412fdefb87daa95ef9dd2ac6949cc13f45e13159c7c9fd1a0510bb44b163b55c32dd91b29de222dc0557cb61283509e6c8883ff992a6e96a5375162fbfe8e7c8461105ba1fb4bcc57d5199e36f101d8374c9684ae4cb95a1649f1490f95d8464640adf425ece3445705cccd79bbee76e7185dc651d93a75c5b541bf5b01a4577fc783f8ebb0d086b0e32fc13d35d9d63d3a501a0fb9a33de09a2c77cd5494e963fb99d8b52390d7f2bdb7b422748647c146251d9d12061ae09b574e8258d35fb6f70d5fead1e7a1e0b8684ed1c24cc14bdc111e2f4ffb99ec8251778d15b6be814a8540f9a8b5dd562e38512fbf7292b9d3b5c5c9201239a49429bca6f2a0c37b6687f361169432fecdb4ecb8c3bdb7a6f40e67197da7a2650de23368c310fd60ba8032bcc3394ad663dd81f1b9d7ebc4f62add06f57b6ccb0cbe3c7f87494a17e525d5799fed958a34e334eaa08c991684984c4f79ea1e30ed42f06ddfeef40b21901d2f3959bdf7710aaa9f011087ad8f1f080e824bac269022be0358b1b9ad2cf831a27a95a29ead403d569cc44e71264bd24a4fd62a10c54e09ea6bf0109d12f095f709c4a9b4d2835244deb3344a33f334e5d9c9ab367c59086ad3979cfd52c8b5784e7d30f0f7e00b5b0c18e902906f961dfe92711beebed74ea3de4be3ad439bcf0ee9001ee058fe782f335020bd8b85c2650948e03286c15b24dc279f2e2ab488b84463f9cc4d17ffbc6b542cf19868e1d62b727c1910866978d97f71e5a85c2939f884d508648fa664c6762bf426c1147a9e9acf897a4e5c5a2fbecd2b702c31c601e0199caf4fa66b6906e0019a8ceb7b82faa81159d5f743cd2cc9d0788b2c908d517eb33d3ce3e01010c8ca00c5f5a004a42927188e958f7e2b67b51ac33e5ccab333066c7cc4b9b173a6c4776704d2cf322c3e4f9473a147a36a4e00b7706a9c072de6ec00d2fdb7c85649c2f51b8245c01ad49c3a85c02d6e48bc4bb2d15dd8c835543d72a39febec5694af62956fe22a63dc184fd6cd6aeca2cb61847202aace1461f93fdd6fb80f655223140fcacc117c14b4ef7733ddd3da68b1145848f25fdb21586b1d66015951a155475952c151f4e7bbafb42ba117b352c2995e05b60074bad025a244c939e95c7dcfd07b64bd6123fb8d6d653856802e2f07908ba961d80459f3cca42f47cba40f5a527dd28be01a1abf73d6796e583769d47521ab501b339c73e83589f51f4d1ccd9c45f5dd807926e3803bee65f069b45fd833895fdd4248df50469922f882f3d168ed0496d6f80ece52d5308742cbbe2213fc35f2fca6b82f9c6188cc2efa1eb7d8ef9509b9000dd2af21359704808b3c8013880599f61c963fce9062f2919741a56468f154d034c64b41f4413af809287ad8423223c695f5aec0d9b5a8107a501504901267cff6611667d7a95cc9a07b2c079476240e1178cf813626d1ca68cbc77dc1208f561b7eb5e7c60615e0a44738efe3bcac27bc589f98b0e4190723f1d3004ca93d42dd685a9a81a6371b67194b5244d5b16f269eddf579309f49a6ef2d1a9beb4b3c0c4c0ba2fee7127607f69a5d58f26d9e709b2bb66dee651b40d72131b72345d374352c8539c53cecaf1f27a42addac3ed4206dd02c806c1ce3473950c177ab30d88792bc2495c717ce6c5f43f34f95b08b2cf50f23d7c4939fbf6fd764e6794bd94fa9f574f02a254f848bc1f8c8ab54b4e76034035e844ed4acbd111839fd09ece2802df1f59f3fbc57a0064908f16da66960907d99373ff848f7d1243050ec55566b4a42eab14f4188efda7ce2f6f9fca1118217dcbc3fd91540dfd2845276c0d762391786ef2401221017860351989e830f21d57684b318028948ba355007427225b680ccdc4ac8f4fb20ac4940bb5f0ada6d4bb5dfb6a80ae5b6fe3e21838dc3b7171d63dd31082306397deddda188ab0c246873dcd70e9fb4865131064faec620fb54eb3226a39a3ab2cfb1f83b9dd3ce8412f2fdd9a4b538ee9b9b8d9cf93088c6313b980f4e9669b82ce3664cfbc670cca350d99c35a53949b8d2c30371926a148c8a144a570234ab766b675450569f7e941f25707fbcb056fcb0dc88859956a13642f4ed01712f40685a6fe51a8de70326a5381070ddf36aad553f583e0a47bd52002860a2fbd634f8090b62c08d3cddb9189f91958b4c19455dc065d96c5604e96039c711ce6f956abd3bdbd707b99723c3be12baf91862e296b9e25287b0f2a3d975cffad99e1e2a71986226f80478c58215d2aeac9bd2fafb3c347eabcf8a1305f5b53761c7f662d9d99b2cbd4713084fea595cef0bb440a893905d01fcde6670a9e5b81e24ed076a49ad262c2ad9f8a578b54b710645c577a695259c42d98df9665857cfda1e917ca3ba485a8c2054f2c1139e38200d8bbec2e2dde434a5d5c0e3991ef9243a1</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">您好，这里需要密码。</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2019/12/03/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/wechat/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  wechat
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2019/12/03/javascript/demo/%E5%88%A4%E6%96%ADc3%E5%8A%A8%E7%94%BB%E7%BB%93%E6%9D%9F%E5%8F%8A%E5%9B%9E%E8%B0%83/">
+                demo
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+		©2019-<span id="footerYear"></span>
+		<a href="/"> 静思 </a>
+
+		 |
+		<span id="busuanzi_container_site_pv">
+			总访问量
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv">
+			访客数
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+		
+		<br />
+		主题
+		<a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+		作者 <a href="//github.com/wujun234" target="_blank">WuJun</a> 技术
+		<a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript">
+	document.getElementById('footerYear').innerHTML =
+		new Date().getFullYear() + ''
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
