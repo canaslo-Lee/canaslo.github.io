@@ -1516,21 +1516,20 @@ html结构&lt;!DOCTYPE html&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">
+			<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/">
 				<h2 class="index-title">
-					水平垂直居中
+					清除浮动
 				</h2>
 				<div class="index-brief">
-					
-绝对定位 + 位移
-.parent &#123;
-  postion: relative;
+					.clearfix &#123;
+  zoom: 1;
 &#125;
-.child &#123;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+.clearfiex:after, .clearfix:before &#123;
+  content: &quot;&quot;;
+  display: block;
+  clear: both;
+&#125;
+
 
 					...
 				</div>
@@ -1552,20 +1551,21 @@ html结构&lt;!DOCTYPE html&gt;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/">
+			<a href="/2019/12/03/styles/css/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/">
 				<h2 class="index-title">
-					清除浮动
+					水平垂直居中
 				</h2>
 				<div class="index-brief">
-					.clearfix &#123;
-  zoom: 1;
+					
+绝对定位 + 位移
+.parent &#123;
+  postion: relative;
 &#125;
-.clearfiex:after, .clearfix:before &#123;
-  content: &quot;&quot;;
-  display: block;
-  clear: both;
-&#125;
-
+.child &#123;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 
 					...
 				</div>

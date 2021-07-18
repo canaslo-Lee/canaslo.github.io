@@ -1448,15 +1448,20 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
 				<h2 class="index-title">
-					06.数据双向绑定的原理
+					08.keep-alive
 				</h2>
 				<div class="index-brief">
-					原理
-采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+					对 keep-alive 的了解
+keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
+vue 2.1.0 版本之后，keep-alive 新增两个属性
+include 包含的组件缓存
+exclude 排除的组件不缓存，优先级大于 include
 
-把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
+
+
+使用方法：&l
 					...
 				</div>
 			</a>
@@ -1490,40 +1495,6 @@
 计算属性内部 this 指向 vm 实例
 template 调用时直接写计算属性名称即可
 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
-				<h2 class="index-title">
-					08.keep-alive
-				</h2>
-				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
-
-
-
-使用方法：&l
 					...
 				</div>
 			</a>
@@ -1583,6 +1554,37 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
 &lt;style scoped&gt;&lt;/style&gt;
 
 
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
+				<h2 class="index-title">
+					优缺点
+				</h2>
+				<div class="index-brief">
+					优点：
+vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
+mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
+不支持低版本浏览器，最低支持到 ie9
+不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
+首次加载首
 					...
 				</div>
 			</a>

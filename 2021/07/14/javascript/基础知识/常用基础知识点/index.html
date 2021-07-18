@@ -1732,10 +1732,12 @@ console.log(new Parent().lev()) // name
 <li>继承更像是函数的功能用法，如何用函数做到复用、组合，这些和使用继承的思路是一致的</li>
 <li>原型式继承用其函数复制内部对象的一个副本，这样不仅可继承内部对象的属性还可以把函数、对象（内部对象的返回）随意调用、添加属性；修改参数即可改变原型对象，新增属性不会相互影响</li>
 </ul>
-<h3 id="继承的实现方式"><a href="#继承的实现方式" class="headerlink" title="继承的实现方式"></a>继承的实现方式</h3><ol>
+<h3 id="继承的实现方式"><a href="#继承的实现方式" class="headerlink" title="继承的实现方式"></a>继承的实现方式</h3><ul>
 <li><p>原型链继承</p>
+<blockquote>
+<p>重点：让新实例原型等于父类实例</p>
+</blockquote>
 <ul>
-<li>重点：让新实例原型等于父类实例</li>
 <li>特点：实例可继承构造函数、父类构造函数、父类原型属性；新实例不继承父类实例属性</li>
 <li>缺点： 新实例无法向父类构造函数传参、继承方式单一；所有新实例都共享父类实例属性，一个实例修改原型属性，另一实例同步修改</li>
 <li>demo<pre><code class="js">function Person (name) &#123;
@@ -1753,8 +1755,14 @@ console.log(per1 instanceof Person) // true
 </li>
 </ul>
 </li>
-<li><p>借用构造函数继承    - 重点：用call()和apply()将父类构造函数引入子类函数    - 特点：只继承父类构造函数的属性，不能继承父类原型属性；解决原型链继承缺点，可继承多个构造函数，可在子实例向父类实例传参    - 缺点：只能继承父类构造函数的属性，无法实现构造函数复用，每次使用都需重新调用；每个新实例都有父类构造函数的副本，臃肿    - demo</p>
-<pre><code class="js">function Person (name) &#123;
+<li><p>借用构造函数继承</p>
+<blockquote>
+<p>重点：用call()和apply()将父类构造函数引入子类函数</p>
+</blockquote>
+<ul>
+<li>特点：只继承父类构造函数的属性，不能继承父类原型属性；解决原型链继承缺点，可继承多个构造函数，可在子实例向父类实例传参</li>
+<li>缺点：只能继承父类构造函数的属性，无法实现构造函数复用，每次使用都需重新调用；每个新实例都有父类构造函数的副本，臃肿</li>
+<li>demo<pre><code class="js">function Person (name) &#123;
   this.name = name
   this.sum = function () &#123; console.log(this.name) &#125;
 &#125;
@@ -1768,8 +1776,16 @@ console.log(new Con().age) // 12
 console.log(new Con() instanceof Person) // false
 </code></pre>
 </li>
-<li><p>组合继承（组合原型链和构造函数继承）    - 重点：结合原型链和构造函数继承的优点，传参、复用    - 特点：可继承父类原型上的属性，可传参、复用；每个新实例引入的构造函数属性是私有的    - 缺点：调用两次父类构造函数，子类的构造函数会替代原型上的父类构造函数    - demo</p>
-<pre><code class="js">function Person (name) &#123;
+</ul>
+</li>
+<li><p>组合继承（组合原型链和构造函数继承）</p>
+<blockquote>
+<p>重点：结合原型链和构造函数继承的优点，传参、复用</p>
+</blockquote>
+<ul>
+<li>特点：可继承父类原型上的属性，可传参、复用；每个新实例引入的构造函数属性是私有的</li>
+<li>缺点：调用两次父类构造函数，子类的构造函数会替代原型上的父类构造函数</li>
+<li>demo<pre><code class="js">function Person (name) &#123;
   this.name = name
   this.sum = function () &#123; console.log(this.name) &#125;
 &#125;
@@ -1782,8 +1798,16 @@ console.log(new subType(&#39;gar&#39;).name) // &#39;gar&#39;
 console.log(new subType(&#39;gar&#39;).age) // 10
 </code></pre>
 </li>
-<li><p>原型式继承    - 重点：用函数包装一个对象并返回该函数调用，该函数就成了可随意增加属性的实例或对象，Object.create()就是这个原理    - 特点：类似复制一个对象，用函数包装    - 缺点：所有实例都继承原型上的属性，无法实现复用（新实例属性都是后添加）    - demo</p>
-<pre><code class="js">function Person (name) &#123;
+</ul>
+</li>
+<li><p>原型式继承</p>
+<blockquote>
+<p>重点：用函数包装一个对象并返回该函数调用，该函数就成了可随意增加属性的实例或对象，Object.create()就是这个原理</p>
+</blockquote>
+<ul>
+<li>特点：类似复制一个对象，用函数包装</li>
+<li>缺点：所有实例都继承原型上的属性，无法实现复用（新实例属性都是后添加）</li>
+<li>demo<pre><code class="js">function Person (name) &#123;
   this.name = name
   this.sum = function () &#123; console.log(this.name) &#125;
 &#125;
@@ -1797,8 +1821,16 @@ let sup = new Person() // 获取父类实例
 console.log(content(sup).age) // 10 继承父类函数属性
 </code></pre>
 </li>
-<li><p>寄生式继承    - 重点：在原型式继承外面套了个壳子    - 特点：无创建自定义类型，因只是套了一个壳子返回该对象，该函数成为创新的新对象    - 缺点：未使用原型，无法复用    - demo</p>
-<pre><code class="js">function Person (name) &#123;
+</ul>
+</li>
+<li><p>寄生式继承</p>
+<blockquote>
+<p>重点：在原型式继承外面套了个壳子</p>
+</blockquote>
+<ul>
+<li>特点：无创建自定义类型，因只是套了一个壳子返回该对象，该函数成为创新的新对象</li>
+<li>缺点：未使用原型，无法复用</li>
+<li>demo<pre><code class="js">function Person (name) &#123;
   this.name = name
   this.sum = function () &#123; console.log(this.name) &#125;
 &#125;
@@ -1823,7 +1855,18 @@ console.log(typeof sup1) // &#39;object&#39;
 console.log(sup1.name) // &#39;gar&#39; 返回sub对象继承sub属性
 </code></pre>
 </li>
-<li><p>寄生组合式继承    - 寄生：在函数内返回对象然后调用    - 组合：函数的原型等于另一个实例；函数中用apply或call引入另一个构造函数，可传参    - 重点：修复组合继承的问题    - demo</p>
+</ul>
+</li>
+<li><p>寄生组合式继承</p>
+<blockquote>
+<p>重点：修复组合继承的问题</p>
+</blockquote>
+<ul>
+<li><p>寄生：在函数内返回对象然后调用</p>
+</li>
+<li><p>组合：函数的原型等于另一个实例；函数中用apply或call引入另一个构造函数，可传参</p>
+</li>
+<li><p>demo</p>
 <pre><code class="js">function Person (name) &#123;
   this.name = name
   this.sum = function () &#123; console.log(this.name) &#125;
@@ -1850,7 +1893,9 @@ let sub1 = new sub()
 console.log(sub1.age) // 10
 </code></pre>
 </li>
-</ol>
+</ul>
+</li>
+</ul>
 <h3 id="闭包是什么"><a href="#闭包是什么" class="headerlink" title="闭包是什么"></a>闭包是什么</h3><ul>
 <li>闭包是函数内部和函数外部链接的桥梁，可读取其他函数内部变量的函数；当函数返回值为另一个函数时，返回的函数若调用其父级函数内部的变量且返回该函数在外部被执行时，会产生一个闭包环境，具体指的是外部高阶函数</li>
 <li>闭包是函数和声明该函数的此法环境组合，内部函数对外部函数作用域内变量的引用；函数内属性在函数执行期间有生命周期；闭包内的函数私有化变量，完成数据封装，类似面向对象，子函数被父级函数之外的的变量引用会形成闭包</li>

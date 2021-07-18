@@ -1448,15 +1448,19 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.2.%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5/">
+			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
 				<h2 class="index-title">
-					01.2.参考链接
+					01.3.提案
 				</h2>
 				<div class="index-brief">
-					官方文件
-ECMAScript® 2015 Language Specification: ECMAScript 2015 规格
-ECMAScript® 2016 Language Specification: ECMAScript 2016 规格
-ECMAScript® 2017 Language
+					本章介绍一些尚未进入标准、但很有希望的最新提案。
+do 表达式本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。
+&#123;
+  let t = f();
+  t = t * t + 1;
+&#125;
+
+上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得
 					...
 				</div>
 			</a>
@@ -1477,19 +1481,15 @@ ECMAScript® 2017 Language
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
+			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.2.%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5/">
 				<h2 class="index-title">
-					01.3.提案
+					01.2.参考链接
 				</h2>
 				<div class="index-brief">
-					本章介绍一些尚未进入标准、但很有希望的最新提案。
-do 表达式本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。
-&#123;
-  let t = f();
-  t = t * t + 1;
-&#125;
-
-上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得
+					官方文件
+ECMAScript® 2015 Language Specification: ECMAScript 2015 规格
+ECMAScript® 2016 Language Specification: ECMAScript 2016 规格
+ECMAScript® 2017 Language
 					...
 				</div>
 			</a>
@@ -1563,19 +1563,19 @@ do 表达式本质上，块级作用域是一个语句，将多个操作封装�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/03.1.array/">
+			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/02.let-const/">
 				<h2 class="index-title">
-					03.1.array
+					02.let-const
 				</h2>
 				<div class="index-brief">
-					扩展运算符含义扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。
-console.log(...[1, 2, 3])
-// 1 2 3
+					let 命令基本用法ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。
+&#123;
+  let a = 10;
+  var b = 1;
+&#125;
 
-console.log(1, ...[2, 3, 4], 5)
-// 1 2 3 4 5
-
-[..
+a // ReferenceError: a is not defined.
+b
 					...
 				</div>
 			</a>
