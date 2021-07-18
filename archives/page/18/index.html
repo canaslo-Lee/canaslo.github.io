@@ -1476,22 +1476,28 @@
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
+			<a href="/2019/11/24/vue/vue2/vuex/%E5%9F%BA%E7%A1%80/">
 				<h2 class="index-title">
-					路由实现
+					基础
 				</h2>
 				<div class="index-brief">
-					hash 模式
-浏览器中符号 # 及后面字符称为 hash
-读取方法：
-使用 window.location.hash 读取
+					vuex 是什么
+状态机 用于存储、更改状态的组件
+
+怎么用
+使用方法：
+只读的数据集中放在 store 中
+同步改变状态的方法是提交 mutations
+异步逻辑封装在 action 中
+在 main.js 中引入 store，注入
 
 
-特点：
-hash 虽然在 URL 中，但不包括在 HTTP 请求中
-用于指导浏览器行为，对服务器安全无用
-hash 不会重加载页面
-该模式下 只有 hash 符号之前的内
+
+什么时候用
+使用场景：
+单页面应用中组件间状态
+音乐播放
+
 					...
 				</div>
 			</a>
@@ -1545,28 +1551,22 @@ next 函数一定要调用该方法 resolve 整个钩子。执行效果依赖
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vuex/%E5%9F%BA%E7%A1%80/">
+			<a href="/2019/11/24/vue/vue2/vue-router/%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0/">
 				<h2 class="index-title">
-					基础
+					路由实现
 				</h2>
 				<div class="index-brief">
-					vuex 是什么
-状态机 用于存储、更改状态的组件
-
-怎么用
-使用方法：
-只读的数据集中放在 store 中
-同步改变状态的方法是提交 mutations
-异步逻辑封装在 action 中
-在 main.js 中引入 store，注入
+					hash 模式
+浏览器中符号 # 及后面字符称为 hash
+读取方法：
+使用 window.location.hash 读取
 
 
-
-什么时候用
-使用场景：
-单页面应用中组件间状态
-音乐播放
-
+特点：
+hash 虽然在 URL 中，但不包括在 HTTP 请求中
+用于指导浏览器行为，对服务器安全无用
+hash 不会重加载页面
+该模式下 只有 hash 符号之前的内
 					...
 				</div>
 			</a>
