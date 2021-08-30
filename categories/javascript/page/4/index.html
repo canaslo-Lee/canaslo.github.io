@@ -1121,6 +1121,26 @@
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										wechart
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/08/30/wechart/wxpano/">
+										wxpano
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										工具类
 									</a>
 									
@@ -1435,6 +1455,15 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+										浏览器性能优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -1448,27 +1477,22 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/05%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/%E5%8A%9F%E8%83%BD/%E8%8E%B7%E5%8F%96%E5%9C%B0%E5%9B%BE%E5%AE%9A%E4%BD%8D/">
 				<h2 class="index-title">
-					01.数据类型
+					获取地图定位
 				</h2>
 				<div class="index-brief">
-					描述ECMAScript有6种简单数据类型（原始类型）
+					css#inp &#123;
+  position: fixed;
+  top: 100px;
+  width: 500px;
+  margin-left: -250px;
+  text-align: center;
+  left: 50%;
+  height: 30px;
+&#125;
 
-Undefined
-Null
-Boolean
-Number
-String
-Symbol：Symbol（符号）es6新增
-
-一种复杂数据类型叫Object（对象）
-
-Object是一种无序名值对的集合。
-
-注解：
-
-在ECMAScript中不能
+html
 					...
 				</div>
 			</a>
@@ -1553,22 +1577,16 @@ undefined 类型只有一个值，即特殊值 undefined
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/05%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/05.boolean/">
+			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/05%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
 				<h2 class="index-title">
-					05.boolean
+					04.null
 				</h2>
 				<div class="index-brief">
 					描述
-boolean 类型有两个值
-true
-false
-
-
-布尔值字面量true、false区分大小写，因此True、False及其他大小混写形式是有效标识符但不是布尔值
-Boolean(其他类型值) 可以将其他类型的值转换为布尔值
-
-转换规则：
-理解转换规则非常重要，因为if等控制流语句会自动执
+null 类型只有一个值，即特殊值 null
+null 表示空对象指针；这也是 typeof null 返回 object 的原因
+初始化变量时推荐使用null初始化；只需要检查该变量的值就可以知道该变量是否重新赋值
+undefined 由 null 派生的来，因此它们表面相等；即：undef
 					...
 				</div>
 			</a>
@@ -1589,16 +1607,22 @@ Boolean(其他类型值) 可以将其他类型的值转换为布尔值
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/05%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/04.null/">
+			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/05%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/05.boolean/">
 				<h2 class="index-title">
-					04.null
+					05.boolean
 				</h2>
 				<div class="index-brief">
 					描述
-null 类型只有一个值，即特殊值 null
-null 表示空对象指针；这也是 typeof null 返回 object 的原因
-初始化变量时推荐使用null初始化；只需要检查该变量的值就可以知道该变量是否重新赋值
-undefined 由 null 派生的来，因此它们表面相等；即：undef
+boolean 类型有两个值
+true
+false
+
+
+布尔值字面量true、false区分大小写，因此True、False及其他大小混写形式是有效标识符但不是布尔值
+Boolean(其他类型值) 可以将其他类型的值转换为布尔值
+
+转换规则：
+理解转换规则非常重要，因为if等控制流语句会自动执
 					...
 				</div>
 			</a>

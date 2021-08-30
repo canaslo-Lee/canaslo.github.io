@@ -1121,6 +1121,26 @@
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										wechart
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/08/30/wechart/wxpano/">
+										wxpano
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										工具类
 									</a>
 									
@@ -1435,6 +1455,15 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+										浏览器性能优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -1448,20 +1477,56 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/05.%E7%BB%84%E4%BB%B6%E4%BC%A0%E5%80%BC/">
 				<h2 class="index-title">
-					08.keep-alive
+					05.组件传值
 				</h2>
 				<div class="index-brief">
-					对 keep-alive 的了解
-keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
-vue 2.1.0 版本之后，keep-alive 新增两个属性
-include 包含的组件缓存
-exclude 排除的组件不缓存，优先级大于 include
+					组件间传值
+父传子
+子组件通过 props 方法接收父组件传入值
+
+
+子传父
+子组件通过 $emit 方法传递给父组件
+
+
+非父子、兄弟组件
+eventBus；
+创建一个事件中心，用于传递事件和接受事件；适用于小型项目；根据项目体量灵活选择是否使用 vuex
 
 
 
-使用方法：&l
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/06.%E6%95%B0%E6%8D%AE%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8E%9F%E7%90%86/">
+				<h2 class="index-title">
+					06.数据双向绑定的原理
+				</h2>
+				<div class="index-brief">
+					原理
+采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty() 劫持各个属性的 setter、getter 数据变动时发布消息给订阅者，触发相应监听回调。
+
+把一个普通 js 对象传递给实例作为其 data 选项时，vue 将遍历其属性用 Object.defi
 					...
 				</div>
 			</a>
@@ -1515,6 +1580,40 @@ template 调用时直接写计算属性名称即可
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/08.keep-alive/">
+				<h2 class="index-title">
+					08.keep-alive
+				</h2>
+				<div class="index-brief">
+					对 keep-alive 的了解
+keep-alive 是 vue 内置的一个组件，可使被包含的组件保留状态，避免重绘
+vue 2.1.0 版本之后，keep-alive 新增两个属性
+include 包含的组件缓存
+exclude 排除的组件不缓存，优先级大于 include
+
+
+
+使用方法：&l
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-11-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/vue/">vue</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/09.%E8%BF%87%E6%BB%A4%E5%99%A8/">
 				<h2 class="index-title">
 					09.过滤器
@@ -1544,70 +1643,10 @@ html 代码：&lt;div id=&quot;app&quot;&gt;
                 </div>
 		</div>	
 	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/10.css%E5%8F%AA%E5%9C%A8%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E7%94%9F%E6%95%88/">
-				<h2 class="index-title">
-					10.css只在当前组件生效
-				</h2>
-				<div class="index-brief">
-					style 标签中添加 scoped
-&lt;style scoped&gt;&lt;/style&gt;
-
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/11/24/vue/vue2/vue%E5%9F%BA%E7%A1%80/%E4%BC%98%E7%BC%BA%E7%82%B9/">
-				<h2 class="index-title">
-					优缺点
-				</h2>
-				<div class="index-brief">
-					优点：
-vue 的目标是通过尽可能简单的 api 实现相应的数据绑定和组合的视图组件，核心是一个相应的数据绑定系统
-mvvm、数据驱动、组件化、轻量、简洁、高效、快速、模块友好缺点：
-不支持低版本浏览器，最低支持到 ie9
-不利于 seo 优化，若要支持 seo，需通过服务端进行渲染组件
-首次加载首
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-11-24</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/vue/">vue</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
 	
 	<div id="index-paginator">
 		
-			<a class="extend prev" rel="prev" href="/archives/page/19/">&lt;</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/18/">18</a><a class="page-number" href="/archives/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/archives/page/21/">21</a><a class="page-number" href="/archives/page/22/">22</a><a class="extend next" rel="next" href="/archives/page/21/">&gt;</a>
+			<a class="extend prev" rel="prev" href="/archives/page/19/">&lt;</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/18/">18</a><a class="page-number" href="/archives/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/archives/page/21/">21</a><a class="page-number" href="/archives/page/22/">22</a><a class="page-number" href="/archives/page/23/">23</a><a class="extend next" rel="next" href="/archives/page/21/">&gt;</a>
 		
 	</div>
 </div>

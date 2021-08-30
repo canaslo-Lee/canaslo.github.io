@@ -1121,6 +1121,26 @@
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										wechart
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/08/30/wechart/wxpano/">
+										wxpano
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										工具类
 									</a>
 									
@@ -1435,6 +1455,15 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+										浏览器性能优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -1544,7 +1573,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h3><ul>
+<h4 id="if…else-if…-和-switch-的区别？"><a href="#if…else-if…-和-switch-的区别？" class="headerlink" title="if…else if… 和 switch 的区别？"></a>if…else if… 和 switch 的区别？</h4><h3 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h3><ul>
 <li>unshift()：头部添加</li>
 <li>push()：尾部添加</li>
 <li>pop()：删除并返回数组中最后一个</li>
@@ -1572,7 +1601,7 @@
 const arr1 = Array(1,2,3,4)
 const arr2 = [1,2,3,4]
 </code></pre>
-<h3 id="对象方法"><a href="#对象方法" class="headerlink" title="对象方法"></a>对象方法</h3><h3 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h3><ul>
+<h3 id="对象方法"><a href="#对象方法" class="headerlink" title="对象方法"></a>对象方法</h3><h4 id="obj-children-与-obj-childNodes-的区别"><a href="#obj-children-与-obj-childNodes-的区别" class="headerlink" title="obj.children() 与 obj.childNodes() 的区别"></a>obj.children() 与 obj.childNodes() 的区别</h4><h3 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h3><ul>
 <li>anchor(name)：创建html锚</li>
 <li>charAt(index)：返回指定位置字符；必填，字符在字符串中的索引</li>
 <li>charCodeAt(index)：返回指定字符的Unicode编码</li>
@@ -1721,6 +1750,26 @@ console.log(new Parent().lev()) // name
 </ul>
 <h3 id="this作用域"><a href="#this作用域" class="headerlink" title="this作用域"></a>this作用域</h3><ul>
 <li>js作用域有两种：全局：其实是window对象的属性；局部：只在函数中通过变量声明才生效，为避免作用域问题，变量声明时需使用变量关键字，变量在全局作用域中声明的变量为全局变量，局部作用域声明的为局部变量</li>
+</ul>
+<h3 id="写出3个使用this的的典型应用"><a href="#写出3个使用this的的典型应用" class="headerlink" title="写出3个使用this的的典型应用"></a>写出3个使用this的的典型应用</h3><ul>
+<li>在html元素时间属性中使用，如：<pre><code class="html">&lt;input type=&quot;button&quot; onclick=&quot;showInfo(this)&quot; value=&quot;click&quot;/&gt;
+</code></pre>
+</li>
+<li>构造函数<pre><code class="js">function Animal (name, color) &#123;
+  this.name = name
+  this.color = color
+&#125;
+</code></pre>
+</li>
+<li>Input点击，获取值<pre><code class="html">&lt;input type=&quot;button&quot; id=&quot;text&quot; value=&quot;click&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var btn = document.getElementById(&quot;text&quot;)
+  btn.onclick = function () &#123;
+    alert(this.value) // 此处this是按钮元素
+  &#125;
+&lt;/script&gt;
+</code></pre>
+</li>
 </ul>
 <h3 id="原型链概念"><a href="#原型链概念" class="headerlink" title="原型链概念"></a>原型链概念</h3><ul>
 <li>每个实例对象都存在一个__proto__属性，该属性指向其原型对象，此实例对象的构造函数存在原型属性prototype，与实例的__proto__属性指向一致</li>
@@ -1972,7 +2021,7 @@ console.log(sub1.age) // 10
 <li>普通事件不支持添加多个事件，最下面的事件会覆盖上面的，无法取消</li>
 <li>事件绑定（addEventListener）可添加多个事件，ie低版本需要使用attachEvent，支持事件冒泡和事件捕获</li>
 </ul>
-<h3 id="IE和DOM事件流的区别"><a href="#IE和DOM事件流的区别" class="headerlink" title="IE和DOM事件流的区别"></a>IE和DOM事件流的区别</h3><h4 id="什么是事件流"><a href="#什么是事件流" class="headerlink" title="什么是事件流"></a>什么是事件流</h4><ul>
+<h3 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h3><h4 id="实现一个函数-clone-，可以对-JavaScript-中的-5-种主要数据类型（包括-Number、string、array、object、boolean）进行值复制"><a href="#实现一个函数-clone-，可以对-JavaScript-中的-5-种主要数据类型（包括-Number、string、array、object、boolean）进行值复制" class="headerlink" title="实现一个函数 clone ，可以对 JavaScript 中的 5 种主要数据类型（包括 Number、string、array、object、boolean）进行值复制"></a>实现一个函数 clone ，可以对 JavaScript 中的 5 种主要数据类型（包括 Number、string、array、object、boolean）<strong>进行值复制</strong></h4><h4 id="对象浅拷贝和深拷贝有什么区别"><a href="#对象浅拷贝和深拷贝有什么区别" class="headerlink" title="对象浅拷贝和深拷贝有什么区别"></a>对象浅拷贝和深拷贝有什么区别</h4><h4 id="js-实现一个-深度-clone-的方法"><a href="#js-实现一个-深度-clone-的方法" class="headerlink" title="js 实现一个 深度 clone 的方法"></a>js 实现一个 深度 clone 的方法</h4><h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3><h3 id="IE和DOM事件流的区别"><a href="#IE和DOM事件流的区别" class="headerlink" title="IE和DOM事件流的区别"></a>IE和DOM事件流的区别</h3><h4 id="什么是事件流"><a href="#什么是事件流" class="headerlink" title="什么是事件流"></a>什么是事件流</h4><ul>
 <li>从页面中接收事件的顺序</li>
 </ul>
 <h4 id="事件流种类"><a href="#事件流种类" class="headerlink" title="事件流种类"></a>事件流种类</h4><ul>
@@ -2119,7 +2168,7 @@ if(typeof JSON !== &#39;object&#39;)&#123;
 </ol>
 </li>
 </ul>
-<h3 id="cookie设置、获取、删除"><a href="#cookie设置、获取、删除" class="headerlink" title="cookie设置、获取、删除"></a>cookie设置、获取、删除</h3><pre><code class="js">/**
+<h3 id="什么是cookie？为什么用cookie？js如何操作使用cookie？"><a href="#什么是cookie？为什么用cookie？js如何操作使用cookie？" class="headerlink" title="什么是cookie？为什么用cookie？js如何操作使用cookie？"></a>什么是cookie？为什么用cookie？js如何操作使用cookie？</h3><h3 id="cookie设置、获取、删除"><a href="#cookie设置、获取、删除" class="headerlink" title="cookie设置、获取、删除"></a>cookie设置、获取、删除</h3><pre><code class="js">/**
  * 设置Cookie
  * key &#123; String &#125;：传入键
  * val &#123; String &#125;：传入值
@@ -2248,7 +2297,7 @@ cb: &#39;show&#39;
 </code></pre>
 </li>
 </ul>
-<h3 id="一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好"><a href="#一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好" class="headerlink" title="一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好"></a>一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好</h3><ol>
+<h3 id="跨域通信"><a href="#跨域通信" class="headerlink" title="跨域通信"></a>跨域通信</h3><h3 id="跨域问题是怎么处理的"><a href="#跨域问题是怎么处理的" class="headerlink" title="跨域问题是怎么处理的"></a>跨域问题是怎么处理的</h3><h3 id="什么是跨域？说出几种跨域请求的方法"><a href="#什么是跨域？说出几种跨域请求的方法" class="headerlink" title="什么是跨域？说出几种跨域请求的方法"></a>什么是跨域？说出几种跨域请求的方法</h3><h3 id="什么是跨域？跨域请求资源的方法有哪些？各有哪些需要注意的地方"><a href="#什么是跨域？跨域请求资源的方法有哪些？各有哪些需要注意的地方" class="headerlink" title="什么是跨域？跨域请求资源的方法有哪些？各有哪些需要注意的地方"></a>什么是跨域？跨域请求资源的方法有哪些？各有哪些需要注意的地方</h3><h3 id="一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好"><a href="#一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好" class="headerlink" title="一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好"></a>一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？描述的越详细越好</h3><ol>
 <li>浏览器地址栏输入url</li>
 <li>浏览器依次查看浏览器缓存、系统缓存、路由缓存；如果存在则直接显示，否则下一步</li>
 <li>域名解析（DNS）获取相应IP</li>
@@ -2311,11 +2360,16 @@ cb: &#39;show&#39;
     <div class="post-guide">
         <div class="item left">
             
+              <a href="/2021/08/30/wechart/wxpano/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  
+              </a>
+            
         </div>
         <div class="item right">
             
-              <a href="/2021/05/02/%E5%B7%A5%E5%85%B7%E7%B1%BB/win10/bat%E5%8A%9F%E8%83%BD/">
-                bat功能
+              <a href="/2021/05/02/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+                
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

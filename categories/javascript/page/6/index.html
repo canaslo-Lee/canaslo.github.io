@@ -1121,6 +1121,26 @@
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										wechart
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/08/30/wechart/wxpano/">
+										wxpano
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										工具类
 									</a>
 									
@@ -1435,6 +1455,15 @@
 								
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2021/05/02/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B1%BB(%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6)/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">
+										浏览器性能优化
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -1448,27 +1477,17 @@
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/06%E3%80%81%E6%93%8D%E4%BD%9C%E7%AC%A6/02.%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6/">
+			<a href="/2019/12/03/javascript/%E7%BA%A2%E5%AE%9D%E4%B9%A64%E7%AC%94%E8%AE%B0/06%E3%80%81%E6%93%8D%E4%BD%9C%E7%AC%A6/03.%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 				<h2 class="index-title">
-					02.一元操作符
+					03.位操作符
 				</h2>
 				<div class="index-brief">
-					描述
-只操作一个值的操作符
-是es中最简单的操作符
+					位操作符
+用于数值底层操作，即：操作内存中表示数据的比特（位）
+es中所有数值都以 IEEE 754 64位格式存储
+位操作并不直接应用到64位表示，而是先将值转为32位整数再进行位操作，之后将结果转为64位
+对开发者好像只有32位整数，64位置整数存储格式是不可见的，因此只需要考虑32位整数即可
 
-1. 递增/减操作符
-描述：
-
-递增（++）/减（–）照搬自C语言
-有前缀版和后缀版两个版本
-
-
-前缀版：位于要操作的变量前
-let age = 29
-++age // 29 + 1 = 30
-// 等于下列代码
-age = age + 1 //
 					...
 				</div>
 			</a>
@@ -1600,19 +1619,15 @@ ECMAScript 和 JavaScript 的关系一个常见的问题是
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.3.%E6%8F%90%E6%A1%88/">
+			<a href="/2019/12/03/javascript/%E5%BE%85%E5%BD%92%E6%A1%A3/es6%E6%80%BB%E7%BB%93/01.2.%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5/">
 				<h2 class="index-title">
-					01.3.提案
+					01.2.参考链接
 				</h2>
 				<div class="index-brief">
-					本章介绍一些尚未进入标准、但很有希望的最新提案。
-do 表达式本质上，块级作用域是一个语句，将多个操作封装在一起，没有返回值。
-&#123;
-  let t = f();
-  t = t * t + 1;
-&#125;
-
-上面代码中，块级作用域将两个语句封装在一起。但是，在块级作用域以外，没有办法得
+					官方文件
+ECMAScript® 2015 Language Specification: ECMAScript 2015 规格
+ECMAScript® 2016 Language Specification: ECMAScript 2016 规格
+ECMAScript® 2017 Language
 					...
 				</div>
 			</a>
